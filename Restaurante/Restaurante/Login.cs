@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Restaurante
-{
+{ //Prueba de commit
     public partial class Login : Form
     {
         // Usa la misma cadena que en Registro.cs
