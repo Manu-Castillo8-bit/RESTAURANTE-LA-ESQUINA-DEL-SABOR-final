@@ -15,7 +15,7 @@ namespace Restaurante
 {
     public partial class Registro : Form
     {
-        string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\Etapa de informarse\Usuarios.accdb;";
+        string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\La esquina del sabor new.accdb;";
         OleDbConnection conexion;
         public Registro()
         {
@@ -37,10 +37,10 @@ namespace Restaurante
                 conexion.Open();
 
                 string usuario = txtUsuario.Text;
-                string contraseña = txtContraseña.Text;
+                string correo = txtCorreo.Text;
 
                 // Verificar si el usuario ya existe
-                string consulta = "SELECT COUNT(*) FROM registros WHERE Usuario = ?";
+                string consulta = "SELECT COUNT(*) FROM tb_cliente WHERE nombre = ?";
                 OleDbCommand verificarCmd = new OleDbCommand(consulta, conexion);
                 verificarCmd.Parameters.AddWithValue("?", usuario);
 
@@ -53,15 +53,21 @@ namespace Restaurante
                 }
 
                 // Insertar solo si no existe
-                OleDbCommand comando = new OleDbCommand("INSERT INTO registros ([Usuario], [Contraseña]) VALUES (?, ?)", conexion);
+                OleDbCommand comando = new OleDbCommand("INSERT INTO tb_cliente ([nombre], [correo]) VALUES (?, ?)", conexion);
                 comando.Parameters.AddWithValue("?", usuario);
-                comando.Parameters.AddWithValue("?", contraseña);
+                comando.Parameters.AddWithValue("?", correo);
 
                 int resultado = comando.ExecuteNonQuery();
                 MessageBox.Show($"Registros insertados: {resultado}", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 comando.Dispose();
                 verificarCmd.Dispose();
+                txtUsuario.Clear();
+                txtCorreo.Clear();
+
+                this.Hide();
+                Login newForm = new Login();
+                newForm.ShowDialog();
             }
             catch (Exception ex)
             {
@@ -93,14 +99,12 @@ namespace Restaurante
 
         private void Ver_contra_CheckedChanged(object sender, EventArgs e)
         {
-            if (Ver_contra.Checked)
-            {
-                txtContraseña.PasswordChar = '\0';
-            }
-            else
-            {
-                txtContraseña.PasswordChar = '*';
-            }
+            
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

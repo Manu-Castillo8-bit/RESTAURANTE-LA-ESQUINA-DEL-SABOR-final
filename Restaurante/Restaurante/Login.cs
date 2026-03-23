@@ -81,5 +81,10 @@ namespace Restaurante
             Registro newForm = new Registro();
             newForm.ShowDialog();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
