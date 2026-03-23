@@ -3,44 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|c:\\users\\user\\desktop\\restaurante la esquina del sabor\\restaurante\\restaurante\\men\u00FA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\men\u00FA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\men\u00FA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\men\u00FA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|c:\\users\\user\\desktop\\restaurante la esquina del sabor\\restaurante\\restaurante\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\entradas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\entradas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\platillos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\platillos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\postres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\postres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -69,23 +37,6 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Men\u00FA.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Men\u00FA.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Men\u00FA.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Men\u00FA.cs",
-              "RelativeToolTip": "Restaurante\\Men\u00FA.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwDYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T20:20:31.08Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Login.cs [Dise\u00F1o]",
@@ -99,94 +50,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Men\u00FA.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Men\u00FA.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Men\u00FA.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Men\u00FA.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Restaurante\\Men\u00FA.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T05:00:45.426Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Registro.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Registro.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Registro.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Registro.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Restaurante\\Registro.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-04T08:00:57.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Login.cs",
               "RelativeDocumentMoniker": "Restaurante\\Login.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Login.cs",
               "RelativeToolTip": "Restaurante\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-22T22:15:05.096Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Factura.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Factura.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Factura.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Profe Javier\\M\u00F3dulo 1.5\\Etapa de informarse\\Restaurante\\Restaurante\\Factura.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Profe Javier\\M\u00F3dulo 1.5\\Etapa de informarse\\Restaurante\\Restaurante\\Factura.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T05:33:16.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Bebidas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Bebidas.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Bebidas.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Bebidas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Restaurante\\Bebidas.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T05:20:27.008Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Entradas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Entradas.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Entradas.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Profe Javier\\M\u00F3dulo 1.5\\Etapa de informarse\\Restaurante\\Restaurante\\Entradas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Profe Javier\\M\u00F3dulo 1.5\\Etapa de informarse\\Restaurante\\Restaurante\\Entradas.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T04:02:22.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Postres.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Postres.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Postres.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Profe Javier\\M\u00F3dulo 1.5\\Etapa de informarse\\Restaurante\\Restaurante\\Postres.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Profe Javier\\M\u00F3dulo 1.5\\Etapa de informarse\\Restaurante\\Restaurante\\Postres.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T05:19:48.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Platillos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Platillos.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Platillos.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Profe Javier\\M\u00F3dulo 1.5\\Etapa de informarse\\Restaurante\\Restaurante\\Platillos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Profe Javier\\M\u00F3dulo 1.5\\Etapa de informarse\\Restaurante\\Restaurante\\Platillos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T05:20:18.134Z"
             }
           ]
         }

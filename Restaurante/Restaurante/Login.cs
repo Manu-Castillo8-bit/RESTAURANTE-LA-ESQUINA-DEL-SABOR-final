@@ -8,7 +8,7 @@ namespace Restaurante
     public partial class Login : Form
     {
         // Usa la misma cadena que en Registro.cs
-        private readonly string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Usuarios.accdb;";
+        private readonly string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\La esquina del sabor new.accdb;";
 
         public Login()
         {
@@ -24,9 +24,9 @@ namespace Restaurante
         {
             // Asegúrate de que los nombres textBox1/textBox2 coincidan con tus controles
             string usuario = textBox1.Text;
-            string contraseña = textBox2.Text;
+           
 
-            if (string.IsNullOrWhiteSpace(usuario) || string.IsNullOrWhiteSpace(contraseña))
+            if (string.IsNullOrWhiteSpace(usuario))
             {
                 MessageBox.Show("Ingrese por favor sus datos correspondientes.");
                 return;
@@ -35,10 +35,10 @@ namespace Restaurante
             try
             {
                 using (var conexion = new OleDbConnection(cadenaConexion))
-                using (var comando = new OleDbCommand("SELECT COUNT(*) FROM registros WHERE [Usuario]=? AND [Contraseña]=?", conexion))
+                using (var comando = new OleDbCommand("SELECT COUNT(*) FROM tb_cliente WHERE [nombre]=? ", conexion))
                 {
                     comando.Parameters.AddWithValue("?", usuario);
-                    comando.Parameters.AddWithValue("?", contraseña);
+                   
 
                     conexion.Open();
                     int existe = Convert.ToInt32(comando.ExecuteScalar());
@@ -54,7 +54,7 @@ namespace Restaurante
                     }
                     else
                     {
-                        MessageBox.Show("Usuario o contraseña incorrectos.", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Introduzca su nombre correcto.", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
@@ -71,14 +71,8 @@ namespace Restaurante
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-                textBox2.PasswordChar = '\0';
-            }
-            else
-            {
-                textBox2.PasswordChar = '*';
-            }
+            
+            
         }
 
         private void Registrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
