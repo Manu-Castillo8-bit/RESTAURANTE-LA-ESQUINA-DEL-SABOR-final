@@ -1,0 +1,135 @@
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\bin\Debug\Restaurante.exe.config
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\bin\Debug\Restaurante.exe
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\bin\Debug\Restaurante.pdb
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.Bebidas.resources
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.Login.resources
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.Menú.resources
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.Platillos.resources
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.Postres.resources
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.exe
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.exe.config
+C:\Users\Mi pc\Desktop\Restaurante\Restaurante\obj\Debug\Restaurante.Factura.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Bebidas.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datospostres.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_3_leches.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_atol.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_bebidas.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_cafe.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_cena.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_chocolate.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_de_paltillos.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_flan.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_panes.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_quesadillas.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_soda.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_tortas.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Factura.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Login.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Menú.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Platillos.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Postres.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Registro.resources
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\bin\Debug\Restaurante.exe.config
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\bin\Debug\Restaurante.exe
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\bin\Debug\Restaurante.pdb
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.exe
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
+C:\Users\Mi pc\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.exe.config
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\bin\Debug\Restaurante.exe.config
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\bin\Debug\Restaurante.exe
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\bin\Debug\Restaurante.pdb
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Bebidas.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datospostres.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_3_leches.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_atol.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_bebidas.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_cafe.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_cena.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_chocolate.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_de_paltillos.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_flan.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_panes.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_quesadillas.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_soda.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_tortas.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Factura.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Login.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Menú.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Platillos.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Postres.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Registro.resources
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.exe
+C:\Users\User\Desktop\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\bin\Debug\Restaurante.exe.config
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\bin\Debug\Restaurante.exe
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\bin\Debug\Restaurante.pdb
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Bebidas.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datospostres.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_3_leches.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_atol.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_bebidas.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_cafe.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_cena.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_chocolate.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_de_paltillos.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_flan.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_panes.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_quesadillas.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_soda.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_tortas.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Factura.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Login.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Menú.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Platillos.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Postres.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Registro.resources
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.exe
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
+C:\Users\User\Desktop\Profe Javier\Módulo 1.5\Etapa de informarse\Restaurante\Restaurante\obj\Debug\Restaurante.Entradas.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\bin\Debug\Restaurante.exe.config
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\bin\Debug\Restaurante.exe
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\bin\Debug\Restaurante.pdb
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Bebidas.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datospostres.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_3_leches.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_atol.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_bebidas.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_cafe.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_cena.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_chocolate.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_de_paltillos.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_flan.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_panes.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_quesadillas.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_soda.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_tortas.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Entradas.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Factura.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Login.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Menú.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Platillos.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Postres.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Registro.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.exe
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.pdb

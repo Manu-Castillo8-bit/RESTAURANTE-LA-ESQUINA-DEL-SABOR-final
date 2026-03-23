@@ -1,0 +1,555 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_chocolate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_chocolate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_de_paltillos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_de_paltillos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_flan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_flan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_panes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_panes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_soda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_soda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_tortas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_tortas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\men\u00FA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\men\u00FA.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|c:\\users\\mi pc\\desktop\\etapa de informarse\\restaurante\\restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\postres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\postres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\platillos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\platillos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datospostres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datospostres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_cena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_cena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datospostres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datospostres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_tortas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_tortas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_soda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_soda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_quesadillas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_quesadillas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_quesadillas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_quesadillas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_panes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_panes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_flan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_flan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_de_paltillos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_de_paltillos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_chocolate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_chocolate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_cena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_cena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_bebidas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_cafe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_cafe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_cafe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_cafe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_atol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_atol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_atol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_atol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_3_leches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_3_leches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\restaurante\\datos_3_leches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\datos_3_leches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Platillos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Platillos.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Platillos.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Platillos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Platillos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:05:29.738Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Postres.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Postres.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Postres.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Postres.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Postres.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:05:30.8Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Bebidas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Bebidas.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Bebidas.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Bebidas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Bebidas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:08:44.395Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Factura.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Factura.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Factura.cs",
+              "RelativeToolTip": "Restaurante\\Factura.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAcwIMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:57:32.029Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Registro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Registro.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Registro.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Registro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Registro.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:05:32.16Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Men\u00FA.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Men\u00FA.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Men\u00FA.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Men\u00FA.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Men\u00FA.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:05:28.3Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Login.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Login.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:05:26.91Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Datos_tortas.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_tortas.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_tortas.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_tortas.cs",
+              "RelativeToolTip": "Restaurante\\Datos_tortas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:05:13.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Datos_soda.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_soda.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_soda.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_soda.cs",
+              "RelativeToolTip": "Restaurante\\Datos_soda.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwCEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:05:08.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Datos_panes.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_panes.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_panes.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_panes.cs",
+              "RelativeToolTip": "Restaurante\\Datos_panes.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:04:59.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Datos_flan.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_flan.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_flan.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_flan.cs",
+              "RelativeToolTip": "Restaurante\\Datos_flan.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwCEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:04:55.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Datos_de_paltillos.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_de_paltillos.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_de_paltillos.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_de_paltillos.cs",
+              "RelativeToolTip": "Restaurante\\Datos_de_paltillos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:04:49.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Datos_chocolate.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_chocolate.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_chocolate.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_chocolate.cs",
+              "RelativeToolTip": "Restaurante\\Datos_chocolate.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:04:44.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Datos_cena.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_cena.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_cena.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_cena.cs",
+              "RelativeToolTip": "Restaurante\\Datos_cena.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowCgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:04:37.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Datos_cafe.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_cafe.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_cafe.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_cafe.cs",
+              "RelativeToolTip": "Restaurante\\Datos_cafe.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:04:30.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Datos_bebidas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_bebidas.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_bebidas.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_bebidas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_bebidas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:04:27.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Datos_atol.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_atol.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_atol.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_atol.cs",
+              "RelativeToolTip": "Restaurante\\Datos_atol.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvyEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:04:21.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Datos_3_leches.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_3_leches.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_3_leches.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_3_leches.cs",
+              "RelativeToolTip": "Restaurante\\Datos_3_leches.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvyEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:04:15.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Datos_quesadillas.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_quesadillas.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_quesadillas.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_quesadillas.cs",
+              "RelativeToolTip": "Restaurante\\Datos_quesadillas.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:03:37.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Factura.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Factura.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Factura.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Factura.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Factura.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:57:26.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Datospostres.cs",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datospostres.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datospostres.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datospostres.cs",
+              "RelativeToolTip": "Restaurante\\Datospostres.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwCAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:56:39.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Datospostres.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datospostres.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datospostres.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datospostres.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datospostres.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:56:37.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Datos_flan.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_flan.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_flan.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_flan.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_flan.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:56:05.991Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Datos_quesadillas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_quesadillas.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_quesadillas.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_quesadillas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_quesadillas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:55:44.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Datos_3_leches.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_3_leches.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_3_leches.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_3_leches.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_3_leches.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:55:34.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Datos_atol.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_atol.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_atol.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_atol.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_atol.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:55:26.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Datos_chocolate.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_chocolate.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_chocolate.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_chocolate.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_chocolate.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:55:16.927Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Datos_cafe.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_cafe.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_cafe.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_cafe.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_cafe.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:55:10.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Datos_soda.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_soda.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_soda.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_soda.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_soda.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:55:01.052Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Datos_tortas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_tortas.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_tortas.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_tortas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_tortas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:54:46.072Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Datos_panes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_panes.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_panes.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_panes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_panes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:53:33.587Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Datos_cena.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_cena.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_cena.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_cena.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_cena.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:52:00.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Datos_de_paltillos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_de_paltillos.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Datos_de_paltillos.cs",
+              "ToolTip": "C:\\Users\\Mi pc\\Desktop\\Etapa de informarse\\Restaurante\\Restaurante\\Datos_de_paltillos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Datos_de_paltillos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:48:26.369Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
