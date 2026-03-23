@@ -127,17 +127,23 @@
   <data name="Ojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ojo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Café" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Café.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tres leches" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tres leches.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Crema soda png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Crema soda png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logito final " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logito final .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Pastel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pastel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ato pngl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ato pngl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coca png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coca png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cena" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cena.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,26 +151,23 @@
   <data name="Pepsi png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pepsi png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chocolate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crema soda png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crema soda png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pupusas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pupusas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coca png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coca png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logito final " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logito final .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pan con pollo png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pan con pollo png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chocolate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Flan png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flan png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +175,8 @@
   <data name="Candado sin fondo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Candado sin fondo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Crema soda png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Crema soda png1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Crema soda png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crema soda png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Persona" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Persona.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,13 +187,13 @@
   <data name="d" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Café" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Café.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ato pngl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ato pngl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="titulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\titulo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="carta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -55,6 +55,7 @@
             this.Platillos.Size = new System.Drawing.Size(127, 118);
             this.Platillos.TabIndex = 4;
             this.Platillos.Text = "Platillos";
+            this.Platillos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Platillos.UseVisualStyleBackColor = false;
             this.Platillos.Click += new System.EventHandler(this.Platillos_Click);
             // 
@@ -75,6 +76,7 @@
             this.Bebidas.Size = new System.Drawing.Size(132, 98);
             this.Bebidas.TabIndex = 5;
             this.Bebidas.Text = "Bebidas";
+            this.Bebidas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Bebidas.UseVisualStyleBackColor = false;
             this.Bebidas.Click += new System.EventHandler(this.Bebidas_Click);
             // 
@@ -90,11 +92,12 @@
             this.Postres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Postres.Font = new System.Drawing.Font("MV Boli", 15.25F, System.Drawing.FontStyle.Bold);
             this.Postres.ForeColor = System.Drawing.Color.White;
-            this.Postres.Location = new System.Drawing.Point(260, 352);
+            this.Postres.Location = new System.Drawing.Point(260, 331);
             this.Postres.Name = "Postres";
-            this.Postres.Size = new System.Drawing.Size(137, 112);
+            this.Postres.Size = new System.Drawing.Size(127, 140);
             this.Postres.TabIndex = 6;
             this.Postres.Text = "Postres";
+            this.Postres.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Postres.UseVisualStyleBackColor = false;
             this.Postres.Click += new System.EventHandler(this.Postres_Click);
             // 
@@ -150,10 +153,10 @@
             this.Entradas.ForeColor = System.Drawing.Color.White;
             this.Entradas.Location = new System.Drawing.Point(31, 190);
             this.Entradas.Name = "Entradas";
-            this.Entradas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Entradas.Size = new System.Drawing.Size(113, 104);
+            this.Entradas.Size = new System.Drawing.Size(127, 128);
             this.Entradas.TabIndex = 24;
             this.Entradas.Text = "Entradas";
+            this.Entradas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Entradas.UseVisualStyleBackColor = false;
             this.Entradas.Click += new System.EventHandler(this.Entradas_Click);
             // 

@@ -108,10 +108,10 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Restaurante.Properties.Resources.Candado_sin_fondo;
-            this.pictureBox3.Location = new System.Drawing.Point(247, 266);
+            this.pictureBox3.Image = global::Restaurante.Properties.Resources.carta;
+            this.pictureBox3.Location = new System.Drawing.Point(243, 266);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox3.Size = new System.Drawing.Size(58, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 25;
             this.pictureBox3.TabStop = false;
