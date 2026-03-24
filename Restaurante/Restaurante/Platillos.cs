@@ -16,10 +16,6 @@ namespace Restaurante
     {
         private Datos_de_paltillos form_dt_platillos;
 
-        
-        
-            
-        
         public Platillos(Datos_de_paltillos formPadre)
         {
             InitializeComponent();
@@ -47,6 +43,19 @@ namespace Restaurante
             this.form_dt_tortas = formPadre;
         }
 
+        private Datos_lasaña form_dt_lasaña;
+        public Platillos(Datos_lasaña formPadre)
+        {
+            InitializeComponent();
+            this.form_dt_lasaña = formPadre;
+        }
+
+        private Datos_carne form_dt_carne;
+        public Platillos(Datos_carne formPadre)
+        {
+            InitializeComponent();
+            this.form_dt_carne = formPadre;
+        }
 
         private void R_pl_m_Click(object sender, EventArgs e)
         {
@@ -54,9 +63,6 @@ namespace Restaurante
         }
 
         //-------Para recibir datos de otros formularios y mostrarlos en Platillos-------//
-
-
-
 
         private string pupusasRecibidas;
         public Platillos(string pupusas)
@@ -68,54 +74,23 @@ namespace Restaurante
         }
 
 
-
-
-
-
-
-
         private void ord_pl_CheckedChanged(object sender, EventArgs e)
-        {
-            if (ord_pl.Checked)
-            {
-                this.Hide();
-                Datos_de_paltillos newForm = new Datos_de_paltillos();
-                newForm.Show();
-
-                
-
-            }
-           
+        {     
         }
 
         private void Ord_cena_CheckedChanged(object sender, EventArgs e)
         {
-            if (Ord_cena.Checked)
-            {
-                this.Hide();
-                Datos_cena newForm = new Datos_cena();
-                newForm.Show();
-
-
-            }
+            
         }
 
         private void Ord_panes_CheckedChanged(object sender, EventArgs e)
         {
-            if (Ord_panes.Checked)
-            {
-                this.Hide();
-                Datos_panes newForm = new Datos_panes();
-                newForm.Show();
-
-            }
+            
         }
 
         private void Ord_tortas_CheckedChanged(object sender, EventArgs e)
         {
-            this.Hide();
-            Datos_tortas newForm = new Datos_tortas();
-            newForm.Show();
+            
         }
 
         private void R_pl_m_Click_1(object sender, EventArgs e)
@@ -125,6 +100,50 @@ namespace Restaurante
             // 2. Crear y mostrar el nuevo formulario (Form2)
             Menú newForm = new Menú();
             newForm.ShowDialog();
+        }
+
+        private void btnPupusas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_de_paltillos newForm = new Datos_de_paltillos();
+            newForm.Show();
+        }
+
+        private void btnPanes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_panes newForm = new Datos_panes();
+            newForm.Show();
+
+        }
+
+        private void btnCena_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_cena newForm = new Datos_cena();
+            newForm.Show();
+
+        }
+
+        private void btnTortas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_tortas newForm = new Datos_tortas();
+            newForm.Show();
+        }
+
+        private void btnCarne_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_carne newForm = new Datos_carne();
+            newForm.Show();
+        }
+
+        private void btnLasaña_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_lasaña newForm = new Datos_lasaña();
+            newForm.Show();
         }
     }
 }

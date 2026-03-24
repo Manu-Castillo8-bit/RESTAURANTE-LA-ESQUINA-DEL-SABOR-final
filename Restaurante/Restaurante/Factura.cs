@@ -163,64 +163,89 @@ namespace Restaurante
 
         private void Total_Click(object sender, EventArgs e)
         {
+
+            // PLATILLOS
             pupusas_f.Text = Almacenamiento_temporal.Pupusas;
             cena_f.Text = Almacenamiento_temporal.Cena;
             panes_f.Text = Almacenamiento_temporal.Panes;
             torta_f.Text = Almacenamiento_temporal.Tortas;
+            lasaña_f.Text = Almacenamiento_temporal.Lasaña;
+            carne_f.Text = Almacenamiento_temporal.Carne;
 
             double pupusas = Convert.ToDouble(Almacenamiento_temporal.Pupusas);
             double cena = Convert.ToDouble(Almacenamiento_temporal.Cena);
             double panes = Convert.ToDouble(Almacenamiento_temporal.Panes);
             double tortas = Convert.ToDouble(Almacenamiento_temporal.Tortas);
+            double lasaña = Convert.ToDouble(Almacenamiento_temporal.Lasaña);
+            double carne = Convert.ToDouble(Almacenamiento_temporal.Carne);
 
             double p_pupusas= pupusas * 1.00;
             double p_cena= cena * 3.50;
             double p_panes= panes * 1.50;
             double p_tortas= tortas * 2.00;
-            
+            double p_lasaña = lasaña * 1.50;
+            double p_carne = carne * 1.50;
 
-            double total_platillos = pupusas * 1.00 + cena * 3.50 + panes * 1.50 + tortas * 2.00;
+            double total_platillos = pupusas * 1.00 + cena * 3.50 + panes * 1.50 + tortas * 2.00 + lasaña*1.50 + carne*1.50;
 
+
+            // BEBIDAS
             soda_f.Text = Almacenamiento_temporal.Bebidas;
             chocolate_f.Text = Almacenamiento_temporal.Chocolates;
             cafe_f.Text = Almacenamiento_temporal.Cafes;
             atol_f.Text = Almacenamiento_temporal.Atoles;
+            licuado_f.Text = Almacenamiento_temporal.Licuados;
+            te_f.Text = Almacenamiento_temporal.Tes;
 
             double soda = Convert.ToDouble(Almacenamiento_temporal.Bebidas);
             double chocolate = Convert.ToDouble(Almacenamiento_temporal.Chocolates);
             double cafe = Convert.ToDouble(Almacenamiento_temporal.Cafes);
             double atol = Convert.ToDouble(Almacenamiento_temporal.Atoles);
+            double licuado = Convert.ToDouble(Almacenamiento_temporal.Licuados);
+            double te = Convert.ToDouble(Almacenamiento_temporal.Tes);
 
             double p_soda = soda * 1.00;
             double p_chocolate = chocolate * 1.00;
             double p_cafe = cafe * 1.00;
             double p_atol = atol * 1.00;
+            double p_licuado = licuado * 1.00;
+            double p_te = te * 1.00;
 
-            double total_bebidas = (soda * 1.00 + chocolate * 1.00 + cafe * 1.00 + atol * 1.00);
+            double total_bebidas = (soda * 1.00 + chocolate * 1.00 + cafe * 1.00 + atol * 1.00 + licuado * 1.00 + te * 1.00);
 
-            
+
+            //POSTRES
 
             tres_l_f.Text = Almacenamiento_temporal.TresLeches;
             quesadillas_f.Text = Almacenamiento_temporal.Quesadillas;
             flan_f.Text = Almacenamiento_temporal.Flanes;
             pastel_f.Text = Almacenamiento_temporal.pastel;
+            tartaleta_f.Text = Almacenamiento_temporal.pastel;
+            pastel_li_f.Text = Almacenamiento_temporal.pastel;
 
             double tres_l = Convert.ToDouble(Almacenamiento_temporal.TresLeches);
             double quesadillas = Convert.ToDouble(Almacenamiento_temporal.Quesadillas);
             double flan = Convert.ToDouble(Almacenamiento_temporal.Flanes);
             double pastel = Convert.ToDouble(Almacenamiento_temporal.pastel);
+            double tartaleta = Convert.ToDouble(Almacenamiento_temporal.pastel);
+            double pastel_li = Convert.ToDouble(Almacenamiento_temporal.pastel);
 
             double p_tres_l = tres_l * 3.00;
             double p_quesadillas = quesadillas * 2.00;
             double p_flan = flan * 1.50;
             double p_pastel = pastel * 3.50;
+            double p_tartaleta = tartaleta * 1.50;
+            double p_pastel_li = pastel_li * 3.50;
 
-            double total_postres = tres_l * 3.00 + quesadillas * 2.00 + flan * 1.50 + pastel * 3.50;
+            double total_postres = tres_l * 3.00 + quesadillas * 2.00 + flan * 1.50 + pastel * 3.50 + tartaleta* 1.50 + pastel_li *3.50 ;
 
             a.Text=p_pupusas.ToString("F2");
             b.Text=p_cena.ToString("F2");
             c.Text=p_panes.ToString("F2");
             d.Text=p_tortas.ToString("F2");
+            textBox1.Text=p_lasaña.ToString("F2");
+            textBox3.Text=p_carne.ToString("F2");
+
             e_.Text=p_soda.ToString("F2");
             f.Text=p_chocolate.ToString("F2");
             g.Text=p_cafe.ToString("F2");
@@ -247,6 +272,11 @@ namespace Restaurante
         private void a_TextChanged(object sender, EventArgs e)
         {
             //Ignorar
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

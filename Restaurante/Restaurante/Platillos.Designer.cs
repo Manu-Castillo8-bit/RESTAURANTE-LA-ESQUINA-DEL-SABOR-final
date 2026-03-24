@@ -38,20 +38,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.ord_pl = new System.Windows.Forms.CheckBox();
-            this.Ord_cena = new System.Windows.Forms.CheckBox();
-            this.Ord_panes = new System.Windows.Forms.CheckBox();
-            this.Ord_tortas = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnCarne = new System.Windows.Forms.Button();
+            this.btnLasaña = new System.Windows.Forms.Button();
+            this.btnTortas = new System.Windows.Forms.Button();
+            this.btnCena = new System.Windows.Forms.Button();
+            this.btnPupusas = new System.Windows.Forms.Button();
+            this.btnPanes = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.R_pl_m = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -156,46 +152,6 @@
             this.label9.TabIndex = 34;
             this.label9.Text = "$1.50";
             // 
-            // ord_pl
-            // 
-            this.ord_pl.AutoSize = true;
-            this.ord_pl.Location = new System.Drawing.Point(69, 247);
-            this.ord_pl.Name = "ord_pl";
-            this.ord_pl.Size = new System.Drawing.Size(15, 14);
-            this.ord_pl.TabIndex = 35;
-            this.ord_pl.UseVisualStyleBackColor = true;
-            this.ord_pl.CheckedChanged += new System.EventHandler(this.ord_pl_CheckedChanged);
-            // 
-            // Ord_cena
-            // 
-            this.Ord_cena.AutoSize = true;
-            this.Ord_cena.Location = new System.Drawing.Point(69, 430);
-            this.Ord_cena.Name = "Ord_cena";
-            this.Ord_cena.Size = new System.Drawing.Size(15, 14);
-            this.Ord_cena.TabIndex = 36;
-            this.Ord_cena.UseVisualStyleBackColor = true;
-            this.Ord_cena.CheckedChanged += new System.EventHandler(this.Ord_cena_CheckedChanged);
-            // 
-            // Ord_panes
-            // 
-            this.Ord_panes.AutoSize = true;
-            this.Ord_panes.Location = new System.Drawing.Point(350, 234);
-            this.Ord_panes.Name = "Ord_panes";
-            this.Ord_panes.Size = new System.Drawing.Size(15, 14);
-            this.Ord_panes.TabIndex = 37;
-            this.Ord_panes.UseVisualStyleBackColor = true;
-            this.Ord_panes.CheckedChanged += new System.EventHandler(this.Ord_panes_CheckedChanged);
-            // 
-            // Ord_tortas
-            // 
-            this.Ord_tortas.AutoSize = true;
-            this.Ord_tortas.Location = new System.Drawing.Point(350, 430);
-            this.Ord_tortas.Name = "Ord_tortas";
-            this.Ord_tortas.Size = new System.Drawing.Size(15, 14);
-            this.Ord_tortas.TabIndex = 38;
-            this.Ord_tortas.UseVisualStyleBackColor = true;
-            this.Ord_tortas.CheckedChanged += new System.EventHandler(this.Ord_tortas_CheckedChanged);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -239,83 +195,101 @@
             this.label13.TabIndex = 39;
             this.label13.Text = "Carne";
             // 
-            // button1
+            // btnCarne
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(69, 555);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 139);
-            this.button1.TabIndex = 43;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCarne.BackColor = System.Drawing.Color.Transparent;
+            this.btnCarne.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCarne.BackgroundImage")));
+            this.btnCarne.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCarne.FlatAppearance.BorderSize = 0;
+            this.btnCarne.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCarne.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCarne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCarne.Location = new System.Drawing.Point(69, 555);
+            this.btnCarne.Name = "btnCarne";
+            this.btnCarne.Size = new System.Drawing.Size(170, 139);
+            this.btnCarne.TabIndex = 43;
+            this.btnCarne.UseVisualStyleBackColor = false;
+            this.btnCarne.Click += new System.EventHandler(this.btnCarne_Click);
             // 
-            // button2
+            // btnLasaña
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(371, 555);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 108);
-            this.button2.TabIndex = 44;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnLasaña.BackColor = System.Drawing.Color.Transparent;
+            this.btnLasaña.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLasaña.BackgroundImage")));
+            this.btnLasaña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLasaña.FlatAppearance.BorderSize = 0;
+            this.btnLasaña.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnLasaña.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnLasaña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLasaña.Location = new System.Drawing.Point(371, 555);
+            this.btnLasaña.Name = "btnLasaña";
+            this.btnLasaña.Size = new System.Drawing.Size(119, 108);
+            this.btnLasaña.TabIndex = 44;
+            this.btnLasaña.UseVisualStyleBackColor = false;
+            this.btnLasaña.Click += new System.EventHandler(this.btnLasaña_Click);
             // 
-            // button3
+            // btnTortas
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::Restaurante.Properties.Resources.torta_png;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(408, 421);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 86);
-            this.button3.TabIndex = 45;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnTortas.BackColor = System.Drawing.Color.Transparent;
+            this.btnTortas.BackgroundImage = global::Restaurante.Properties.Resources.torta_png;
+            this.btnTortas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTortas.FlatAppearance.BorderSize = 0;
+            this.btnTortas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnTortas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnTortas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTortas.Location = new System.Drawing.Point(408, 421);
+            this.btnTortas.Name = "btnTortas";
+            this.btnTortas.Size = new System.Drawing.Size(96, 86);
+            this.btnTortas.TabIndex = 45;
+            this.btnTortas.UseVisualStyleBackColor = false;
+            this.btnTortas.Click += new System.EventHandler(this.btnTortas_Click);
             // 
-            // button4
+            // btnCena
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::Restaurante.Properties.Resources.Cena;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(90, 421);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(96, 86);
-            this.button4.TabIndex = 46;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCena.BackColor = System.Drawing.Color.Transparent;
+            this.btnCena.BackgroundImage = global::Restaurante.Properties.Resources.Cena;
+            this.btnCena.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCena.FlatAppearance.BorderSize = 0;
+            this.btnCena.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCena.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCena.Location = new System.Drawing.Point(90, 421);
+            this.btnCena.Name = "btnCena";
+            this.btnCena.Size = new System.Drawing.Size(96, 86);
+            this.btnCena.TabIndex = 46;
+            this.btnCena.UseVisualStyleBackColor = false;
+            this.btnCena.Click += new System.EventHandler(this.btnCena_Click);
             // 
-            // button5
+            // btnPupusas
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = global::Restaurante.Properties.Resources.Pupusas;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(99, 219);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 86);
-            this.button5.TabIndex = 47;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnPupusas.BackColor = System.Drawing.Color.Transparent;
+            this.btnPupusas.BackgroundImage = global::Restaurante.Properties.Resources.Pupusas;
+            this.btnPupusas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPupusas.FlatAppearance.BorderSize = 0;
+            this.btnPupusas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPupusas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPupusas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPupusas.Location = new System.Drawing.Point(99, 219);
+            this.btnPupusas.Name = "btnPupusas";
+            this.btnPupusas.Size = new System.Drawing.Size(96, 86);
+            this.btnPupusas.TabIndex = 47;
+            this.btnPupusas.UseVisualStyleBackColor = false;
+            this.btnPupusas.Click += new System.EventHandler(this.btnPupusas_Click);
             // 
-            // button6
+            // btnPanes
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImage = global::Restaurante.Properties.Resources.Pan_con_pollo_png;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(371, 220);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(95, 96);
-            this.button6.TabIndex = 48;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnPanes.BackColor = System.Drawing.Color.Transparent;
+            this.btnPanes.BackgroundImage = global::Restaurante.Properties.Resources.Pan_con_pollo_png;
+            this.btnPanes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPanes.FlatAppearance.BorderSize = 0;
+            this.btnPanes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPanes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPanes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPanes.Location = new System.Drawing.Point(371, 220);
+            this.btnPanes.Name = "btnPanes";
+            this.btnPanes.Size = new System.Drawing.Size(95, 96);
+            this.btnPanes.TabIndex = 48;
+            this.btnPanes.UseVisualStyleBackColor = false;
+            this.btnPanes.Click += new System.EventHandler(this.btnPanes_Click);
             // 
             // label14
             // 
@@ -367,19 +341,15 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.R_pl_m);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnPanes);
+            this.Controls.Add(this.btnPupusas);
+            this.Controls.Add(this.btnCena);
+            this.Controls.Add(this.btnTortas);
+            this.Controls.Add(this.btnLasaña);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.Ord_tortas);
-            this.Controls.Add(this.Ord_panes);
-            this.Controls.Add(this.Ord_cena);
-            this.Controls.Add(this.ord_pl);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -389,7 +359,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCarne);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Platillos";
@@ -411,20 +381,16 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox ord_pl;
-        private System.Windows.Forms.CheckBox Ord_cena;
-        private System.Windows.Forms.CheckBox Ord_panes;
-        private System.Windows.Forms.CheckBox Ord_tortas;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnCarne;
+        private System.Windows.Forms.Button btnLasaña;
+        private System.Windows.Forms.Button btnTortas;
+        private System.Windows.Forms.Button btnCena;
+        private System.Windows.Forms.Button btnPupusas;
+        private System.Windows.Forms.Button btnPanes;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button R_pl_m;
         private System.Windows.Forms.Button button7;

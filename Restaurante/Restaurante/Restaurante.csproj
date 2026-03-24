@@ -83,6 +83,12 @@
     <Compile Include="Datos_cafe.Designer.cs">
       <DependentUpon>Datos_cafe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datos_carne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_carne.Designer.cs">
+      <DependentUpon>Datos_carne.cs</DependentUpon>
+    </Compile>
     <Compile Include="Datos_cena.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     </Compile>
     <Compile Include="Datos_flan.Designer.cs">
       <DependentUpon>Datos_flan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datos_lasaña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_lasaña.Designer.cs">
+      <DependentUpon>Datos_lasaña.cs</DependentUpon>
     </Compile>
     <Compile Include="Datos_panes.cs">
       <SubType>Form</SubType>
@@ -193,6 +205,9 @@
     <EmbeddedResource Include="Datos_cafe.resx">
       <DependentUpon>Datos_cafe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Datos_carne.resx">
+      <DependentUpon>Datos_carne.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Datos_cena.resx">
       <DependentUpon>Datos_cena.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Datos_flan.resx">
       <DependentUpon>Datos_flan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datos_lasaña.resx">
+      <DependentUpon>Datos_lasaña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Datos_panes.resx">
       <DependentUpon>Datos_panes.cs</DependentUpon>

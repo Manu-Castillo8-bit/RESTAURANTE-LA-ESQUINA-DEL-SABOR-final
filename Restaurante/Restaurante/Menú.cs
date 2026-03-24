@@ -71,5 +71,10 @@ namespace Restaurante
             Entradas newForm = new Entradas();
             newForm.ShowDialog();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

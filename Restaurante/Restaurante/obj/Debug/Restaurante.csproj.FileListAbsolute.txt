@@ -133,3 +133,5 @@ C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\o
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.exe
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_carne.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_lasaña.resources

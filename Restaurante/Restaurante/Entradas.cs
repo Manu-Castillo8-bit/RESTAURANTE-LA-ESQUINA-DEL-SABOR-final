@@ -21,5 +21,19 @@ namespace Restaurante
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+          this.Close();
+        }
+
+        private void R_e_m_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            // 2. Crear y mostrar el nuevo formulario (Form2)
+            Menú newForm = new Menú();
+            newForm.ShowDialog();
+        }
     }
 }
