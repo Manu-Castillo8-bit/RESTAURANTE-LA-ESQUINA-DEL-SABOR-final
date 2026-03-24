@@ -107,6 +107,12 @@
     <Compile Include="Datos_de_paltillos.Designer.cs">
       <DependentUpon>Datos_de_paltillos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datos_ensalada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_ensalada.Designer.cs">
+      <DependentUpon>Datos_ensalada.cs</DependentUpon>
+    </Compile>
     <Compile Include="Datos_flan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,17 +131,47 @@
     <Compile Include="Datos_panes.Designer.cs">
       <DependentUpon>Datos_panes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datos_papas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_papas.Designer.cs">
+      <DependentUpon>Datos_papas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Datos_quesadillas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Datos_quesadillas.Designer.cs">
       <DependentUpon>Datos_quesadillas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datos_sandwich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_sandwich.Designer.cs">
+      <DependentUpon>Datos_sandwich.cs</DependentUpon>
+    </Compile>
     <Compile Include="Datos_soda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Datos_soda.Designer.cs">
       <DependentUpon>Datos_soda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datos_sopa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_sopa.Designer.cs">
+      <DependentUpon>Datos_sopa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datos_tamales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_tamales.Designer.cs">
+      <DependentUpon>Datos_tamales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datos_torrejas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_torrejas.Designer.cs">
+      <DependentUpon>Datos_torrejas.cs</DependentUpon>
     </Compile>
     <Compile Include="Datos_tortas.cs">
       <SubType>Form</SubType>
@@ -217,6 +253,9 @@
     <EmbeddedResource Include="Datos_de_paltillos.resx">
       <DependentUpon>Datos_de_paltillos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Datos_ensalada.resx">
+      <DependentUpon>Datos_ensalada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Datos_flan.resx">
       <DependentUpon>Datos_flan.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,11 +265,26 @@
     <EmbeddedResource Include="Datos_panes.resx">
       <DependentUpon>Datos_panes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Datos_papas.resx">
+      <DependentUpon>Datos_papas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Datos_quesadillas.resx">
       <DependentUpon>Datos_quesadillas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Datos_sandwich.resx">
+      <DependentUpon>Datos_sandwich.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Datos_soda.resx">
       <DependentUpon>Datos_soda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datos_sopa.resx">
+      <DependentUpon>Datos_sopa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datos_tamales.resx">
+      <DependentUpon>Datos_tamales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datos_torrejas.resx">
+      <DependentUpon>Datos_torrejas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Datos_tortas.resx">
       <DependentUpon>Datos_tortas.cs</DependentUpon>

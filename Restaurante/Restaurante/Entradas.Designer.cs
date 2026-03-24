@@ -42,12 +42,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnPapas = new System.Windows.Forms.Button();
+            this.btnSopa = new System.Windows.Forms.Button();
+            this.btnTorrejas = new System.Windows.Forms.Button();
+            this.btnTamales = new System.Windows.Forms.Button();
+            this.btnSandwich = new System.Windows.Forms.Button();
+            this.btnEnsalada = new System.Windows.Forms.Button();
             this.R_e_m = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -196,95 +196,101 @@
             this.label1.Text = "Entradas";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // btnPapas
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(74, 213);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 104);
-            this.button1.TabIndex = 73;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPapas.BackColor = System.Drawing.Color.Transparent;
+            this.btnPapas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPapas.BackgroundImage")));
+            this.btnPapas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPapas.FlatAppearance.BorderSize = 0;
+            this.btnPapas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPapas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPapas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPapas.Location = new System.Drawing.Point(74, 213);
+            this.btnPapas.Name = "btnPapas";
+            this.btnPapas.Size = new System.Drawing.Size(108, 104);
+            this.btnPapas.TabIndex = 73;
+            this.btnPapas.UseVisualStyleBackColor = false;
+            this.btnPapas.Click += new System.EventHandler(this.btnPapas_Click);
             // 
-            // button2
+            // btnSopa
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(357, 231);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 87);
-            this.button2.TabIndex = 74;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSopa.BackColor = System.Drawing.Color.Transparent;
+            this.btnSopa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSopa.BackgroundImage")));
+            this.btnSopa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSopa.FlatAppearance.BorderSize = 0;
+            this.btnSopa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSopa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSopa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSopa.Location = new System.Drawing.Point(357, 231);
+            this.btnSopa.Name = "btnSopa";
+            this.btnSopa.Size = new System.Drawing.Size(86, 87);
+            this.btnSopa.TabIndex = 74;
+            this.btnSopa.UseVisualStyleBackColor = false;
+            this.btnSopa.Click += new System.EventHandler(this.btnSopa_Click);
             // 
-            // button3
+            // btnTorrejas
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(351, 356);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 113);
-            this.button3.TabIndex = 76;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnTorrejas.BackColor = System.Drawing.Color.Transparent;
+            this.btnTorrejas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTorrejas.BackgroundImage")));
+            this.btnTorrejas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTorrejas.FlatAppearance.BorderSize = 0;
+            this.btnTorrejas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnTorrejas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnTorrejas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTorrejas.Location = new System.Drawing.Point(351, 356);
+            this.btnTorrejas.Name = "btnTorrejas";
+            this.btnTorrejas.Size = new System.Drawing.Size(106, 113);
+            this.btnTorrejas.TabIndex = 76;
+            this.btnTorrejas.UseVisualStyleBackColor = false;
+            this.btnTorrejas.Click += new System.EventHandler(this.btnTorrejas_Click);
             // 
-            // button4
+            // btnTamales
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(46, 366);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(166, 116);
-            this.button4.TabIndex = 75;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnTamales.BackColor = System.Drawing.Color.Transparent;
+            this.btnTamales.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTamales.BackgroundImage")));
+            this.btnTamales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTamales.FlatAppearance.BorderSize = 0;
+            this.btnTamales.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnTamales.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnTamales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTamales.Location = new System.Drawing.Point(46, 366);
+            this.btnTamales.Name = "btnTamales";
+            this.btnTamales.Size = new System.Drawing.Size(166, 116);
+            this.btnTamales.TabIndex = 75;
+            this.btnTamales.UseVisualStyleBackColor = false;
+            this.btnTamales.Click += new System.EventHandler(this.btnTamales_Click);
             // 
-            // button5
+            // btnSandwich
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(371, 526);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(86, 87);
-            this.button5.TabIndex = 78;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnSandwich.BackColor = System.Drawing.Color.Transparent;
+            this.btnSandwich.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSandwich.BackgroundImage")));
+            this.btnSandwich.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSandwich.FlatAppearance.BorderSize = 0;
+            this.btnSandwich.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSandwich.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSandwich.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSandwich.Location = new System.Drawing.Point(371, 526);
+            this.btnSandwich.Name = "btnSandwich";
+            this.btnSandwich.Size = new System.Drawing.Size(86, 87);
+            this.btnSandwich.TabIndex = 78;
+            this.btnSandwich.UseVisualStyleBackColor = false;
+            this.btnSandwich.Click += new System.EventHandler(this.btnSandwich_Click);
             // 
-            // button6
+            // btnEnsalada
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(74, 488);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(126, 132);
-            this.button6.TabIndex = 77;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnEnsalada.BackColor = System.Drawing.Color.Transparent;
+            this.btnEnsalada.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEnsalada.BackgroundImage")));
+            this.btnEnsalada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEnsalada.FlatAppearance.BorderSize = 0;
+            this.btnEnsalada.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnEnsalada.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnEnsalada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnsalada.Location = new System.Drawing.Point(74, 488);
+            this.btnEnsalada.Name = "btnEnsalada";
+            this.btnEnsalada.Size = new System.Drawing.Size(126, 132);
+            this.btnEnsalada.TabIndex = 77;
+            this.btnEnsalada.UseVisualStyleBackColor = false;
+            this.btnEnsalada.Click += new System.EventHandler(this.btnEnsalada_Click);
             // 
             // R_e_m
             // 
@@ -323,10 +329,10 @@
             this.ClientSize = new System.Drawing.Size(665, 702);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.R_e_m);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSandwich);
+            this.Controls.Add(this.btnTorrejas);
+            this.Controls.Add(this.btnSopa);
+            this.Controls.Add(this.btnPapas);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label12);
@@ -340,8 +346,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnTamales);
+            this.Controls.Add(this.btnEnsalada);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Entradas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -366,12 +372,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnPapas;
+        private System.Windows.Forms.Button btnSopa;
+        private System.Windows.Forms.Button btnTorrejas;
+        private System.Windows.Forms.Button btnTamales;
+        private System.Windows.Forms.Button btnSandwich;
+        private System.Windows.Forms.Button btnEnsalada;
         private System.Windows.Forms.Button R_e_m;
         private System.Windows.Forms.Button button7;
     }

@@ -164,17 +164,17 @@ namespace Restaurante
         private void Total_Click(object sender, EventArgs e)
         {
             //ENTRADAS
-            papas_f.Text= Almacenamiento_temporal.Papas;
+            papas_f.Text = Almacenamiento_temporal.Papas;
             sopas_f.Text = Almacenamiento_temporal.Sopas;
             tamales_f.Text = Almacenamiento_temporal.Tamales;
             torrejas_f.Text = Almacenamiento_temporal.Torrejas;
             ensalada_f.Text = Almacenamiento_temporal.Ensaladas;
             sandwich_f.Text = Almacenamiento_temporal.Sandwiches;
 
-             double papas = Convert.ToDouble(Almacenamiento_temporal.Papas);
+            double papas = Convert.ToDouble(Almacenamiento_temporal.Papas);
             double sopas = Convert.ToDouble(Almacenamiento_temporal.Sopas);
             double tamales = Convert.ToDouble(Almacenamiento_temporal.Tamales);
-            double torrejas= Convert.ToDouble(Almacenamiento_temporal.Torrejas);
+            double torrejas = Convert.ToDouble(Almacenamiento_temporal.Torrejas);
             double ensalada = Convert.ToDouble(Almacenamiento_temporal.Ensaladas);
             double sandwich = Convert.ToDouble(Almacenamiento_temporal.Sandwiches);
 
@@ -185,7 +185,7 @@ namespace Restaurante
             double p_ensalada = ensalada * 1.50;
             double p_sandwich = sandwich * 1.50;
 
-            double total_entradas= papas*1.00 + sopas*1.50 + tamales * 1.00 + torrejas * 2.00 + ensalada * 1.50 + sandwich * 1.50;
+            double total_entradas = papas * 1.00 + sopas * 1.50 + tamales * 1.00 + torrejas * 2.00 + ensalada * 1.50 + sandwich * 1.50;
 
             // PLATILLOS
             pupusas_f.Text = Almacenamiento_temporal.Pupusas;
@@ -202,14 +202,14 @@ namespace Restaurante
             double lasaña = Convert.ToDouble(Almacenamiento_temporal.Lasaña);
             double carne = Convert.ToDouble(Almacenamiento_temporal.Carne);
 
-            double p_pupusas= pupusas * 1.00;
-            double p_cena= cena * 3.50;
-            double p_panes= panes * 1.50;
-            double p_tortas= tortas * 2.00;
+            double p_pupusas = pupusas * 1.00;
+            double p_cena = cena * 3.50;
+            double p_panes = panes * 1.50;
+            double p_tortas = tortas * 2.00;
             double p_lasaña = lasaña * 1.50;
             double p_carne = carne * 1.50;
 
-            double total_platillos = pupusas * 1.00 + cena * 3.50 + panes * 1.50 + tortas * 2.00 + lasaña*1.50 + carne*1.50;
+            double total_platillos = pupusas * 1.00 + cena * 3.50 + panes * 1.50 + tortas * 2.00 + lasaña * 1.50 + carne * 1.50;
 
 
             // BEBIDAS
@@ -260,29 +260,43 @@ namespace Restaurante
             double p_tartaleta = tartaleta * 1.50;
             double p_pastel_li = pastel_li * 3.50;
 
-            double total_postres = tres_l * 3.00 + quesadillas * 2.00 + flan * 1.50 + pastel * 3.50 + tartaleta* 1.50 + pastel_li *3.50 ;
+            double total_postres = tres_l * 3.00 + quesadillas * 2.00 + flan * 1.50 + pastel * 3.50 + tartaleta * 1.50 + pastel_li * 3.50;
 
-            a.Text=p_pupusas.ToString("F2");
-            b.Text=p_cena.ToString("F2");
-            c.Text=p_panes.ToString("F2");
-            d.Text=p_tortas.ToString("F2");
-            textBox1.Text=p_lasaña.ToString("F2");
-            textBox3.Text=p_carne.ToString("F2");
+           textBox14.Text= p_papas.ToString("F2");
+            textBox13.Text = p_sopas.ToString("F2");
+            textBox12.Text = p_tamales.ToString("F2");
+            textBox10.Text = p_torrejas.ToString("F2");
+            textBox6.Text = p_ensalada.ToString("F2"); 
+            textBox2.Text =p_sandwich.ToString("F2");
 
-            e_.Text=p_soda.ToString("F2");
-            f.Text=p_chocolate.ToString("F2");
-            g.Text=p_cafe.ToString("F2");
-            h.Text=p_atol.ToString("F2");
+            a.Text = p_pupusas.ToString("F2");
+            b.Text = p_cena.ToString("F2");
+            c.Text = p_panes.ToString("F2");
+            d.Text = p_tortas.ToString("F2");
+            textBox1.Text = p_lasaña.ToString("F2");
+            textBox3.Text = p_carne.ToString("F2");
+
+            e_.Text = p_soda.ToString("F2");
+            f.Text = p_chocolate.ToString("F2");
+            g.Text = p_cafe.ToString("F2");
+            h.Text = p_atol.ToString("F2");
+            textBox5.Text = p_licuado.ToString("F2");
+            textBox7.Text = p_te.ToString("F2");
+
+
             i.Text=p_tres_l.ToString("F2");
             j.Text=p_quesadillas.ToString("F2");
             k.Text=p_flan.ToString("F2");
             l.Text=p_pastel.ToString("F2");
+            textBox9.Text = p_tartaleta.ToString("F2");
+            textBox11.Text = p_pastel_li.ToString("F2");
 
+            t_entradas.Text = Convert.ToString(total_entradas);
             t_platillos.Text = Convert.ToString(total_platillos);
             t_bebidas.Text = Convert.ToString(total_bebidas);
             t_postres.Text = Convert.ToString(total_postres);
 
-            precio_final.Text = Convert.ToString(total_platillos+ total_bebidas + total_postres);
+            precio_final.Text = Convert.ToString(total_entradas+total_platillos+ total_bebidas + total_postres);
 
             Calcular_total.Visible = true;
         }

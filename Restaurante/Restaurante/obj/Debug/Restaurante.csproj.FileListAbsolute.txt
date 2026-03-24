@@ -135,3 +135,9 @@ C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\o
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_carne.resources
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_lasaña.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_ensalada.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_papas.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_sandwich.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_sopa.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_tamales.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_torrejas.resources

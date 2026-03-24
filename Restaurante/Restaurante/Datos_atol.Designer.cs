@@ -29,40 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Datos_atol));
-            this.Datos = new System.Windows.Forms.Button();
-            this.Atol_ = new System.Windows.Forms.TextBox();
-            this.Panes = new System.Windows.Forms.Label();
             this.R_Dtos_atol = new System.Windows.Forms.Button();
+            this.Panes = new System.Windows.Forms.Label();
+            this.Atol_ = new System.Windows.Forms.TextBox();
+            this.Datos = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // Datos
-            // 
-            this.Datos.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Datos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Datos.Location = new System.Drawing.Point(219, 193);
-            this.Datos.Name = "Datos";
-            this.Datos.Size = new System.Drawing.Size(105, 39);
-            this.Datos.TabIndex = 44;
-            this.Datos.Text = "Registrar";
-            this.Datos.UseVisualStyleBackColor = false;
-            this.Datos.Click += new System.EventHandler(this.Datos_Click);
-            // 
-            // Atol_
-            // 
-            this.Atol_.Location = new System.Drawing.Point(28, 62);
-            this.Atol_.Name = "Atol_";
-            this.Atol_.Size = new System.Drawing.Size(410, 20);
-            this.Atol_.TabIndex = 0;
-            // 
-            // Panes
-            // 
-            this.Panes.AutoSize = true;
-            this.Panes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Panes.Location = new System.Drawing.Point(25, 32);
-            this.Panes.Name = "Panes";
-            this.Panes.Size = new System.Drawing.Size(143, 13);
-            this.Panes.TabIndex = 42;
-            this.Panes.Text = "¿Cuántos atoles desea?";
             // 
             // R_Dtos_atol
             // 
@@ -76,6 +47,35 @@
             this.R_Dtos_atol.Text = "Regresar";
             this.R_Dtos_atol.UseVisualStyleBackColor = false;
             this.R_Dtos_atol.Click += new System.EventHandler(this.R_Dtos_atol_Click);
+            // 
+            // Panes
+            // 
+            this.Panes.AutoSize = true;
+            this.Panes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Panes.Location = new System.Drawing.Point(25, 32);
+            this.Panes.Name = "Panes";
+            this.Panes.Size = new System.Drawing.Size(143, 13);
+            this.Panes.TabIndex = 42;
+            this.Panes.Text = "¿Cuántos atoles desea?";
+            // 
+            // Atol_
+            // 
+            this.Atol_.Location = new System.Drawing.Point(28, 62);
+            this.Atol_.Name = "Atol_";
+            this.Atol_.Size = new System.Drawing.Size(410, 20);
+            this.Atol_.TabIndex = 0;
+            // 
+            // Datos
+            // 
+            this.Datos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Datos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Datos.Location = new System.Drawing.Point(219, 193);
+            this.Datos.Name = "Datos";
+            this.Datos.Size = new System.Drawing.Size(105, 39);
+            this.Datos.TabIndex = 44;
+            this.Datos.Text = "Registrar";
+            this.Datos.UseVisualStyleBackColor = false;
+            this.Datos.Click += new System.EventHandler(this.Datos_Click);
             // 
             // Datos_atol
             // 
@@ -97,9 +97,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Datos;
-        private System.Windows.Forms.TextBox Atol_;
-        private System.Windows.Forms.Label Panes;
         private System.Windows.Forms.Button R_Dtos_atol;
+        private System.Windows.Forms.Label Panes;
+        private System.Windows.Forms.TextBox Atol_;
+        private System.Windows.Forms.Button Datos;
     }
 }
