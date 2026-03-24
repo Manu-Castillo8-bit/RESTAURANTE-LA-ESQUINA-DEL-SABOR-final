@@ -163,6 +163,29 @@ namespace Restaurante
 
         private void Total_Click(object sender, EventArgs e)
         {
+            //ENTRADAS
+            papas_f.Text= Almacenamiento_temporal.Papas;
+            sopas_f.Text = Almacenamiento_temporal.Sopas;
+            tamales_f.Text = Almacenamiento_temporal.Tamales;
+            torrejas_f.Text = Almacenamiento_temporal.Torrejas;
+            ensalada_f.Text = Almacenamiento_temporal.Ensaladas;
+            sandwich_f.Text = Almacenamiento_temporal.Sandwiches;
+
+             double papas = Convert.ToDouble(Almacenamiento_temporal.Papas);
+            double sopas = Convert.ToDouble(Almacenamiento_temporal.Sopas);
+            double tamales = Convert.ToDouble(Almacenamiento_temporal.Tamales);
+            double torrejas= Convert.ToDouble(Almacenamiento_temporal.Torrejas);
+            double ensalada = Convert.ToDouble(Almacenamiento_temporal.Ensaladas);
+            double sandwich = Convert.ToDouble(Almacenamiento_temporal.Sandwiches);
+
+            double p_papas = papas * 1.00;
+            double p_sopas = sopas * 1.50;
+            double p_tamales = tamales * 1.00;
+            double p_torrejas = torrejas * 2.00;
+            double p_ensalada = ensalada * 1.50;
+            double p_sandwich = sandwich * 1.50;
+
+            double total_entradas= papas*1.00 + sopas*1.50 + tamales * 1.00 + torrejas * 2.00 + ensalada * 1.50 + sandwich * 1.50;
 
             // PLATILLOS
             pupusas_f.Text = Almacenamiento_temporal.Pupusas;

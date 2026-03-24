@@ -127,7 +127,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 18);
             this.label7.TabIndex = 56;
-            this.label7.Text = "$3.50";
+            this.label7.Text = "$1.00";
             // 
             // label6
             // 
