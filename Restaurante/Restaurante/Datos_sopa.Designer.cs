@@ -31,7 +31,7 @@
             this.Datos = new System.Windows.Forms.Button();
             this.Sopa_ = new System.Windows.Forms.TextBox();
             this.Panes = new System.Windows.Forms.Label();
-            this.R_Dtos_atol = new System.Windows.Forms.Button();
+            this.R_Dtos_sopa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Datos
@@ -63,17 +63,18 @@
             this.Panes.TabIndex = 47;
             this.Panes.Text = "¿Cuántas sopas desea?";
             // 
-            // R_Dtos_atol
+            // R_Dtos_sopa
             // 
-            this.R_Dtos_atol.BackColor = System.Drawing.Color.IndianRed;
-            this.R_Dtos_atol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R_Dtos_atol.ForeColor = System.Drawing.Color.Black;
-            this.R_Dtos_atol.Location = new System.Drawing.Point(437, 194);
-            this.R_Dtos_atol.Name = "R_Dtos_atol";
-            this.R_Dtos_atol.Size = new System.Drawing.Size(105, 39);
-            this.R_Dtos_atol.TabIndex = 46;
-            this.R_Dtos_atol.Text = "Regresar";
-            this.R_Dtos_atol.UseVisualStyleBackColor = false;
+            this.R_Dtos_sopa.BackColor = System.Drawing.Color.IndianRed;
+            this.R_Dtos_sopa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R_Dtos_sopa.ForeColor = System.Drawing.Color.Black;
+            this.R_Dtos_sopa.Location = new System.Drawing.Point(437, 194);
+            this.R_Dtos_sopa.Name = "R_Dtos_sopa";
+            this.R_Dtos_sopa.Size = new System.Drawing.Size(105, 39);
+            this.R_Dtos_sopa.TabIndex = 46;
+            this.R_Dtos_sopa.Text = "Regresar";
+            this.R_Dtos_sopa.UseVisualStyleBackColor = false;
+            this.R_Dtos_sopa.Click += new System.EventHandler(this.R_Dtos_sopa_Click);
             // 
             // Datos_sopa
             // 
@@ -83,7 +84,7 @@
             this.Controls.Add(this.Datos);
             this.Controls.Add(this.Sopa_);
             this.Controls.Add(this.Panes);
-            this.Controls.Add(this.R_Dtos_atol);
+            this.Controls.Add(this.R_Dtos_sopa);
             this.Name = "Datos_sopa";
             this.Text = "Datos_sopa";
             this.ResumeLayout(false);
@@ -96,6 +97,6 @@
         private System.Windows.Forms.Button Datos;
         private System.Windows.Forms.TextBox Sopa_;
         private System.Windows.Forms.Label Panes;
-        private System.Windows.Forms.Button R_Dtos_atol;
+        private System.Windows.Forms.Button R_Dtos_sopa;
     }
 }

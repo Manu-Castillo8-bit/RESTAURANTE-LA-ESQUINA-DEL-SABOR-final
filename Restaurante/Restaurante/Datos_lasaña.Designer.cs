@@ -74,6 +74,7 @@
             this.R_Dtos_platillos.TabIndex = 30;
             this.R_Dtos_platillos.Text = "Regresar";
             this.R_Dtos_platillos.UseVisualStyleBackColor = false;
+            this.R_Dtos_platillos.Click += new System.EventHandler(this.R_Dtos_platillos_Click);
             // 
             // Datos_lasaña
             // 

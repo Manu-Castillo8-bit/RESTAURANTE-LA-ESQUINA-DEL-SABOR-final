@@ -31,7 +31,7 @@
             this.Datos = new System.Windows.Forms.Button();
             this.Sandwich_ = new System.Windows.Forms.TextBox();
             this.Panes = new System.Windows.Forms.Label();
-            this.R_Dtos_atol = new System.Windows.Forms.Button();
+            this.R_Dtos_sandwich = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Datos
@@ -63,17 +63,18 @@
             this.Panes.TabIndex = 47;
             this.Panes.Text = "¿Cuántos sandwiches desea?";
             // 
-            // R_Dtos_atol
+            // R_Dtos_sandwich
             // 
-            this.R_Dtos_atol.BackColor = System.Drawing.Color.IndianRed;
-            this.R_Dtos_atol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R_Dtos_atol.ForeColor = System.Drawing.Color.Black;
-            this.R_Dtos_atol.Location = new System.Drawing.Point(429, 185);
-            this.R_Dtos_atol.Name = "R_Dtos_atol";
-            this.R_Dtos_atol.Size = new System.Drawing.Size(105, 39);
-            this.R_Dtos_atol.TabIndex = 46;
-            this.R_Dtos_atol.Text = "Regresar";
-            this.R_Dtos_atol.UseVisualStyleBackColor = false;
+            this.R_Dtos_sandwich.BackColor = System.Drawing.Color.IndianRed;
+            this.R_Dtos_sandwich.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R_Dtos_sandwich.ForeColor = System.Drawing.Color.Black;
+            this.R_Dtos_sandwich.Location = new System.Drawing.Point(429, 185);
+            this.R_Dtos_sandwich.Name = "R_Dtos_sandwich";
+            this.R_Dtos_sandwich.Size = new System.Drawing.Size(105, 39);
+            this.R_Dtos_sandwich.TabIndex = 46;
+            this.R_Dtos_sandwich.Text = "Regresar";
+            this.R_Dtos_sandwich.UseVisualStyleBackColor = false;
+            this.R_Dtos_sandwich.Click += new System.EventHandler(this.R_Dtos_sandwich_Click);
             // 
             // Datos_sandwich
             // 
@@ -83,7 +84,7 @@
             this.Controls.Add(this.Datos);
             this.Controls.Add(this.Sandwich_);
             this.Controls.Add(this.Panes);
-            this.Controls.Add(this.R_Dtos_atol);
+            this.Controls.Add(this.R_Dtos_sandwich);
             this.Name = "Datos_sandwich";
             this.Text = "Datos_sandwich";
             this.ResumeLayout(false);
@@ -96,6 +97,6 @@
         private System.Windows.Forms.Button Datos;
         private System.Windows.Forms.TextBox Sandwich_;
         private System.Windows.Forms.Label Panes;
-        private System.Windows.Forms.Button R_Dtos_atol;
+        private System.Windows.Forms.Button R_Dtos_sandwich;
     }
 }

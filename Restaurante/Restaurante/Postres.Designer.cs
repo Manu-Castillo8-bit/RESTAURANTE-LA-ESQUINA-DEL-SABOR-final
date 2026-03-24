@@ -39,19 +39,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.ord_3_leches = new System.Windows.Forms.CheckBox();
-            this.ord_quesadillas = new System.Windows.Forms.CheckBox();
-            this.ord_flan = new System.Windows.Forms.CheckBox();
-            this.ord_pastel = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnLeches = new System.Windows.Forms.Button();
+            this.btnFlan = new System.Windows.Forms.Button();
+            this.btnPasChocolate = new System.Windows.Forms.Button();
+            this.btnQuesadillas = new System.Windows.Forms.Button();
+            this.btnPasLimon = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -174,46 +170,6 @@
             this.label9.Text = "Pastel\r\n de \r\nchocolate";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // ord_3_leches
-            // 
-            this.ord_3_leches.AutoSize = true;
-            this.ord_3_leches.Location = new System.Drawing.Point(73, 240);
-            this.ord_3_leches.Name = "ord_3_leches";
-            this.ord_3_leches.Size = new System.Drawing.Size(15, 14);
-            this.ord_3_leches.TabIndex = 42;
-            this.ord_3_leches.UseVisualStyleBackColor = true;
-            this.ord_3_leches.CheckedChanged += new System.EventHandler(this.ord_3_leches_CheckedChanged);
-            // 
-            // ord_quesadillas
-            // 
-            this.ord_quesadillas.AutoSize = true;
-            this.ord_quesadillas.Location = new System.Drawing.Point(73, 417);
-            this.ord_quesadillas.Name = "ord_quesadillas";
-            this.ord_quesadillas.Size = new System.Drawing.Size(15, 14);
-            this.ord_quesadillas.TabIndex = 43;
-            this.ord_quesadillas.UseVisualStyleBackColor = true;
-            this.ord_quesadillas.CheckedChanged += new System.EventHandler(this.ord_quesadillas_CheckedChanged);
-            // 
-            // ord_flan
-            // 
-            this.ord_flan.AutoSize = true;
-            this.ord_flan.Location = new System.Drawing.Point(343, 248);
-            this.ord_flan.Name = "ord_flan";
-            this.ord_flan.Size = new System.Drawing.Size(15, 14);
-            this.ord_flan.TabIndex = 44;
-            this.ord_flan.UseVisualStyleBackColor = true;
-            this.ord_flan.CheckedChanged += new System.EventHandler(this.ord_flan_CheckedChanged);
-            // 
-            // ord_pastel
-            // 
-            this.ord_pastel.AutoSize = true;
-            this.ord_pastel.Location = new System.Drawing.Point(343, 417);
-            this.ord_pastel.Name = "ord_pastel";
-            this.ord_pastel.Size = new System.Drawing.Size(15, 14);
-            this.ord_pastel.TabIndex = 45;
-            this.ord_pastel.UseVisualStyleBackColor = true;
-            this.ord_pastel.CheckedChanged += new System.EventHandler(this.ord_pastel_CheckedChanged);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -258,70 +214,75 @@
             this.label13.TabIndex = 50;
             this.label13.Text = "Tartaleta";
             // 
-            // button1
+            // btnLeches
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Restaurante.Properties.Resources.Tres_leches;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(105, 246);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 88);
-            this.button1.TabIndex = 54;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnLeches.BackColor = System.Drawing.Color.Transparent;
+            this.btnLeches.BackgroundImage = global::Restaurante.Properties.Resources.Tres_leches;
+            this.btnLeches.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLeches.FlatAppearance.BorderSize = 0;
+            this.btnLeches.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLeches.Location = new System.Drawing.Point(105, 246);
+            this.btnLeches.Name = "btnLeches";
+            this.btnLeches.Size = new System.Drawing.Size(94, 88);
+            this.btnLeches.TabIndex = 54;
+            this.btnLeches.UseVisualStyleBackColor = false;
+            this.btnLeches.Click += new System.EventHandler(this.btnLeches_Click);
             // 
-            // button2
+            // btnFlan
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::Restaurante.Properties.Resources.Flan_png;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(364, 246);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 88);
-            this.button2.TabIndex = 55;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnFlan.BackColor = System.Drawing.Color.Transparent;
+            this.btnFlan.BackgroundImage = global::Restaurante.Properties.Resources.Flan_png;
+            this.btnFlan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnFlan.FlatAppearance.BorderSize = 0;
+            this.btnFlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFlan.Location = new System.Drawing.Point(364, 246);
+            this.btnFlan.Name = "btnFlan";
+            this.btnFlan.Size = new System.Drawing.Size(94, 88);
+            this.btnFlan.TabIndex = 55;
+            this.btnFlan.UseVisualStyleBackColor = false;
+            this.btnFlan.Click += new System.EventHandler(this.btnFlan_Click);
             // 
-            // button3
+            // btnPasChocolate
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::Restaurante.Properties.Resources.Pastel;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(364, 417);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 88);
-            this.button3.TabIndex = 57;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnPasChocolate.BackColor = System.Drawing.Color.Transparent;
+            this.btnPasChocolate.BackgroundImage = global::Restaurante.Properties.Resources.Pastel;
+            this.btnPasChocolate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPasChocolate.FlatAppearance.BorderSize = 0;
+            this.btnPasChocolate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPasChocolate.Location = new System.Drawing.Point(364, 417);
+            this.btnPasChocolate.Name = "btnPasChocolate";
+            this.btnPasChocolate.Size = new System.Drawing.Size(94, 88);
+            this.btnPasChocolate.TabIndex = 57;
+            this.btnPasChocolate.UseVisualStyleBackColor = false;
+            this.btnPasChocolate.Click += new System.EventHandler(this.btnPasChocolate_Click);
             // 
-            // button4
+            // btnQuesadillas
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::Restaurante.Properties.Resources.Quesadilla;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(105, 417);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(94, 88);
-            this.button4.TabIndex = 56;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnQuesadillas.BackColor = System.Drawing.Color.Transparent;
+            this.btnQuesadillas.BackgroundImage = global::Restaurante.Properties.Resources.Quesadilla;
+            this.btnQuesadillas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnQuesadillas.FlatAppearance.BorderSize = 0;
+            this.btnQuesadillas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuesadillas.Location = new System.Drawing.Point(105, 417);
+            this.btnQuesadillas.Name = "btnQuesadillas";
+            this.btnQuesadillas.Size = new System.Drawing.Size(94, 88);
+            this.btnQuesadillas.TabIndex = 56;
+            this.btnQuesadillas.UseVisualStyleBackColor = false;
+            this.btnQuesadillas.Click += new System.EventHandler(this.btnQuesadillas_Click);
             // 
-            // button5
+            // btnPasLimon
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(364, 552);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(111, 100);
-            this.button5.TabIndex = 59;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnPasLimon.BackColor = System.Drawing.Color.Transparent;
+            this.btnPasLimon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPasLimon.BackgroundImage")));
+            this.btnPasLimon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPasLimon.FlatAppearance.BorderSize = 0;
+            this.btnPasLimon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPasLimon.Location = new System.Drawing.Point(364, 552);
+            this.btnPasLimon.Name = "btnPasLimon";
+            this.btnPasLimon.Size = new System.Drawing.Size(111, 100);
+            this.btnPasLimon.TabIndex = 59;
+            this.btnPasLimon.UseVisualStyleBackColor = false;
+            this.btnPasLimon.Click += new System.EventHandler(this.btnPasLimon_Click);
             // 
             // button6
             // 
@@ -335,6 +296,7 @@
             this.button6.Size = new System.Drawing.Size(118, 114);
             this.button6.TabIndex = 58;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -348,6 +310,7 @@
             this.button7.Size = new System.Drawing.Size(54, 55);
             this.button7.TabIndex = 60;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Postres
             // 
@@ -357,20 +320,16 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(659, 702);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnPasLimon);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPasChocolate);
+            this.Controls.Add(this.btnQuesadillas);
+            this.Controls.Add(this.btnFlan);
+            this.Controls.Add(this.btnLeches);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.ord_pastel);
-            this.Controls.Add(this.ord_flan);
-            this.Controls.Add(this.ord_quesadillas);
-            this.Controls.Add(this.ord_3_leches);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
@@ -403,19 +362,15 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox ord_3_leches;
-        private System.Windows.Forms.CheckBox ord_quesadillas;
-        private System.Windows.Forms.CheckBox ord_flan;
-        private System.Windows.Forms.CheckBox ord_pastel;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnLeches;
+        private System.Windows.Forms.Button btnFlan;
+        private System.Windows.Forms.Button btnPasChocolate;
+        private System.Windows.Forms.Button btnQuesadillas;
+        private System.Windows.Forms.Button btnPasLimon;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
     }

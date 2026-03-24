@@ -83,36 +83,44 @@ namespace Restaurante
 
         private void btnPapas_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Datos_papas newForm = new Datos_papas();
             newForm.ShowDialog();
+           
+           
         }
 
         private void btnSopa_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Datos_sopa newForm = new Datos_sopa();
             newForm.ShowDialog();
         }
 
         private void btnTamales_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Datos_tamales newForm = new Datos_tamales();
             newForm.ShowDialog();
         }
 
         private void btnTorrejas_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Datos_torrejas newForm = new Datos_torrejas();
             newForm.ShowDialog();
         }
 
         private void btnEnsalada_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Datos_ensalada newForm = new Datos_ensalada();
             newForm.ShowDialog();
         }
 
         private void btnSandwich_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Datos_sandwich newForm = new Datos_sandwich();
             newForm.ShowDialog();
         }

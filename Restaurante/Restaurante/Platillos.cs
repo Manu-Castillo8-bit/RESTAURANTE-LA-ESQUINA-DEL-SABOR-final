@@ -145,5 +145,10 @@ namespace Restaurante
             Datos_lasaña newForm = new Datos_lasaña();
             newForm.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

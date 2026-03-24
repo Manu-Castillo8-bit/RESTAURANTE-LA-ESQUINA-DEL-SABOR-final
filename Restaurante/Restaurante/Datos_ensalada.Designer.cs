@@ -31,7 +31,7 @@
             this.Datos = new System.Windows.Forms.Button();
             this.Ensalada_ = new System.Windows.Forms.TextBox();
             this.Panes = new System.Windows.Forms.Label();
-            this.R_Dtos_atol = new System.Windows.Forms.Button();
+            this.R_Dtos_ensaladas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Datos
@@ -63,17 +63,18 @@
             this.Panes.TabIndex = 47;
             this.Panes.Text = "¿Cuántas ensaladas desea?";
             // 
-            // R_Dtos_atol
+            // R_Dtos_ensaladas
             // 
-            this.R_Dtos_atol.BackColor = System.Drawing.Color.IndianRed;
-            this.R_Dtos_atol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R_Dtos_atol.ForeColor = System.Drawing.Color.Black;
-            this.R_Dtos_atol.Location = new System.Drawing.Point(446, 192);
-            this.R_Dtos_atol.Name = "R_Dtos_atol";
-            this.R_Dtos_atol.Size = new System.Drawing.Size(105, 39);
-            this.R_Dtos_atol.TabIndex = 46;
-            this.R_Dtos_atol.Text = "Regresar";
-            this.R_Dtos_atol.UseVisualStyleBackColor = false;
+            this.R_Dtos_ensaladas.BackColor = System.Drawing.Color.IndianRed;
+            this.R_Dtos_ensaladas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R_Dtos_ensaladas.ForeColor = System.Drawing.Color.Black;
+            this.R_Dtos_ensaladas.Location = new System.Drawing.Point(446, 192);
+            this.R_Dtos_ensaladas.Name = "R_Dtos_ensaladas";
+            this.R_Dtos_ensaladas.Size = new System.Drawing.Size(105, 39);
+            this.R_Dtos_ensaladas.TabIndex = 46;
+            this.R_Dtos_ensaladas.Text = "Regresar";
+            this.R_Dtos_ensaladas.UseVisualStyleBackColor = false;
+            this.R_Dtos_ensaladas.Click += new System.EventHandler(this.R_Dtos_ensaladas_Click);
             // 
             // Datos_ensalada
             // 
@@ -83,7 +84,7 @@
             this.Controls.Add(this.Datos);
             this.Controls.Add(this.Ensalada_);
             this.Controls.Add(this.Panes);
-            this.Controls.Add(this.R_Dtos_atol);
+            this.Controls.Add(this.R_Dtos_ensaladas);
             this.Name = "Datos_ensalada";
             this.Text = "Datos_ensalada";
             this.ResumeLayout(false);
@@ -96,6 +97,6 @@
         private System.Windows.Forms.Button Datos;
         private System.Windows.Forms.TextBox Ensalada_;
         private System.Windows.Forms.Label Panes;
-        private System.Windows.Forms.Button R_Dtos_atol;
+        private System.Windows.Forms.Button R_Dtos_ensaladas;
     }
 }

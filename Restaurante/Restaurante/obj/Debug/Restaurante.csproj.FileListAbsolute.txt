@@ -141,3 +141,4 @@ C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\o
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_sopa.resources
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_tamales.resources
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_torrejas.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_tartaleta.resources

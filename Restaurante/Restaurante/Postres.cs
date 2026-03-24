@@ -56,50 +56,21 @@ namespace Restaurante
 
         private void ord_3_leches_CheckedChanged(object sender, EventArgs e)
         {
-            if (ord_3_leches.Checked)
-            {
-                this.Hide();
-                Datos_3_leches newForm = new Datos_3_leches();
-                newForm.Show();
-
-
-            }
         }
 
         private void ord_quesadillas_CheckedChanged(object sender, EventArgs e)
         {
-            if (ord_quesadillas.Checked)
-            {
-                this.Hide();
-                Datos_quesadillas newForm = new Datos_quesadillas();
-                newForm.Show();
-
-
-            }
+           
         }
 
         private void ord_flan_CheckedChanged(object sender, EventArgs e)
         {
-            if (ord_flan.Checked)
-            {
-                this.Hide();
-                Datos_flan newForm = new Datos_flan();
-                newForm.Show();
-
-
-            }
+            
         }
 
         private void ord_pastel_CheckedChanged(object sender, EventArgs e)
         {
-            if (ord_pastel.Checked)
-            {
-                this.Hide();
-                Datospostres newForm = new Datospostres();
-                newForm.Show();
-
-
-            }
+            
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -120,6 +91,53 @@ namespace Restaurante
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_tartaleta newForm = new Datos_tartaleta();
+            newForm.Show();
+        }
+
+        private void btnPasLimon_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_paslimon newForm = new Datos_paslimon();
+            newForm.Show();
+        }
+
+        private void btnLeches_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_3_leches newForm = new Datos_3_leches();
+            newForm.Show();
+        }
+
+        private void btnFlan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_flan newForm = new Datos_flan();
+            newForm.Show();
+        }
+
+        private void btnQuesadillas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_quesadillas newForm = new Datos_quesadillas();
+            newForm.Show();
+        }
+
+        private void btnPasChocolate_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datospostres newForm = new Datospostres();
+            newForm.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

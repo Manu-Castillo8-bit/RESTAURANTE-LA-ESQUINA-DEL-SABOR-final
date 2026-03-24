@@ -329,6 +329,7 @@
             this.button7.Size = new System.Drawing.Size(68, 70);
             this.button7.TabIndex = 51;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Platillos
             // 

@@ -125,6 +125,12 @@
     <Compile Include="Datos_lasaña.Designer.cs">
       <DependentUpon>Datos_lasaña.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datos_licuado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_licuado.Designer.cs">
+      <DependentUpon>Datos_licuado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Datos_panes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,12 @@
     </Compile>
     <Compile Include="Datos_papas.Designer.cs">
       <DependentUpon>Datos_papas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datos_paslimon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_paslimon.Designer.cs">
+      <DependentUpon>Datos_paslimon.cs</DependentUpon>
     </Compile>
     <Compile Include="Datos_quesadillas.cs">
       <SubType>Form</SubType>
@@ -166,6 +178,18 @@
     </Compile>
     <Compile Include="Datos_tamales.Designer.cs">
       <DependentUpon>Datos_tamales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datos_tartaleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_tartaleta.Designer.cs">
+      <DependentUpon>Datos_tartaleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datos_te.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos_te.Designer.cs">
+      <DependentUpon>Datos_te.cs</DependentUpon>
     </Compile>
     <Compile Include="Datos_torrejas.cs">
       <SubType>Form</SubType>
@@ -262,11 +286,17 @@
     <EmbeddedResource Include="Datos_lasaña.resx">
       <DependentUpon>Datos_lasaña.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Datos_licuado.resx">
+      <DependentUpon>Datos_licuado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Datos_panes.resx">
       <DependentUpon>Datos_panes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Datos_papas.resx">
       <DependentUpon>Datos_papas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datos_paslimon.resx">
+      <DependentUpon>Datos_paslimon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Datos_quesadillas.resx">
       <DependentUpon>Datos_quesadillas.cs</DependentUpon>
@@ -282,6 +312,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Datos_tamales.resx">
       <DependentUpon>Datos_tamales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datos_tartaleta.resx">
+      <DependentUpon>Datos_tartaleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datos_te.resx">
+      <DependentUpon>Datos_te.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Datos_torrejas.resx">
       <DependentUpon>Datos_torrejas.cs</DependentUpon>

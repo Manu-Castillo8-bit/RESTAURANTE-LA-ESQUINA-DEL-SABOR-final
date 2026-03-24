@@ -59,9 +59,9 @@
             this.Pupusas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pupusas.Location = new System.Drawing.Point(27, 19);
             this.Pupusas.Name = "Pupusas";
-            this.Pupusas.Size = new System.Drawing.Size(219, 13);
+            this.Pupusas.Size = new System.Drawing.Size(197, 13);
             this.Pupusas.TabIndex = 31;
-            this.Pupusas.Text = "¿Cuántos dólares de pupusas desea?";
+            this.Pupusas.Text = "¿Cuántos platos de carne desea?";
             // 
             // R_Dtos_platillos
             // 
@@ -74,6 +74,7 @@
             this.R_Dtos_platillos.TabIndex = 30;
             this.R_Dtos_platillos.Text = "Regresar";
             this.R_Dtos_platillos.UseVisualStyleBackColor = false;
+            this.R_Dtos_platillos.Click += new System.EventHandler(this.R_Dtos_platillos_Click);
             // 
             // Datos_carne
             // 

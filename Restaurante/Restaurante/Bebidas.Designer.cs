@@ -39,20 +39,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.Ord_soda = new System.Windows.Forms.CheckBox();
-            this.Ord_cafe = new System.Windows.Forms.CheckBox();
-            this.Ord_atol = new System.Windows.Forms.CheckBox();
-            this.Ord_chocolate = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnSoda = new System.Windows.Forms.Button();
+            this.btnCafe = new System.Windows.Forms.Button();
+            this.btnLicuado = new System.Windows.Forms.Button();
+            this.btnTe = new System.Windows.Forms.Button();
+            this.btnAtol = new System.Windows.Forms.Button();
+            this.btnChocolate = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -171,46 +167,6 @@
             this.label9.Text = "Atol";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // Ord_soda
-            // 
-            this.Ord_soda.AutoSize = true;
-            this.Ord_soda.Location = new System.Drawing.Point(78, 253);
-            this.Ord_soda.Name = "Ord_soda";
-            this.Ord_soda.Size = new System.Drawing.Size(15, 14);
-            this.Ord_soda.TabIndex = 40;
-            this.Ord_soda.UseVisualStyleBackColor = true;
-            this.Ord_soda.CheckedChanged += new System.EventHandler(this.Ord_soda_CheckedChanged);
-            // 
-            // Ord_cafe
-            // 
-            this.Ord_cafe.AutoSize = true;
-            this.Ord_cafe.Location = new System.Drawing.Point(351, 257);
-            this.Ord_cafe.Name = "Ord_cafe";
-            this.Ord_cafe.Size = new System.Drawing.Size(15, 14);
-            this.Ord_cafe.TabIndex = 41;
-            this.Ord_cafe.UseVisualStyleBackColor = true;
-            this.Ord_cafe.CheckedChanged += new System.EventHandler(this.Ord_cafe_CheckedChanged);
-            // 
-            // Ord_atol
-            // 
-            this.Ord_atol.AutoSize = true;
-            this.Ord_atol.Location = new System.Drawing.Point(361, 430);
-            this.Ord_atol.Name = "Ord_atol";
-            this.Ord_atol.Size = new System.Drawing.Size(15, 14);
-            this.Ord_atol.TabIndex = 42;
-            this.Ord_atol.UseVisualStyleBackColor = true;
-            this.Ord_atol.CheckedChanged += new System.EventHandler(this.Ord_atol_CheckedChanged);
-            // 
-            // Ord_chocolate
-            // 
-            this.Ord_chocolate.AutoSize = true;
-            this.Ord_chocolate.Location = new System.Drawing.Point(62, 426);
-            this.Ord_chocolate.Name = "Ord_chocolate";
-            this.Ord_chocolate.Size = new System.Drawing.Size(15, 14);
-            this.Ord_chocolate.TabIndex = 43;
-            this.Ord_chocolate.UseVisualStyleBackColor = true;
-            this.Ord_chocolate.CheckedChanged += new System.EventHandler(this.Ord_chocolate_CheckedChanged);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -255,84 +211,89 @@
             this.label13.TabIndex = 44;
             this.label13.Text = "Licuado";
             // 
-            // button1
+            // btnSoda
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Restaurante.Properties.Resources.Crema_soda_png1;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(110, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 93);
-            this.button1.TabIndex = 48;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSoda.BackColor = System.Drawing.Color.Transparent;
+            this.btnSoda.BackgroundImage = global::Restaurante.Properties.Resources.Crema_soda_png1;
+            this.btnSoda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSoda.FlatAppearance.BorderSize = 0;
+            this.btnSoda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSoda.Location = new System.Drawing.Point(110, 244);
+            this.btnSoda.Name = "btnSoda";
+            this.btnSoda.Size = new System.Drawing.Size(85, 93);
+            this.btnSoda.TabIndex = 48;
+            this.btnSoda.UseVisualStyleBackColor = false;
+            this.btnSoda.Click += new System.EventHandler(this.btnSoda_Click);
             // 
-            // button2
+            // btnCafe
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::Restaurante.Properties.Resources.Café;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(365, 257);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 83);
-            this.button2.TabIndex = 49;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCafe.BackColor = System.Drawing.Color.Transparent;
+            this.btnCafe.BackgroundImage = global::Restaurante.Properties.Resources.Café;
+            this.btnCafe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCafe.FlatAppearance.BorderSize = 0;
+            this.btnCafe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCafe.Location = new System.Drawing.Point(365, 257);
+            this.btnCafe.Name = "btnCafe";
+            this.btnCafe.Size = new System.Drawing.Size(108, 83);
+            this.btnCafe.TabIndex = 49;
+            this.btnCafe.UseVisualStyleBackColor = false;
+            this.btnCafe.Click += new System.EventHandler(this.btnCafe_Click);
             // 
-            // button3
+            // btnLicuado
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(70, 547);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 131);
-            this.button3.TabIndex = 50;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnLicuado.BackColor = System.Drawing.Color.Transparent;
+            this.btnLicuado.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLicuado.BackgroundImage")));
+            this.btnLicuado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLicuado.FlatAppearance.BorderSize = 0;
+            this.btnLicuado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLicuado.Location = new System.Drawing.Point(70, 547);
+            this.btnLicuado.Name = "btnLicuado";
+            this.btnLicuado.Size = new System.Drawing.Size(135, 131);
+            this.btnLicuado.TabIndex = 50;
+            this.btnLicuado.UseVisualStyleBackColor = false;
+            this.btnLicuado.Click += new System.EventHandler(this.btnLicuado_Click);
             // 
-            // button4
+            // btnTe
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(351, 547);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(142, 115);
-            this.button4.TabIndex = 53;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnTe.BackColor = System.Drawing.Color.Transparent;
+            this.btnTe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTe.BackgroundImage")));
+            this.btnTe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTe.FlatAppearance.BorderSize = 0;
+            this.btnTe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTe.Location = new System.Drawing.Point(351, 547);
+            this.btnTe.Name = "btnTe";
+            this.btnTe.Size = new System.Drawing.Size(142, 115);
+            this.btnTe.TabIndex = 53;
+            this.btnTe.UseVisualStyleBackColor = false;
+            this.btnTe.Click += new System.EventHandler(this.btnTe_Click);
             // 
-            // button5
+            // btnAtol
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = global::Restaurante.Properties.Resources.Ato_pngl;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(390, 368);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(133, 143);
-            this.button5.TabIndex = 52;
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnAtol.BackColor = System.Drawing.Color.Transparent;
+            this.btnAtol.BackgroundImage = global::Restaurante.Properties.Resources.Ato_pngl;
+            this.btnAtol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAtol.FlatAppearance.BorderSize = 0;
+            this.btnAtol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtol.Location = new System.Drawing.Point(390, 368);
+            this.btnAtol.Name = "btnAtol";
+            this.btnAtol.Size = new System.Drawing.Size(133, 143);
+            this.btnAtol.TabIndex = 52;
+            this.btnAtol.UseVisualStyleBackColor = false;
+            this.btnAtol.Click += new System.EventHandler(this.btnAtol_Click);
             // 
-            // button6
+            // btnChocolate
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImage = global::Restaurante.Properties.Resources.Chocolate;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(83, 366);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(148, 132);
-            this.button6.TabIndex = 51;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnChocolate.BackColor = System.Drawing.Color.Transparent;
+            this.btnChocolate.BackgroundImage = global::Restaurante.Properties.Resources.Chocolate;
+            this.btnChocolate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnChocolate.FlatAppearance.BorderSize = 0;
+            this.btnChocolate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChocolate.Location = new System.Drawing.Point(83, 366);
+            this.btnChocolate.Name = "btnChocolate";
+            this.btnChocolate.Size = new System.Drawing.Size(148, 132);
+            this.btnChocolate.TabIndex = 51;
+            this.btnChocolate.UseVisualStyleBackColor = false;
+            this.btnChocolate.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -346,6 +307,7 @@
             this.button7.Size = new System.Drawing.Size(54, 55);
             this.button7.TabIndex = 54;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Bebidas
             // 
@@ -356,18 +318,14 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(651, 702);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTe);
+            this.Controls.Add(this.btnLicuado);
+            this.Controls.Add(this.btnCafe);
+            this.Controls.Add(this.btnSoda);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.Ord_chocolate);
-            this.Controls.Add(this.Ord_atol);
-            this.Controls.Add(this.Ord_cafe);
-            this.Controls.Add(this.Ord_soda);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
@@ -378,8 +336,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.R_b_m);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnAtol);
+            this.Controls.Add(this.btnChocolate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Bebidas";
@@ -402,20 +360,16 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox Ord_soda;
-        private System.Windows.Forms.CheckBox Ord_cafe;
-        private System.Windows.Forms.CheckBox Ord_atol;
-        private System.Windows.Forms.CheckBox Ord_chocolate;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnSoda;
+        private System.Windows.Forms.Button btnCafe;
+        private System.Windows.Forms.Button btnLicuado;
+        private System.Windows.Forms.Button btnTe;
+        private System.Windows.Forms.Button btnAtol;
+        private System.Windows.Forms.Button btnChocolate;
         private System.Windows.Forms.Button button7;
     }
 }

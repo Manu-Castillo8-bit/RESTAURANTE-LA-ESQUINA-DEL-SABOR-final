@@ -25,6 +25,13 @@ namespace Restaurante
             Entradas entradas = new Entradas(this);
             entradas.Show();
         }
+
+        private void R_Dtos_papas_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Solo cierra, NO hace INSERT
+            Entradas entradas = new Entradas(this);
+            entradas.Show();
+        }
     }
     
 }

@@ -61,39 +61,69 @@ namespace Restaurante
 
         private void Ord_soda_CheckedChanged(object sender, EventArgs e)
         {
-            if (Ord_soda.Checked)
-            {
-                this.Hide();
-                Datos_soda newForm = new Datos_soda();
-                newForm.Show();
-
-
-            }
+            
         }
 
         private void Ord_chocolate_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Ord_cafe_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Ord_atol_CheckedChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button6_Click(object sender, EventArgs e)
         {
             this.Hide();
             Datos_chocolate newForm = new Datos_chocolate();
             newForm.Show();
         }
 
-        private void Ord_cafe_CheckedChanged(object sender, EventArgs e)
+        private void btnSoda_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_soda newForm = new Datos_soda();
+            newForm.Show();
+        }
+
+        private void btnCafe_Click(object sender, EventArgs e)
         {
             this.Hide();
             Datos_cafe newForm = new Datos_cafe();
             newForm.Show();
         }
 
-        private void Ord_atol_CheckedChanged(object sender, EventArgs e)
+        private void btnAtol_Click(object sender, EventArgs e)
         {
             this.Hide();
             Datos_atol newForm = new Datos_atol();
             newForm.Show();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void btnLicuado_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Datos_licuado newForm = new Datos_licuado();
+            newForm.Show();
+        }
+
+        private void btnTe_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Datos_te newForm = new Datos_te();
+            newForm.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
 
         }
     }

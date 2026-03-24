@@ -31,7 +31,8 @@
             this.Datos = new System.Windows.Forms.Button();
             this.Tamales_ = new System.Windows.Forms.TextBox();
             this.Panes = new System.Windows.Forms.Label();
-            this.R_Dtos_atol = new System.Windows.Forms.Button();
+            this.R_Dtos_tamal = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Datos
@@ -48,7 +49,7 @@
             // 
             // Tamales_
             // 
-            this.Tamales_.Location = new System.Drawing.Point(26, 60);
+            this.Tamales_.Location = new System.Drawing.Point(26, 93);
             this.Tamales_.Name = "Tamales_";
             this.Tamales_.Size = new System.Drawing.Size(410, 20);
             this.Tamales_.TabIndex = 45;
@@ -59,31 +60,43 @@
             this.Panes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Panes.Location = new System.Drawing.Point(23, 30);
             this.Panes.Name = "Panes";
-            this.Panes.Size = new System.Drawing.Size(152, 13);
+            this.Panes.Size = new System.Drawing.Size(215, 13);
             this.Panes.TabIndex = 47;
-            this.Panes.Text = "¿Cuántos tamales desea?";
+            this.Panes.Text = "¿Cuántos dólares de tamales desea?";
             // 
-            // R_Dtos_atol
+            // R_Dtos_tamal
             // 
-            this.R_Dtos_atol.BackColor = System.Drawing.Color.IndianRed;
-            this.R_Dtos_atol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R_Dtos_atol.ForeColor = System.Drawing.Color.Black;
-            this.R_Dtos_atol.Location = new System.Drawing.Point(440, 191);
-            this.R_Dtos_atol.Name = "R_Dtos_atol";
-            this.R_Dtos_atol.Size = new System.Drawing.Size(105, 39);
-            this.R_Dtos_atol.TabIndex = 46;
-            this.R_Dtos_atol.Text = "Regresar";
-            this.R_Dtos_atol.UseVisualStyleBackColor = false;
+            this.R_Dtos_tamal.BackColor = System.Drawing.Color.IndianRed;
+            this.R_Dtos_tamal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R_Dtos_tamal.ForeColor = System.Drawing.Color.Black;
+            this.R_Dtos_tamal.Location = new System.Drawing.Point(440, 191);
+            this.R_Dtos_tamal.Name = "R_Dtos_tamal";
+            this.R_Dtos_tamal.Size = new System.Drawing.Size(105, 39);
+            this.R_Dtos_tamal.TabIndex = 46;
+            this.R_Dtos_tamal.Text = "Regresar";
+            this.R_Dtos_tamal.UseVisualStyleBackColor = false;
+            this.R_Dtos_tamal.Click += new System.EventHandler(this.R_Dtos_tamal_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(23, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 13);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "Son 3 x $1.00";
             // 
             // Datos_tamales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Datos);
             this.Controls.Add(this.Tamales_);
             this.Controls.Add(this.Panes);
-            this.Controls.Add(this.R_Dtos_atol);
+            this.Controls.Add(this.R_Dtos_tamal);
             this.Name = "Datos_tamales";
             this.Text = "Datos_tamales";
             this.ResumeLayout(false);
@@ -96,6 +109,7 @@
         private System.Windows.Forms.Button Datos;
         private System.Windows.Forms.TextBox Tamales_;
         private System.Windows.Forms.Label Panes;
-        private System.Windows.Forms.Button R_Dtos_atol;
+        private System.Windows.Forms.Button R_Dtos_tamal;
+        private System.Windows.Forms.Label label1;
     }
 }

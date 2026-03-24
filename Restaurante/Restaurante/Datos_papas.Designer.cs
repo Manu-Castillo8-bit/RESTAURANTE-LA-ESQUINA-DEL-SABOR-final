@@ -31,7 +31,7 @@
             this.Datos = new System.Windows.Forms.Button();
             this.Papas_ = new System.Windows.Forms.TextBox();
             this.Panes = new System.Windows.Forms.Label();
-            this.R_Dtos_atol = new System.Windows.Forms.Button();
+            this.R_Dtos_papas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Datos
@@ -63,17 +63,18 @@
             this.Panes.TabIndex = 47;
             this.Panes.Text = "¿Cuántos platos de papas desea?";
             // 
-            // R_Dtos_atol
+            // R_Dtos_papas
             // 
-            this.R_Dtos_atol.BackColor = System.Drawing.Color.IndianRed;
-            this.R_Dtos_atol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R_Dtos_atol.ForeColor = System.Drawing.Color.Black;
-            this.R_Dtos_atol.Location = new System.Drawing.Point(439, 208);
-            this.R_Dtos_atol.Name = "R_Dtos_atol";
-            this.R_Dtos_atol.Size = new System.Drawing.Size(105, 39);
-            this.R_Dtos_atol.TabIndex = 46;
-            this.R_Dtos_atol.Text = "Regresar";
-            this.R_Dtos_atol.UseVisualStyleBackColor = false;
+            this.R_Dtos_papas.BackColor = System.Drawing.Color.IndianRed;
+            this.R_Dtos_papas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R_Dtos_papas.ForeColor = System.Drawing.Color.Black;
+            this.R_Dtos_papas.Location = new System.Drawing.Point(439, 208);
+            this.R_Dtos_papas.Name = "R_Dtos_papas";
+            this.R_Dtos_papas.Size = new System.Drawing.Size(105, 39);
+            this.R_Dtos_papas.TabIndex = 46;
+            this.R_Dtos_papas.Text = "Regresar";
+            this.R_Dtos_papas.UseVisualStyleBackColor = false;
+            this.R_Dtos_papas.Click += new System.EventHandler(this.R_Dtos_papas_Click);
             // 
             // Datos_papas
             // 
@@ -83,7 +84,7 @@
             this.Controls.Add(this.Datos);
             this.Controls.Add(this.Papas_);
             this.Controls.Add(this.Panes);
-            this.Controls.Add(this.R_Dtos_atol);
+            this.Controls.Add(this.R_Dtos_papas);
             this.Name = "Datos_papas";
             this.Text = "Datos_papas";
             this.ResumeLayout(false);
@@ -96,6 +97,6 @@
         private System.Windows.Forms.Button Datos;
         private System.Windows.Forms.TextBox Papas_;
         private System.Windows.Forms.Label Panes;
-        private System.Windows.Forms.Button R_Dtos_atol;
+        private System.Windows.Forms.Button R_Dtos_papas;
     }
 }

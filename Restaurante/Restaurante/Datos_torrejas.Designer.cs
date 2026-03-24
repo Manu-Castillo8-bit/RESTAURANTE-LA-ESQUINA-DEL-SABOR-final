@@ -31,7 +31,7 @@
             this.Datos = new System.Windows.Forms.Button();
             this.Torrejas_ = new System.Windows.Forms.TextBox();
             this.Panes = new System.Windows.Forms.Label();
-            this.R_Dtos_atol = new System.Windows.Forms.Button();
+            this.R_Dtos_torrejas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Datos
@@ -63,17 +63,18 @@
             this.Panes.TabIndex = 47;
             this.Panes.Text = "¿Cuántas torrejas desea?";
             // 
-            // R_Dtos_atol
+            // R_Dtos_torrejas
             // 
-            this.R_Dtos_atol.BackColor = System.Drawing.Color.IndianRed;
-            this.R_Dtos_atol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R_Dtos_atol.ForeColor = System.Drawing.Color.Black;
-            this.R_Dtos_atol.Location = new System.Drawing.Point(435, 198);
-            this.R_Dtos_atol.Name = "R_Dtos_atol";
-            this.R_Dtos_atol.Size = new System.Drawing.Size(105, 39);
-            this.R_Dtos_atol.TabIndex = 46;
-            this.R_Dtos_atol.Text = "Regresar";
-            this.R_Dtos_atol.UseVisualStyleBackColor = false;
+            this.R_Dtos_torrejas.BackColor = System.Drawing.Color.IndianRed;
+            this.R_Dtos_torrejas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R_Dtos_torrejas.ForeColor = System.Drawing.Color.Black;
+            this.R_Dtos_torrejas.Location = new System.Drawing.Point(435, 198);
+            this.R_Dtos_torrejas.Name = "R_Dtos_torrejas";
+            this.R_Dtos_torrejas.Size = new System.Drawing.Size(105, 39);
+            this.R_Dtos_torrejas.TabIndex = 46;
+            this.R_Dtos_torrejas.Text = "Regresar";
+            this.R_Dtos_torrejas.UseVisualStyleBackColor = false;
+            this.R_Dtos_torrejas.Click += new System.EventHandler(this.R_Dtos_torrejas_Click);
             // 
             // Datos_torrejas
             // 
@@ -83,7 +84,7 @@
             this.Controls.Add(this.Datos);
             this.Controls.Add(this.Torrejas_);
             this.Controls.Add(this.Panes);
-            this.Controls.Add(this.R_Dtos_atol);
+            this.Controls.Add(this.R_Dtos_torrejas);
             this.Name = "Datos_torrejas";
             this.Text = "Datos_torrejas";
             this.ResumeLayout(false);
@@ -96,6 +97,6 @@
         private System.Windows.Forms.Button Datos;
         private System.Windows.Forms.TextBox Torrejas_;
         private System.Windows.Forms.Label Panes;
-        private System.Windows.Forms.Button R_Dtos_atol;
+        private System.Windows.Forms.Button R_Dtos_torrejas;
     }
 }

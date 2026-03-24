@@ -25,5 +25,12 @@ namespace Restaurante
             Platillos platillos = new Platillos(this);
             platillos.Show();
         }
+
+        private void R_Dtos_platillos_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Solo cierra, NO hace INSERT
+            Platillos platillos = new Platillos(this);
+            platillos.Show();
+        }
     }
 }
