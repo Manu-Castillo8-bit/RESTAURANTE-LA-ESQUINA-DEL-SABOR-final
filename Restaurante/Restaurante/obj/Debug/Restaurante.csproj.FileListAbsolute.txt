@@ -145,3 +145,4 @@ C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\o
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_licuado.resources
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_paslimon.resources
 C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Datos_te.resources
+C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\Restaurante\Restaurante\obj\Debug\Restaurante.Resumen.resources

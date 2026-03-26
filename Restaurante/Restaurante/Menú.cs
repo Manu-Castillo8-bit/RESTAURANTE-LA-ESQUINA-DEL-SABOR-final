@@ -75,6 +75,14 @@ namespace Restaurante
         private void button7_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
+        }
+
+        private void btnResumen_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Resumen newForm = new Resumen();
+            newForm.ShowDialog();
         }
     }
 }

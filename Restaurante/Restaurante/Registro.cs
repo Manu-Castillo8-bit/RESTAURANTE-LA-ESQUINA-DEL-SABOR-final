@@ -105,6 +105,7 @@ namespace Restaurante
         private void button7_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
         }
     }
 }

@@ -247,6 +247,12 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resumen.Designer.cs">
+      <DependentUpon>Resumen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Bebidas.resx">
       <DependentUpon>Bebidas.cs</DependentUpon>
     </EmbeddedResource>
@@ -355,6 +361,9 @@
     </Compile>
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resumen.resx">
+      <DependentUpon>Resumen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

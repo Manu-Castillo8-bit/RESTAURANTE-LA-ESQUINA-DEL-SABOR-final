@@ -163,7 +163,7 @@
             // 
             this.R_f_m.BackColor = System.Drawing.Color.IndianRed;
             this.R_f_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R_f_m.Location = new System.Drawing.Point(484, 540);
+            this.R_f_m.Location = new System.Drawing.Point(554, 540);
             this.R_f_m.Name = "R_f_m";
             this.R_f_m.Size = new System.Drawing.Size(105, 39);
             this.R_f_m.TabIndex = 24;
@@ -174,7 +174,7 @@
             // Calcular_total
             // 
             this.Calcular_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Calcular_total.Location = new System.Drawing.Point(595, 540);
+            this.Calcular_total.Location = new System.Drawing.Point(724, 540);
             this.Calcular_total.Name = "Calcular_total";
             this.Calcular_total.Size = new System.Drawing.Size(107, 39);
             this.Calcular_total.TabIndex = 25;
@@ -222,11 +222,12 @@
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(727, 533);
+            this.button7.Location = new System.Drawing.Point(1058, 12);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(54, 55);
             this.button7.TabIndex = 53;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox8
             // 

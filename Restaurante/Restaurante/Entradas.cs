@@ -68,7 +68,8 @@ namespace Restaurante
 
         private void button7_Click(object sender, EventArgs e)
         {
-          this.Close();
+            this.Close();
+            Application.Exit();
 
         }
 

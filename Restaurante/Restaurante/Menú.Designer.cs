@@ -36,6 +36,7 @@
             this.r_m_l = new System.Windows.Forms.Button();
             this.Entradas = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.btnResumen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Platillos
@@ -176,6 +177,16 @@
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // btnResumen
+            // 
+            this.btnResumen.Location = new System.Drawing.Point(166, 51);
+            this.btnResumen.Name = "btnResumen";
+            this.btnResumen.Size = new System.Drawing.Size(87, 55);
+            this.btnResumen.TabIndex = 54;
+            this.btnResumen.Text = "RESUMEN";
+            this.btnResumen.UseVisualStyleBackColor = true;
+            this.btnResumen.Click += new System.EventHandler(this.btnResumen_Click);
+            // 
             // Menú
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,6 +195,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(410, 659);
+            this.Controls.Add(this.btnResumen);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.Entradas);
             this.Controls.Add(this.r_m_l);
@@ -209,5 +221,6 @@
         private System.Windows.Forms.Button r_m_l;
         private System.Windows.Forms.Button Entradas;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnResumen;
     }
 }
