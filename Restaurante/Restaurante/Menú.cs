@@ -19,11 +19,25 @@ namespace Restaurante
 
         private void r_m_l_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            // Mostrar cuadro de diálogo de confirmación
+            DialogResult resultado = MessageBox.Show(
+                "¿Estás seguro de que deseas regresar al login?",
+                "Confirmar salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
-           
-            Login newForm = new Login();
-            newForm.ShowDialog();
+            // Verificar la respuesta del usuario
+            if (resultado == DialogResult.Yes)
+            {
+                
+                // O si es un formulario específico:
+                this.Hide();
+                Login newForm = new Login();
+                newForm.ShowDialog();
+
+            }
+            // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
 
         private void Platillos_Click(object sender, EventArgs e)
@@ -74,8 +88,22 @@ namespace Restaurante
 
         private void button7_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Application.Exit();
+            // Mostrar cuadro de diálogo de confirmación
+            DialogResult resultado = MessageBox.Show(
+                "¿Estás seguro de que deseas salir?",
+                "Confirmar salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            // Verificar la respuesta del usuario
+            if (resultado == DialogResult.Yes)
+            {
+                // Cerrar la aplicación
+                Application.Exit();
+                // O si es un formulario específico: this.Close();
+            }
+            // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
 
         private void btnResumen_Click(object sender, EventArgs e)

@@ -47,11 +47,25 @@ namespace Restaurante
 
         private void R_pos_m_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            // Mostrar cuadro de diálogo de confirmación
+            DialogResult resultado = MessageBox.Show(
+                "¿Estás seguro de que deseas regresar al menú?",
+                "Confirmar salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
-            // 2. Crear y mostrar el nuevo formulario (Form2)
-            Menú newForm = new Menú();
-            newForm.ShowDialog();
+            // Verificar la respuesta del usuario
+            if (resultado == DialogResult.Yes)
+            {
+
+                // O si es un formulario específico:
+                this.Hide();
+                Menú newForm = new Menú();
+                newForm.ShowDialog();
+
+            }
+            // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
 
         private void ord_3_leches_CheckedChanged(object sender, EventArgs e)
@@ -137,8 +151,22 @@ namespace Restaurante
 
         private void button7_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Application.Exit();
+            // Mostrar cuadro de diálogo de confirmación
+            DialogResult resultado = MessageBox.Show(
+                "¿Estás seguro de que deseas salir?",
+                "Confirmar salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            // Verificar la respuesta del usuario
+            if (resultado == DialogResult.Yes)
+            {
+                // Cerrar la aplicación
+                Application.Exit();
+                // O si es un formulario específico: this.Close();
+            }
+            // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
     }
 }

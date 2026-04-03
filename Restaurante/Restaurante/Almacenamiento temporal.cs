@@ -8,6 +8,17 @@ namespace Restaurante
 {
     public static class Almacenamiento_temporal
     {
+        
+        public static string Ad_papas{ get; set; } = "0";
+        public static string Ad_ensaladas { get; set; } = "0";
+        public static string Ad_sandwiches { get; set; } = "0";
+
+        public static string Ad_pupusas { get; set; } = "0";
+        public static string Ad_panes { get; set; } = "0";
+        public static string Ad_cenas { get; set; } = "0";
+        public static string Ad_tortas { get; set; } = "0";
+
+
         public static string Papas { get; set; } = "0";
         public static string Sopas { get; set; } = "0";
         public static string Tamales { get; set; } = "0";

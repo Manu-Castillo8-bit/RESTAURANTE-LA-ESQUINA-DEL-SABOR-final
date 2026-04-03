@@ -95,7 +95,7 @@ namespace Restaurante
             Agregar("Tres Leches", Almacenamiento_temporal.TresLeches);
             Agregar("Quesadillas", Almacenamiento_temporal.Quesadillas);
             Agregar("Flanes", Almacenamiento_temporal.Flanes);
-            Agregar("Pastel", Almacenamiento_temporal.pastel);
+            Agregar("Pastel de chocolate", Almacenamiento_temporal.pastel);
             Agregar("Tartaletas", Almacenamiento_temporal.Tartaletas);
             Agregar("Pastel de limón", Almacenamiento_temporal.Pastel_de_limon);
 
@@ -123,14 +123,45 @@ namespace Restaurante
 
         private void regresar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Menú newForm = new Menú();
-            newForm.ShowDialog();
+            // Mostrar cuadro de diálogo de confirmación
+            DialogResult resultado = MessageBox.Show(
+                "¿Estás seguro de que deseas regresar al menú?",
+                "Confirmar salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            // Verificar la respuesta del usuario
+            if (resultado == DialogResult.Yes)
+            {
+
+                // O si es un formulario específico:
+                this.Hide();
+                Menú newForm = new Menú();
+                newForm.ShowDialog();
+
+            }
+            // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
 
         private void salir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            // Mostrar cuadro de diálogo de confirmación
+            DialogResult resultado = MessageBox.Show(
+                "¿Estás seguro de que deseas salir?",
+                "Confirmar salida",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            // Verificar la respuesta del usuario
+            if (resultado == DialogResult.Yes)
+            {
+                // Cerrar la aplicación
+                Application.Exit();
+                // O si es un formulario específico: this.Close();
+            }
+            // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
 
         private void EliminarDeMemoria(string producto)
@@ -139,30 +170,30 @@ namespace Restaurante
             {
                 case "Papas": Almacenamiento_temporal.Papas = "0"; break;
                 case "Tamales": Almacenamiento_temporal.Tamales = "0"; break;
-                case "Ensalada": Almacenamiento_temporal.Ensaladas = "0"; break;
+                case "Ensaladas": Almacenamiento_temporal.Ensaladas = "0"; break;
                 case "Sopas": Almacenamiento_temporal.Sopas = "0"; break;
                 case "Torrejas": Almacenamiento_temporal.Torrejas = "0"; break;
                 case "Sandwiches": Almacenamiento_temporal.Sandwiches = "0"; break;
 
                 case "Pupusas": Almacenamiento_temporal.Pupusas = "0"; break;
-                case "Panes con pollo": Almacenamiento_temporal.Panes = "0"; break;
+                case "Panes": Almacenamiento_temporal.Panes = "0"; break;
                 case "Cena": Almacenamiento_temporal.Cena = "0"; break;
                 case "Tortas": Almacenamiento_temporal.Tortas = "0"; break;
                 case "Carne": Almacenamiento_temporal.Carne = "0"; break;
                 case "Lasaña": Almacenamiento_temporal.Lasaña = "0"; break;
 
                 case "Bebidas": Almacenamiento_temporal.Bebidas = "0"; break;
-                case "Café": Almacenamiento_temporal.Cafes = "0"; break;
-                case "Chocolate": Almacenamiento_temporal.Chocolates = "0"; break;
-                case "Atol": Almacenamiento_temporal.Atoles = "0"; break;
-                case "Licuado": Almacenamiento_temporal.Licuados = "0"; break;
-                case "Té": Almacenamiento_temporal.Tes = "0"; break;
+                case "Cafes": Almacenamiento_temporal.Cafes = "0"; break;
+                case "Chocolates": Almacenamiento_temporal.Chocolates = "0"; break;
+                case "Atoles": Almacenamiento_temporal.Atoles = "0"; break;
+                case "Licuados": Almacenamiento_temporal.Licuados = "0"; break;
+                case "Tes": Almacenamiento_temporal.Tes = "0"; break;
 
-                case "Tres leches": Almacenamiento_temporal.TresLeches = "0"; break;
-                case "Flan": Almacenamiento_temporal.Flanes = "0"; break;
+                case "Tres Leches": Almacenamiento_temporal.TresLeches = "0"; break;
+                case "Flanes": Almacenamiento_temporal.Flanes = "0"; break;
                 case "Quesadillas": Almacenamiento_temporal.Quesadillas = "0"; break;
                 case "Pastel de chocolate": Almacenamiento_temporal.pastel = "0"; break;
-                case "Tartaleta": Almacenamiento_temporal.Tartaletas = "0"; break;
+                case "Tartaletas": Almacenamiento_temporal.Tartaletas = "0"; break;
                 case "Pastel de limón": Almacenamiento_temporal.Pastel_de_limon = "0"; break;
                     
             }
