@@ -86,6 +86,7 @@
             this.Controls.Add(this.Datos);
             this.Controls.Add(this.Panes);
             this.Controls.Add(this.R_Dtos_pastel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Datospostres";
             this.Text = "Datospostres";
             this.Load += new System.EventHandler(this.Datospostres_Load);

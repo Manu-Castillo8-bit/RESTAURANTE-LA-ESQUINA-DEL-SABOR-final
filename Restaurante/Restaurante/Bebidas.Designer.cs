@@ -69,6 +69,8 @@
             this.R_b_m.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("R_b_m.BackgroundImage")));
             this.R_b_m.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.R_b_m.FlatAppearance.BorderSize = 0;
+            this.R_b_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.R_b_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.R_b_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.R_b_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R_b_m.Location = new System.Drawing.Point(434, 46);
@@ -217,6 +219,8 @@
             this.btnSoda.BackgroundImage = global::Restaurante.Properties.Resources.Crema_soda_png1;
             this.btnSoda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSoda.FlatAppearance.BorderSize = 0;
+            this.btnSoda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSoda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSoda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSoda.Location = new System.Drawing.Point(110, 244);
             this.btnSoda.Name = "btnSoda";
@@ -231,6 +235,8 @@
             this.btnCafe.BackgroundImage = global::Restaurante.Properties.Resources.Café;
             this.btnCafe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCafe.FlatAppearance.BorderSize = 0;
+            this.btnCafe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCafe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCafe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCafe.Location = new System.Drawing.Point(365, 257);
             this.btnCafe.Name = "btnCafe";
@@ -245,6 +251,8 @@
             this.btnLicuado.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLicuado.BackgroundImage")));
             this.btnLicuado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLicuado.FlatAppearance.BorderSize = 0;
+            this.btnLicuado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnLicuado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnLicuado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLicuado.Location = new System.Drawing.Point(70, 547);
             this.btnLicuado.Name = "btnLicuado";
@@ -259,6 +267,8 @@
             this.btnTe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTe.BackgroundImage")));
             this.btnTe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTe.FlatAppearance.BorderSize = 0;
+            this.btnTe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnTe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnTe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTe.Location = new System.Drawing.Point(351, 547);
             this.btnTe.Name = "btnTe";
@@ -273,6 +283,8 @@
             this.btnAtol.BackgroundImage = global::Restaurante.Properties.Resources.Ato_pngl;
             this.btnAtol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAtol.FlatAppearance.BorderSize = 0;
+            this.btnAtol.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAtol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAtol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtol.Location = new System.Drawing.Point(390, 368);
             this.btnAtol.Name = "btnAtol";
@@ -287,6 +299,8 @@
             this.btnChocolate.BackgroundImage = global::Restaurante.Properties.Resources.Chocolate;
             this.btnChocolate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnChocolate.FlatAppearance.BorderSize = 0;
+            this.btnChocolate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnChocolate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnChocolate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChocolate.Location = new System.Drawing.Point(83, 366);
             this.btnChocolate.Name = "btnChocolate";
@@ -301,6 +315,8 @@
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Location = new System.Drawing.Point(552, 51);
             this.button7.Name = "button7";

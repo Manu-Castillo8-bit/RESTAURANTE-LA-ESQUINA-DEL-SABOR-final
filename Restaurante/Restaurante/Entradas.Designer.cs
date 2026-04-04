@@ -298,6 +298,8 @@
             this.R_e_m.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("R_e_m.BackgroundImage")));
             this.R_e_m.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.R_e_m.FlatAppearance.BorderSize = 0;
+            this.R_e_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.R_e_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.R_e_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.R_e_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R_e_m.Location = new System.Drawing.Point(429, 46);
@@ -313,6 +315,8 @@
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Location = new System.Drawing.Point(544, 52);
             this.button7.Name = "button7";

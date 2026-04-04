@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Data.OleDb;
+using System.IO;
+using System.Text;
 using System.Windows.Forms;
+
 
 namespace Restaurante
 {
@@ -21,34 +24,13 @@ namespace Restaurante
         private string flanesRecibidos;
         private string pastelesRecibidos;
 
-       
+
 
         public Factura()
         {
             InitializeComponent();
 
         }
-
-        // Constructor unificado: recibe ambos valores (opcionales)
-        /*public Factura(string valorPupusas = null, string valorCenas = null, string valorPanes=null, string valorTortas=null, string valorSoda=null, string valorChocolate = null, string valorCafe=null, string valorAtol=null, string valor_tres_leches=null, string valorQuesadillas=null, string valorFlan=null, string valorPastel=null)
-        {
-            InitializeComponent();
-            string pupusasRecibidas = valorPupusas;
-            cenasRecibidas = valorCenas;
-            panesRecibidos = valorPanes;
-            tortasRecibidas = valorTortas;
-
-            sodasRecibidas= valorSoda;
-            chocolatesRecibidos = valorChocolate;
-            cafesRecibidos = valorCafe;
-            atolesRecibidos = valorAtol;
-
-            tres_leches_Recibidos = valor_tres_leches;
-            quesadillasRecibidas = valorQuesadillas;
-            flanesRecibidos = valorFlan;
-            pastelesRecibidos = valorPastel;
-        }*/
-
 
         private void R_f_m_Click(object sender, EventArgs e)
         {
@@ -73,49 +55,27 @@ namespace Restaurante
             // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
 
+
+       
+
+
+
         private void Calcular_total_Click(object sender, EventArgs e)
         {
-            /*pupusas_f.Text = pupusasRecibidas;
-            cena_f.Text = cenasRecibidas;
-            panes_f.Text = panesRecibidos;
-            torta_f.Text = tortasRecibidas;
 
-            soda_f.Text = sodasRecibidas;
-            chocolate_f.Text = chocolatesRecibidos;
-            cafe_f.Text = cafesRecibidos;
-            atol_f.Text = atolesRecibidos;
+            // Primero asegurarse de que los cálculos estén hechos
+            if (string.IsNullOrEmpty(precio_final.Text) || precio_final.Text == "0")
+            {
+                MessageBox.Show("Primero calcule el total antes de generar la factura",
+                                "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            tres_l_f.Text = tres_leches_Recibidos;
-            quesadillas_f.Text = quesadillasRecibidas;
-            flan_f.Text = flanesRecibidos;
-            pastel_f.Text = pastelesRecibidos;*/
+            GenerarFacturaTXT();
 
 
 
-
-            /*double pupusas, cena = 0, panes = 0, torta = 0;
-            double soda = 0, chocolate = 0, cafe = 0, atol = 0;
-            double t_l = 0, quesadillas = 0, flan = 0, pastel = 0;
-
-            double.TryParse(pupusas_f.Text, out pupusas);
-            double.TryParse(cena_f.Text, out cena);
-            double.TryParse(panes_f.Text, out panes);
-            double.TryParse(torta_f.Text, out torta);
-
-            double.TryParse(soda_f.Text, out soda);
-            double.TryParse(chocolate_f.Text, out chocolate);
-            double.TryParse(cafe_f.Text, out cafe);
-            double.TryParse(atol_f.Text, out atol);
-
-            double.TryParse(tres_l_f.Text, out t_l);
-            double.TryParse(quesadillas_f.Text, out quesadillas);
-            double.TryParse(flan_f.Text, out flan);
-            double.TryParse(pastel_f.Text, out pastel);
-
-            double total_platillos = pupusas * 1.00 + cena * 3.50 + panes * 1.50 + torta * 2.00;
-
-            t_platillos.Text = total_platillos.ToString("F2");*/
-
+/*
             try
             {
                 string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\Etapa de informarse\Usuarios.accdb;";
@@ -173,7 +133,7 @@ namespace Restaurante
             catch (Exception ex)
             {
                 MessageBox.Show($"Error: {ex.Message}");
-            }
+            }*/
 
         }
 
@@ -269,6 +229,7 @@ namespace Restaurante
 
             double total_platillos = pupusas_mas_ade + cena_mas_ade + panes_mas_ade + tortas_mas_ade + p_lasaña + p_carne;
 
+            //......................................................................................................................
 
             // BEBIDAS
 
@@ -295,6 +256,8 @@ namespace Restaurante
 
             double total_bebidas = ((soda * 1.00) + chocolate * 1.00 + cafe * 1.00 + atol * 1.00 + licuado * 1.00 + te * 1.00);
 
+            //......................................................................................................................
+
 
             //POSTRES
 
@@ -302,8 +265,8 @@ namespace Restaurante
             double quesadillas = Convert.ToDouble(Almacenamiento_temporal.Quesadillas);
             double flan = Convert.ToDouble(Almacenamiento_temporal.Flanes);
             double pastel = Convert.ToDouble(Almacenamiento_temporal.pastel);
-            double tartaleta = Convert.ToDouble(Almacenamiento_temporal.pastel);
-            double pastel_li = Convert.ToDouble(Almacenamiento_temporal.pastel);
+            double tartaleta = Convert.ToDouble(Almacenamiento_temporal.Tartaletas);
+            double pastel_li = Convert.ToDouble(Almacenamiento_temporal.Pastel_de_limon);
 
             double p_tres_l = tres_l * 3.00;
             double p_quesadillas = quesadillas * 2.00;
@@ -320,7 +283,6 @@ namespace Restaurante
             pastel_li_f.Text = Convert.ToString(p_pastel_li);
 
             double total_postres = (tres_l * 3.00) + quesadillas * 2.00 + flan * 1.50 + pastel * 3.50 + tartaleta * 1.50 + pastel_li * 3.50;
-
 
 
 
@@ -422,6 +384,129 @@ namespace Restaurante
                 // O si es un formulario específico: this.Close();
             }
             // Si el usuario selecciona No, no hace nada y permanece en la aplicación
+        }
+
+        private void GenerarFacturaTXT()
+        {
+            string fecha = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
+            string rutaEscritorio = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string rutaCompleta = Path.Combine(rutaEscritorio, $"Factura_{fecha}.txt");
+
+            StringBuilder contenido = new StringBuilder();
+
+            // ========== ENCABEZADO ==========
+            contenido.AppendLine("╔══════════════════════════════════════════════════════════════════════════════╗");
+            contenido.AppendLine("║                                    SABOR RESTAURANTE                         ║");
+            contenido.AppendLine("║                                    FACTURA DE COMPRA                         ║");
+            contenido.AppendLine("╠══════════════════════════════════════════════════════════════════════════════╣");
+           contenido.AppendLine($"║  Fecha: {DateTime.Now:dd/MM/yyyy HH:mm:ss}                                   ║");
+            contenido.AppendLine("╠══════════════════════════════════════════════════════════════════════════════╣");
+            contenido.AppendLine("");
+
+            // ========== ENTRADAS ==========
+            if (textBox14.Text != "0" || textBox13.Text != "0" || textBox12.Text != "0" || textBox10.Text != "0" || textBox6.Text != "0" || textBox2.Text != "0")
+            {
+                contenido.AppendLine("║  ENTRADAS:");
+                contenido.AppendLine("║  ────────────────────────────────────────────────────────────────────────");
+               contenido.AppendLine($"║  Papas:                                    ${textBox14.Text.PadLeft(10)}");
+               contenido.AppendLine($"║  Sopas:                                    ${textBox13.Text.PadLeft(10)}");
+               contenido.AppendLine($"║  Tamales:                                  ${textBox12.Text.PadLeft(10)}");
+               contenido.AppendLine($"║  Torrejas:                                 ${textBox10.Text.PadLeft(10)}");
+               contenido.AppendLine($"║  Ensaladas:                                ${textBox6.Text.PadLeft(10)}");
+               contenido.AppendLine($"║  Sandwiches:                               ${textBox2.Text.PadLeft(10)}");
+               contenido.AppendLine("");
+               contenido.AppendLine($"║  Aderezo de papas:                         ${ade_papas.Text.PadLeft(10)}");
+               contenido.AppendLine($"║  Aderezo de ensaladas:                     ${ade_ensaladas.Text.PadLeft(10)}");
+               contenido.AppendLine($"║  Aderezo de sandwiches:                    ${ade_sandwiches.Text.PadLeft(10)}");
+               contenido.AppendLine("");
+               contenido.AppendLine($"║  Subtotal Entradas:                        ${t_entradas.Text.PadLeft(10)}");
+               contenido.AppendLine("");
+            }
+
+            // ========== PLATILLOS ==========
+            if (a.Text != "0" || b.Text != "0" || c.Text != "0" || d.Text != "0" || textBox1.Text != "0" || textBox3.Text != "0")
+            {
+                 contenido.AppendLine("║  PLATILLOS:");
+                 contenido.AppendLine("║  ────────────────────────────────────────────────────────────────────────");
+                contenido.AppendLine($"║  Pupusas:                                  ${a.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Cena:                                     ${b.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Panes:                                    ${c.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Tortas:                                   ${d.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Lasaña:                                   ${textBox1.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Carne:                                    ${textBox3.Text.PadLeft(10)}");
+                contenido.AppendLine("");
+                contenido.AppendLine($"║  Aderezo de pupusas:                       ${ade_pupusas.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Aderezo de panes:                         ${ade_panes.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Aderezo de cenas:                         ${ade_cenas.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Aderezo de tortas:                        ${ade_tortas.Text.PadLeft(10)}");
+                contenido.AppendLine("");
+                contenido.AppendLine($"║  Subtotal Platillos:                       ${t_platillos.Text.PadLeft(10)}");
+                contenido.AppendLine("");
+            }
+
+            // ========== BEBIDAS ==========
+            if (e_.Text != "0" || f.Text != "0" || g.Text != "0" || h.Text != "0" || textBox5.Text != "0" || textBox7.Text != "0")
+            {
+                 contenido.AppendLine("║  BEBIDAS:");
+                 contenido.AppendLine("║  ────────────────────────────────────────────────────────────────────────");
+                contenido.AppendLine($"║  Bebidas enlatadas:                        ${e_.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Chocolates:                               ${f.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Cafés:                                    ${g.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Atoles:                                   ${h.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Licuados:                                 ${textBox5.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Tés:                                      ${textBox7.Text.PadLeft(10)}");
+                contenido.AppendLine("");
+                contenido.AppendLine($"║  Subtotal Bebidas:                         ${t_bebidas.Text.PadLeft(10)}");
+                contenido.AppendLine("");
+            }
+
+            // ========== POSTRES ==========
+            if (i.Text != "0" || j.Text != "0" || k.Text != "0" || l.Text != "0" || textBox9.Text != "0" || textBox11.Text != "0")
+            {
+                 contenido.AppendLine("║  POSTRES:");
+                 contenido.AppendLine("║  ────────────────────────────────────────────────────────────────────────");
+                contenido.AppendLine($"║  Tres Leches:                              ${i.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Quesadillas:                              ${j.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Flanes:                                   ${k.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Pastel de chocolate:                      ${l.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Tartaletas:                               ${textBox9.Text.PadLeft(10)}");
+                contenido.AppendLine($"║  Pastel de limón:                          ${textBox11.Text.PadLeft(10)}");
+                contenido.AppendLine("");
+                contenido.AppendLine($"║  Subtotal Postres:                         ${t_postres.Text.PadLeft(10)}");
+                contenido.AppendLine("");
+            }
+
+            // ========== TOTAL FINAL ==========
+            contenido.AppendLine("╠════════════════════════════════════════════════════════════════════════════════╣");
+           contenido.AppendLine($"║                                                                                ║");
+           contenido.AppendLine($"║  TOTAL A PAGAR:                             ${precio_final.Text.PadLeft(10)}   ║");
+           contenido.AppendLine($"║                                                                                ║");
+            contenido.AppendLine("║  ¡GRACIAS POR SU COMPRA!                                                       ║");
+            contenido.AppendLine("║  VUELVA PRONTO                                                                 ║");
+            contenido.AppendLine("║                                                                                ║");
+            contenido.AppendLine("╚════════════════════════════════════════════════════════════════════════════════╝");
+
+            // Guardar el archivo
+            try
+            {
+                File.WriteAllText(rutaCompleta, contenido.ToString());
+
+                DialogResult resultado = MessageBox.Show(
+                    $"Factura guardada en:\n{rutaCompleta}\n\n¿Desea abrir el archivo?",
+                    "Factura Generada",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Information
+                );
+
+                if (resultado == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("notepad.exe", rutaCompleta);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al guardar la factura: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

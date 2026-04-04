@@ -69,6 +69,8 @@
             this.R_pos_m.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("R_pos_m.BackgroundImage")));
             this.R_pos_m.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.R_pos_m.FlatAppearance.BorderSize = 0;
+            this.R_pos_m.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.R_pos_m.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.R_pos_m.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.R_pos_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R_pos_m.Location = new System.Drawing.Point(407, 49);
@@ -220,6 +222,8 @@
             this.btnLeches.BackgroundImage = global::Restaurante.Properties.Resources.Tres_leches;
             this.btnLeches.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLeches.FlatAppearance.BorderSize = 0;
+            this.btnLeches.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnLeches.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnLeches.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLeches.Location = new System.Drawing.Point(105, 246);
             this.btnLeches.Name = "btnLeches";
@@ -234,6 +238,8 @@
             this.btnFlan.BackgroundImage = global::Restaurante.Properties.Resources.Flan_png;
             this.btnFlan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnFlan.FlatAppearance.BorderSize = 0;
+            this.btnFlan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnFlan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnFlan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFlan.Location = new System.Drawing.Point(364, 246);
             this.btnFlan.Name = "btnFlan";
@@ -248,6 +254,8 @@
             this.btnPasChocolate.BackgroundImage = global::Restaurante.Properties.Resources.Pastel;
             this.btnPasChocolate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPasChocolate.FlatAppearance.BorderSize = 0;
+            this.btnPasChocolate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPasChocolate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnPasChocolate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPasChocolate.Location = new System.Drawing.Point(364, 417);
             this.btnPasChocolate.Name = "btnPasChocolate";
@@ -262,6 +270,8 @@
             this.btnQuesadillas.BackgroundImage = global::Restaurante.Properties.Resources.Quesadilla;
             this.btnQuesadillas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnQuesadillas.FlatAppearance.BorderSize = 0;
+            this.btnQuesadillas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnQuesadillas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnQuesadillas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuesadillas.Location = new System.Drawing.Point(105, 417);
             this.btnQuesadillas.Name = "btnQuesadillas";
@@ -276,6 +286,8 @@
             this.btnPasLimon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPasLimon.BackgroundImage")));
             this.btnPasLimon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPasLimon.FlatAppearance.BorderSize = 0;
+            this.btnPasLimon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPasLimon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnPasLimon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPasLimon.Location = new System.Drawing.Point(364, 552);
             this.btnPasLimon.Name = "btnPasLimon";
@@ -290,6 +302,8 @@
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Location = new System.Drawing.Point(81, 552);
             this.button6.Name = "button6";
@@ -304,6 +318,8 @@
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Location = new System.Drawing.Point(551, 58);
             this.button7.Name = "button7";

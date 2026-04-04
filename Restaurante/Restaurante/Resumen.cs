@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Restaurante
 {
@@ -102,7 +103,7 @@ namespace Restaurante
             // Mostrar total (puedes usar Label)
             lblTotal.Text = "Total: $" + totalGeneral.ToString("0.00");
         }
-    
+
 
         private void Resumen_Load(object sender, EventArgs e)
         {
@@ -195,7 +196,7 @@ namespace Restaurante
                 case "Pastel de chocolate": Almacenamiento_temporal.pastel = "0"; break;
                 case "Tartaletas": Almacenamiento_temporal.Tartaletas = "0"; break;
                 case "Pastel de limón": Almacenamiento_temporal.Pastel_de_limon = "0"; break;
-                    
+
             }
         }
 
@@ -216,13 +217,16 @@ namespace Restaurante
                     // 🔥 2. RECARGAR (esto ya actualiza el grid)
                     CargarPedidos();
                 }
-            
-        }
+
+            }
             else
             {
                 MessageBox.Show("Selecciona una fila");
             }
         }
     }
-    }
+}
 
+
+
+       
