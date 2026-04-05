@@ -213,6 +213,16 @@ namespace Restaurante.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fondo_login {
+            get {
+                object obj = ResourceManager.GetObject("fondo login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logito_final_ {
             get {
                 object obj = ResourceManager.GetObject("logito final ", resourceCulture);
@@ -296,6 +306,16 @@ namespace Restaurante.Properties {
         internal static System.Drawing.Bitmap titulo {
             get {
                 object obj = ResourceManager.GetObject("titulo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap titulo__1_ {
+            get {
+                object obj = ResourceManager.GetObject("titulo (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

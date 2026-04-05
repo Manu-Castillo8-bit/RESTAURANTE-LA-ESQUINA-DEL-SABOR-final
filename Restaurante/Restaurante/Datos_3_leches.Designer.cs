@@ -33,13 +33,15 @@
             this.tres_leches_ = new System.Windows.Forms.TextBox();
             this.Pupusas = new System.Windows.Forms.Label();
             this.R_Dtos_3_leches = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // Datos
             // 
             this.Datos.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Datos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Datos.Location = new System.Drawing.Point(219, 193);
+            this.Datos.Location = new System.Drawing.Point(206, 253);
             this.Datos.Name = "Datos";
             this.Datos.Size = new System.Drawing.Size(105, 39);
             this.Datos.TabIndex = 32;
@@ -49,7 +51,7 @@
             // 
             // tres_leches_
             // 
-            this.tres_leches_.Location = new System.Drawing.Point(28, 62);
+            this.tres_leches_.Location = new System.Drawing.Point(70, 149);
             this.tres_leches_.Name = "tres_leches_";
             this.tres_leches_.Size = new System.Drawing.Size(410, 20);
             this.tres_leches_.TabIndex = 0;
@@ -57,10 +59,12 @@
             // Pupusas
             // 
             this.Pupusas.AutoSize = true;
-            this.Pupusas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pupusas.Location = new System.Drawing.Point(25, 32);
+            this.Pupusas.BackColor = System.Drawing.Color.Transparent;
+            this.Pupusas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pupusas.ForeColor = System.Drawing.Color.White;
+            this.Pupusas.Location = new System.Drawing.Point(67, 116);
             this.Pupusas.Name = "Pupusas";
-            this.Pupusas.Size = new System.Drawing.Size(171, 13);
+            this.Pupusas.Size = new System.Drawing.Size(219, 17);
             this.Pupusas.TabIndex = 30;
             this.Pupusas.Text = "¿Cuántos tres leches desea?";
             // 
@@ -69,7 +73,7 @@
             this.R_Dtos_3_leches.BackColor = System.Drawing.Color.IndianRed;
             this.R_Dtos_3_leches.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R_Dtos_3_leches.ForeColor = System.Drawing.Color.Black;
-            this.R_Dtos_3_leches.Location = new System.Drawing.Point(442, 193);
+            this.R_Dtos_3_leches.Location = new System.Drawing.Point(396, 253);
             this.R_Dtos_3_leches.Name = "R_Dtos_3_leches";
             this.R_Dtos_3_leches.Size = new System.Drawing.Size(105, 39);
             this.R_Dtos_3_leches.TabIndex = 29;
@@ -77,19 +81,35 @@
             this.R_Dtos_3_leches.UseVisualStyleBackColor = false;
             this.R_Dtos_3_leches.Click += new System.EventHandler(this.R_Dtos_3_leches_Click);
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(45, 19);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(157, 84);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 44;
+            this.pictureBox8.TabStop = false;
+            // 
             // Datos_3_leches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(573, 265);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Restaurante.Properties.Resources.fondo_login;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(573, 333);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.Datos);
             this.Controls.Add(this.tres_leches_);
             this.Controls.Add(this.Pupusas);
             this.Controls.Add(this.R_Dtos_3_leches);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Datos_3_leches";
             this.Text = "Datos_3_leches";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,5 +121,6 @@
         private System.Windows.Forms.TextBox tres_leches_;
         private System.Windows.Forms.Label Pupusas;
         private System.Windows.Forms.Button R_Dtos_3_leches;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

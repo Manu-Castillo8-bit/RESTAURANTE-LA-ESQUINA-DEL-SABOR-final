@@ -40,5 +40,10 @@ namespace Restaurante
         {
             //Ignorar
         }
+
+        private void p_chocolate__TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

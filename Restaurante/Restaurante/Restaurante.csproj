@@ -71,12 +71,6 @@
     <Compile Include="Datos_atol.Designer.cs">
       <DependentUpon>Datos_atol.cs</DependentUpon>
     </Compile>
-    <Compile Include="Datos_bebidas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Datos_bebidas.Designer.cs">
-      <DependentUpon>Datos_bebidas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Datos_cafe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,9 +259,6 @@
     <EmbeddedResource Include="Datos_atol.resx">
       <DependentUpon>Datos_atol.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Datos_bebidas.resx">
-      <DependentUpon>Datos_bebidas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Datos_cafe.resx">
       <DependentUpon>Datos_cafe.cs</DependentUpon>
     </EmbeddedResource>
@@ -455,6 +446,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\carta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titulo %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

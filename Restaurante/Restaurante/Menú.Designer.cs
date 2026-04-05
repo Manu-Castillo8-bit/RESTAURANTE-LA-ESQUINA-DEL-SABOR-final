@@ -114,7 +114,7 @@
             this.Factura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Factura.Font = new System.Drawing.Font("MV Boli", 15.25F, System.Drawing.FontStyle.Bold);
             this.Factura.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Factura.Location = new System.Drawing.Point(149, 456);
+            this.Factura.Location = new System.Drawing.Point(140, 436);
             this.Factura.Name = "Factura";
             this.Factura.Size = new System.Drawing.Size(105, 145);
             this.Factura.TabIndex = 7;
@@ -133,7 +133,7 @@
             this.r_m_l.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.r_m_l.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r_m_l.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r_m_l.Location = new System.Drawing.Point(-2, 537);
+            this.r_m_l.Location = new System.Drawing.Point(318, 12);
             this.r_m_l.Name = "r_m_l";
             this.r_m_l.Size = new System.Drawing.Size(80, 64);
             this.r_m_l.TabIndex = 23;
@@ -170,7 +170,7 @@
             this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(354, 546);
+            this.button7.Location = new System.Drawing.Point(12, 12);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(54, 55);
             this.button7.TabIndex = 53;
@@ -179,7 +179,7 @@
             // 
             // btnResumen
             // 
-            this.btnResumen.Location = new System.Drawing.Point(166, 51);
+            this.btnResumen.Location = new System.Drawing.Point(300, 526);
             this.btnResumen.Name = "btnResumen";
             this.btnResumen.Size = new System.Drawing.Size(87, 55);
             this.btnResumen.TabIndex = 54;
