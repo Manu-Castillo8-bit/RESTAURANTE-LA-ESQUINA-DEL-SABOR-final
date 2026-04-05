@@ -33,20 +33,22 @@
             this.Cenas_ = new System.Windows.Forms.TextBox();
             this.Panes = new System.Windows.Forms.Label();
             this.R_Dtos_cenas = new System.Windows.Forms.Button();
-            this.salsa_blanca = new System.Windows.Forms.CheckBox();
-            this.salsa_aguacate = new System.Windows.Forms.CheckBox();
-            this.mayonesa = new System.Windows.Forms.CheckBox();
-            this.pepinesa = new System.Windows.Forms.CheckBox();
-            this.salsa_tomate = new System.Windows.Forms.CheckBox();
-            this.ketchup = new System.Windows.Forms.CheckBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ketchup = new System.Windows.Forms.CheckBox();
+            this.salsa_tomate = new System.Windows.Forms.CheckBox();
+            this.pepinesa = new System.Windows.Forms.CheckBox();
+            this.mayonesa = new System.Windows.Forms.CheckBox();
+            this.salsa_aguacate = new System.Windows.Forms.CheckBox();
+            this.salsa_blanca = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // Datos
             // 
             this.Datos.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Datos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Datos.Location = new System.Drawing.Point(214, 364);
+            this.Datos.Location = new System.Drawing.Point(183, 374);
             this.Datos.Name = "Datos";
             this.Datos.Size = new System.Drawing.Size(105, 39);
             this.Datos.TabIndex = 32;
@@ -56,18 +58,20 @@
             // 
             // Cenas_
             // 
-            this.Cenas_.Location = new System.Drawing.Point(28, 62);
+            this.Cenas_.Location = new System.Drawing.Point(59, 152);
             this.Cenas_.Name = "Cenas_";
-            this.Cenas_.Size = new System.Drawing.Size(410, 20);
+            this.Cenas_.Size = new System.Drawing.Size(275, 20);
             this.Cenas_.TabIndex = 0;
             // 
             // Panes
             // 
             this.Panes.AutoSize = true;
-            this.Panes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Panes.Location = new System.Drawing.Point(25, 32);
+            this.Panes.BackColor = System.Drawing.Color.Transparent;
+            this.Panes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Panes.ForeColor = System.Drawing.Color.White;
+            this.Panes.Location = new System.Drawing.Point(56, 124);
             this.Panes.Name = "Panes";
-            this.Panes.Size = new System.Drawing.Size(223, 13);
+            this.Panes.Size = new System.Drawing.Size(271, 16);
             this.Panes.TabIndex = 30;
             this.Panes.Text = "¿Cuántas cenas  tradicionales desea?";
             // 
@@ -76,7 +80,7 @@
             this.R_Dtos_cenas.BackColor = System.Drawing.Color.IndianRed;
             this.R_Dtos_cenas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R_Dtos_cenas.ForeColor = System.Drawing.Color.Black;
-            this.R_Dtos_cenas.Location = new System.Drawing.Point(437, 364);
+            this.R_Dtos_cenas.Location = new System.Drawing.Point(421, 374);
             this.R_Dtos_cenas.Name = "R_Dtos_cenas";
             this.R_Dtos_cenas.Size = new System.Drawing.Size(105, 39);
             this.R_Dtos_cenas.TabIndex = 29;
@@ -84,81 +88,116 @@
             this.R_Dtos_cenas.UseVisualStyleBackColor = false;
             this.R_Dtos_cenas.Click += new System.EventHandler(this.R_Dtos_cenas_Click);
             // 
-            // salsa_blanca
+            // pictureBox8
             // 
-            this.salsa_blanca.AutoSize = true;
-            this.salsa_blanca.Location = new System.Drawing.Point(398, 258);
-            this.salsa_blanca.Name = "salsa_blanca";
-            this.salsa_blanca.Size = new System.Drawing.Size(105, 17);
-            this.salsa_blanca.TabIndex = 42;
-            this.salsa_blanca.Text = "SALSA BLANCA";
-            this.salsa_blanca.UseVisualStyleBackColor = true;
-            // 
-            // salsa_aguacate
-            // 
-            this.salsa_aguacate.AutoSize = true;
-            this.salsa_aguacate.Location = new System.Drawing.Point(398, 218);
-            this.salsa_aguacate.Name = "salsa_aguacate";
-            this.salsa_aguacate.Size = new System.Drawing.Size(139, 17);
-            this.salsa_aguacate.TabIndex = 41;
-            this.salsa_aguacate.Text = "SALSA DE AGUACATE";
-            this.salsa_aguacate.UseVisualStyleBackColor = true;
-            // 
-            // mayonesa
-            // 
-            this.mayonesa.AutoSize = true;
-            this.mayonesa.Location = new System.Drawing.Point(239, 258);
-            this.mayonesa.Name = "mayonesa";
-            this.mayonesa.Size = new System.Drawing.Size(86, 17);
-            this.mayonesa.TabIndex = 40;
-            this.mayonesa.Text = "MAYONESA";
-            this.mayonesa.UseVisualStyleBackColor = true;
-            // 
-            // pepinesa
-            // 
-            this.pepinesa.AutoSize = true;
-            this.pepinesa.Location = new System.Drawing.Point(239, 218);
-            this.pepinesa.Name = "pepinesa";
-            this.pepinesa.Size = new System.Drawing.Size(79, 17);
-            this.pepinesa.TabIndex = 39;
-            this.pepinesa.Text = "PEPINESA";
-            this.pepinesa.UseVisualStyleBackColor = true;
-            // 
-            // salsa_tomate
-            // 
-            this.salsa_tomate.AutoSize = true;
-            this.salsa_tomate.Location = new System.Drawing.Point(35, 258);
-            this.salsa_tomate.Name = "salsa_tomate";
-            this.salsa_tomate.Size = new System.Drawing.Size(126, 17);
-            this.salsa_tomate.TabIndex = 38;
-            this.salsa_tomate.Text = "SALSA DE TOMATE";
-            this.salsa_tomate.UseVisualStyleBackColor = true;
-            // 
-            // ketchup
-            // 
-            this.ketchup.AutoSize = true;
-            this.ketchup.Location = new System.Drawing.Point(35, 218);
-            this.ketchup.Name = "ketchup";
-            this.ketchup.Size = new System.Drawing.Size(77, 17);
-            this.ketchup.TabIndex = 37;
-            this.ketchup.Text = "KETCHUP";
-            this.ketchup.UseVisualStyleBackColor = true;
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(41, 37);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(157, 84);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 45;
+            this.pictureBox8.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(164, 161);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(260, 209);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 13);
+            this.label1.Size = new System.Drawing.Size(221, 13);
             this.label1.TabIndex = 36;
             this.label1.Text = "DESEA AGREGAR ALGÚN ADEREZO";
+            // 
+            // ketchup
+            // 
+            this.ketchup.AutoSize = true;
+            this.ketchup.BackColor = System.Drawing.Color.Transparent;
+            this.ketchup.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ketchup.ForeColor = System.Drawing.Color.White;
+            this.ketchup.Location = new System.Drawing.Point(220, 246);
+            this.ketchup.Name = "ketchup";
+            this.ketchup.Size = new System.Drawing.Size(84, 17);
+            this.ketchup.TabIndex = 37;
+            this.ketchup.Text = "KETCHUP";
+            this.ketchup.UseVisualStyleBackColor = false;
+            // 
+            // salsa_tomate
+            // 
+            this.salsa_tomate.AutoSize = true;
+            this.salsa_tomate.BackColor = System.Drawing.Color.Transparent;
+            this.salsa_tomate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salsa_tomate.ForeColor = System.Drawing.Color.White;
+            this.salsa_tomate.Location = new System.Drawing.Point(379, 246);
+            this.salsa_tomate.Name = "salsa_tomate";
+            this.salsa_tomate.Size = new System.Drawing.Size(141, 17);
+            this.salsa_tomate.TabIndex = 38;
+            this.salsa_tomate.Text = "SALSA DE TOMATE";
+            this.salsa_tomate.UseVisualStyleBackColor = false;
+            // 
+            // pepinesa
+            // 
+            this.pepinesa.AutoSize = true;
+            this.pepinesa.BackColor = System.Drawing.Color.Transparent;
+            this.pepinesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pepinesa.ForeColor = System.Drawing.Color.White;
+            this.pepinesa.Location = new System.Drawing.Point(220, 282);
+            this.pepinesa.Name = "pepinesa";
+            this.pepinesa.Size = new System.Drawing.Size(87, 17);
+            this.pepinesa.TabIndex = 39;
+            this.pepinesa.Text = "PEPINESA";
+            this.pepinesa.UseVisualStyleBackColor = false;
+            // 
+            // mayonesa
+            // 
+            this.mayonesa.AutoSize = true;
+            this.mayonesa.BackColor = System.Drawing.Color.Transparent;
+            this.mayonesa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mayonesa.ForeColor = System.Drawing.Color.White;
+            this.mayonesa.Location = new System.Drawing.Point(220, 322);
+            this.mayonesa.Name = "mayonesa";
+            this.mayonesa.Size = new System.Drawing.Size(94, 17);
+            this.mayonesa.TabIndex = 40;
+            this.mayonesa.Text = "MAYONESA";
+            this.mayonesa.UseVisualStyleBackColor = false;
+            // 
+            // salsa_aguacate
+            // 
+            this.salsa_aguacate.AutoSize = true;
+            this.salsa_aguacate.BackColor = System.Drawing.Color.Transparent;
+            this.salsa_aguacate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salsa_aguacate.ForeColor = System.Drawing.Color.White;
+            this.salsa_aguacate.Location = new System.Drawing.Point(379, 282);
+            this.salsa_aguacate.Name = "salsa_aguacate";
+            this.salsa_aguacate.Size = new System.Drawing.Size(156, 17);
+            this.salsa_aguacate.TabIndex = 41;
+            this.salsa_aguacate.Text = "SALSA DE AGUACATE";
+            this.salsa_aguacate.UseVisualStyleBackColor = false;
+            // 
+            // salsa_blanca
+            // 
+            this.salsa_blanca.AutoSize = true;
+            this.salsa_blanca.BackColor = System.Drawing.Color.Transparent;
+            this.salsa_blanca.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salsa_blanca.ForeColor = System.Drawing.Color.White;
+            this.salsa_blanca.Location = new System.Drawing.Point(379, 322);
+            this.salsa_blanca.Name = "salsa_blanca";
+            this.salsa_blanca.Size = new System.Drawing.Size(117, 17);
+            this.salsa_blanca.TabIndex = 42;
+            this.salsa_blanca.Text = "SALSA BLANCA";
+            this.salsa_blanca.UseVisualStyleBackColor = false;
             // 
             // Datos_cena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(573, 436);
+            this.BackgroundImage = global::Restaurante.Properties.Resources.fondo_login;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(588, 463);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.salsa_blanca);
             this.Controls.Add(this.salsa_aguacate);
             this.Controls.Add(this.mayonesa);
@@ -170,10 +209,12 @@
             this.Controls.Add(this.Cenas_);
             this.Controls.Add(this.Panes);
             this.Controls.Add(this.R_Dtos_cenas);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Datos_cena";
             this.Text = "Datos_cena";
             this.Load += new System.EventHandler(this.Datos_cena_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,12 +226,13 @@
         private System.Windows.Forms.TextBox Cenas_;
         private System.Windows.Forms.Label Panes;
         private System.Windows.Forms.Button R_Dtos_cenas;
-        private System.Windows.Forms.CheckBox salsa_blanca;
-        private System.Windows.Forms.CheckBox salsa_aguacate;
-        private System.Windows.Forms.CheckBox mayonesa;
-        private System.Windows.Forms.CheckBox pepinesa;
-        private System.Windows.Forms.CheckBox salsa_tomate;
-        private System.Windows.Forms.CheckBox ketchup;
+        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox ketchup;
+        private System.Windows.Forms.CheckBox salsa_tomate;
+        private System.Windows.Forms.CheckBox pepinesa;
+        private System.Windows.Forms.CheckBox mayonesa;
+        private System.Windows.Forms.CheckBox salsa_aguacate;
+        private System.Windows.Forms.CheckBox salsa_blanca;
     }
 }

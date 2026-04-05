@@ -53,5 +53,9 @@ namespace Restaurante
             Almacenamiento_temporal.Ad_panes = Convert.ToString(Aderezo_de_panes);
         }
 
+        private void Panes__TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
