@@ -17,6 +17,7 @@ namespace Restaurante
             InitializeComponent();
         }
 
+
         private void Datos_Click(object sender, EventArgs e)
         {
             // Validar que el campo no esté vacío
@@ -46,6 +47,7 @@ namespace Restaurante
             }
             
             
+
             //Guarda los datos ingresados en la variable "Sopas" de la clase Almacenamiento_temporal
 
             Almacenamiento_temporal.Sopas = Sopa_.Text;

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Linq.Expressions;
 
 namespace Restaurante
 {
@@ -20,7 +21,7 @@ namespace Restaurante
         }
 
 
-//-----------------Diccionario para almacenar los precios de los productos--------------------------
+        //-----------------Diccionario para almacenar los precios de los productos--------------------------
         Dictionary<string, double> precios = new Dictionary<string, double>()
 {
     {"Papas", 1.00},
@@ -51,7 +52,7 @@ namespace Restaurante
     {"Tartaletas", 1.50},
     {"Pastel de limón", 3.50}
 };
-//--------------------------------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------------------------------
 
 
         private void CargarPedidos()
@@ -221,30 +222,40 @@ namespace Restaurante
         //----------------------------BOTON PARA ELIMINAR UN PRODUCTO DEL RESUMEN----------------------------
         private void butEliminar_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.CurrentRow != null)
+            try
             {
-                string producto = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-
-                DialogResult r = MessageBox.Show("¿Eliminar este producto?", "Confirmar", MessageBoxButtons.YesNo);
-
-                if (r == DialogResult.Yes)
+                if (dataGridView1.CurrentRow != null)
                 {
-                    // 🔥 1. BORRAR DE LA CLASE (LO MÁS IMPORTANTE)
-                    EliminarDeMemoria(producto);
+                    string producto = dataGridView1.CurrentRow.Cells[0].Value.ToString();
 
-                    // 🔥 2. RECARGAR (esto ya actualiza el grid)
-                    CargarPedidos();
+                    DialogResult r = MessageBox.Show("¿Eliminar este producto?", "Confirmar", MessageBoxButtons.YesNo);
+
+                    if (r == DialogResult.Yes)
+                    {
+                        // 🔥 1. BORRAR DE LA CLASE (LO MÁS IMPORTANTE)
+                        EliminarDeMemoria(producto);
+
+                        // 🔥 2. RECARGAR (esto ya actualiza el grid)
+                        CargarPedidos();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Selecciona una fila");
                 }
 
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Selecciona una fila");
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
-        //--------------------------------------------------------------------------------------------------
     }
 }
+            //--------------------------------------------------------------------------------------------------
+        
+        
 
 
 

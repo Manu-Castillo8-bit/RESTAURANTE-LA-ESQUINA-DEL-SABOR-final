@@ -239,6 +239,7 @@ namespace Restaurante
             double ensalada_mas_ade = p_ensalada + ad_ensaladas; //Guarda el precio de la ensalada más el aderezo
             double p_sandwich = (sandwich * 1.50);
             double sandwich_mas_ade = p_sandwich + ad_sandwiches; //Guarda el precio de los sandwiches más el aderezo
+            
             double total_entradas = papas_mas_ade + p_sopas + p_tamales + p_torrejas + ensalada_mas_ade + sandwich_mas_ade;
             //--------------------------------------------------------------------------------------------------------------
 
@@ -481,24 +482,6 @@ namespace Restaurante
             l.Text = p_pastel.ToString("F2");
             textBox9.Text = p_tartaleta.ToString("F2");
             textBox11.Text = p_pastel_li.ToString("F2");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             t_entradas.Text = Convert.ToString(total_entradas);

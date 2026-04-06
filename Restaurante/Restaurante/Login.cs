@@ -24,7 +24,7 @@ namespace Restaurante
 
 
 
-
+        // ---------------------------BOTON DE INGRESAR---------------------------------------
         private void ingresar_Click(object sender, EventArgs e)
         {
             // Asegúrate de que los nombres textBox1/textBox2 coincidan con tus controles
@@ -72,7 +72,7 @@ namespace Restaurante
                 MessageBox.Show("Error al conectarse: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        //--------------------------------------------------------------------------------------
 
 
         //--------------EVENTOS CREADOS POR ERROR EN EL DISEÑADOR 💀----------------------
