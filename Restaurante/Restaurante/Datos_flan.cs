@@ -20,6 +20,7 @@ namespace Restaurante
              
         }
 
+        //---------------BOTON DE REGRESO A LOS POSTRES 🔙-----------------
         private void R_Dtos_flan_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -27,9 +28,13 @@ namespace Restaurante
             postres.Show();
             this.Close();
         }
+        //-----------------------------------------------------------------
+
+
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "Flanes" de la clase Almacenamiento_temporal
+
             Almacenamiento_temporal.Flanes = flan_.Text;
         
             this.Close(); // Solo cierra, NO hace INSERT

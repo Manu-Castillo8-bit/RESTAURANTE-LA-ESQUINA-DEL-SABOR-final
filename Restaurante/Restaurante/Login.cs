@@ -7,7 +7,6 @@ namespace Restaurante
 { //Prueba de commit
     public partial class Login : Form
     {
-        // Usa la misma cadena que en Registro.cs
         private readonly string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\La esquina del sabor new.accdb;";
 
         public Login()
@@ -15,17 +14,25 @@ namespace Restaurante
             InitializeComponent();
         }
 
+       //--------------EVENTOS CREADOS POR ERROR EN EL DISEÑADOR 💀----------------------
         private void label2_Click(object sender, EventArgs e)
         {
             //Ignorar
         }
+        //------------------------------------------------------------------------------    
+
+
+
+
 
         private void ingresar_Click(object sender, EventArgs e)
         {
             // Asegúrate de que los nombres textBox1/textBox2 coincidan con tus controles
             string usuario = textBox1.Text;
-           
 
+
+
+            // Validar que el campo de usuario no esté vacío
             if (string.IsNullOrWhiteSpace(usuario))
             {
                 MessageBox.Show("Ingrese por favor sus datos correspondientes.");
@@ -43,10 +50,12 @@ namespace Restaurante
                     conexion.Open();
                     int existe = Convert.ToInt32(comando.ExecuteScalar());
 
+
+                    // Si los datos son válidos
                     if (existe > 0)
                     {
-                        MessageBox.Show("Bienvenido a LA ESQUINA DEL SABOR :D ");
-                        // Credenciales válidas
+                        MessageBox.Show("BIENVENIDO A LA ESQUINA DEL SABOR ");
+                        
                         this.Hide();
                         Menú newForm = new Menú();
                         newForm.ShowDialog();
@@ -64,6 +73,10 @@ namespace Restaurante
             }
         }
 
+
+
+        //--------------EVENTOS CREADOS POR ERROR EN EL DISEÑADOR 💀----------------------
+
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             //ignorar
@@ -74,17 +87,24 @@ namespace Restaurante
             
             
         }
+        //------------------------------------------------------------------------------    
 
+
+
+        //-----------------------------BOTON DE REGISTRARSE 🚹---------------------------------
         private void Registrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
             Registro newForm = new Registro();
             newForm.ShowDialog();
         }
+        //--------------------------------------------------------------------------------------
 
+
+        //-----------------------------BOTON DE SALIR ❌---------------------------------
         private void button7_Click(object sender, EventArgs e)
         {
-            // Mostrar cuadro de diálogo de confirmación
+         
             DialogResult resultado = MessageBox.Show(
                 "¿Estás seguro de que deseas salir?",
                 "Confirmar salida",
@@ -92,14 +112,15 @@ namespace Restaurante
                 MessageBoxIcon.Question
             );
 
-            // Verificar la respuesta del usuario
+            
             if (resultado == DialogResult.Yes)
             {
-                // Cerrar la aplicación
+               
                 Application.Exit();
-                // O si es un formulario específico: this.Close();
+              
             }
-            // Si el usuario selecciona No, no hace nada y permanece en la aplicación
+            
         }
+        //--------------------------------------------------------------------------------------
     }
 }

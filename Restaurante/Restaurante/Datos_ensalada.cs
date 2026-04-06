@@ -18,21 +18,35 @@ namespace Restaurante
         }
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "Ensaladas" de la clase Almacenamiento_temporal
+
             Almacenamiento_temporal.Ensaladas = Ensalada_.Text;
+
+            //Se ejecuta el método para calcular el precio de los aderezos seleccionados
             Calcular_aderezos();
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close(); 
             Entradas entradas = new Entradas(this);
             entradas.Show();
         }
 
+
+
+
+        //--------------BOTON DE REGRESO A LAS ENTRADAS 🔙--------------
         private void R_Dtos_ensaladas_Click(object sender, EventArgs e)
         {
-            this.Close(); // Solo cierra, NO hace INSERT
+
+            this.Close(); 
             Entradas entradas = new Entradas(this);
             entradas.Show();
         }
+        //______________________________________________________________
 
+
+
+
+
+        // Método para calcular el precio de los aderezos seleccionados
         public void Calcular_aderezos()
         {
             double Aderezo_de_ensaladas = 0;

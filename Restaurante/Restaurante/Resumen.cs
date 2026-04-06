@@ -19,6 +19,8 @@ namespace Restaurante
             InitializeComponent();
         }
 
+
+//-----------------Diccionario para almacenar los precios de los productos--------------------------
         Dictionary<string, double> precios = new Dictionary<string, double>()
 {
     {"Papas", 1.00},
@@ -49,6 +51,7 @@ namespace Restaurante
     {"Tartaletas", 1.50},
     {"Pastel de limón", 3.50}
 };
+//--------------------------------------------------------------------------------------------------------
 
 
         private void CargarPedidos()
@@ -71,7 +74,9 @@ namespace Restaurante
                 }
             }
 
-            // LLAMADAS
+
+
+            // ACÁ SE AGREGAN LOS PRODUCTOS QUE SE PIDIERON
             Agregar("Papas", Almacenamiento_temporal.Papas);
             Agregar("Sopas", Almacenamiento_temporal.Sopas);
             Agregar("Tamales", Almacenamiento_temporal.Tamales);
@@ -105,6 +110,7 @@ namespace Restaurante
         }
 
 
+        //---------------------BOTON DE MOSTRAR RESUMEN-------------------------
         private void Resumen_Load(object sender, EventArgs e)
         {
             dataGridView1.ColumnCount = 4;
@@ -116,15 +122,22 @@ namespace Restaurante
 
             CargarPedidos();
         }
+        //-------------------------------------------------------------------------
 
+
+
+        //---------------------BOTON DE ACTUALIZAR RESUMEN---------------------
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             CargarPedidos();
         }
+        //-------------------------------------------------------------------------
 
+
+
+        //------------------BOTON DE REGRESO AL MENÚ 🔙------------------------
         private void regresar_Click(object sender, EventArgs e)
         {
-            // Mostrar cuadro de diálogo de confirmación
             DialogResult resultado = MessageBox.Show(
                 "¿Estás seguro de que deseas regresar al menú?",
                 "Confirmar salida",
@@ -132,22 +145,21 @@ namespace Restaurante
                 MessageBoxIcon.Question
             );
 
-            // Verificar la respuesta del usuario
             if (resultado == DialogResult.Yes)
             {
-
-                // O si es un formulario específico:
                 this.Hide();
                 Menú newForm = new Menú();
                 newForm.ShowDialog();
-
             }
-            // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
+        //-------------------------------------------------------------------------
 
+
+
+
+        //------------------BOTON DE SALIR DE LA APLICACIÓN ❌------------------------
         private void salir_Click(object sender, EventArgs e)
         {
-            // Mostrar cuadro de diálogo de confirmación
             DialogResult resultado = MessageBox.Show(
                 "¿Estás seguro de que deseas salir?",
                 "Confirmar salida",
@@ -155,16 +167,18 @@ namespace Restaurante
                 MessageBoxIcon.Question
             );
 
-            // Verificar la respuesta del usuario
             if (resultado == DialogResult.Yes)
             {
-                // Cerrar la aplicación
                 Application.Exit();
-                // O si es un formulario específico: this.Close();
             }
-            // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
+        //-------------------------------------------------------------------------
 
+
+
+
+
+        // Método para eliminar un producto
         private void EliminarDeMemoria(string producto)
         {
             switch (producto)
@@ -201,6 +215,10 @@ namespace Restaurante
         }
 
 
+
+
+
+        //----------------------------BOTON PARA ELIMINAR UN PRODUCTO DEL RESUMEN----------------------------
         private void butEliminar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.CurrentRow != null)
@@ -224,6 +242,7 @@ namespace Restaurante
                 MessageBox.Show("Selecciona una fila");
             }
         }
+        //--------------------------------------------------------------------------------------------------
     }
 }
 

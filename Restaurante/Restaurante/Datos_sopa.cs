@@ -18,19 +18,23 @@ namespace Restaurante
         }
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "Sopas" de la clase Almacenamiento_temporal
+
             Almacenamiento_temporal.Sopas = Sopa_.Text;
 
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close(); 
             Entradas entradas = new Entradas(this);
             entradas.Show();
         }
 
+
+        //-------------------BOTON DE REGRESO A LOS PLATILLOS 🔙--------------------------------
         private void R_Dtos_sopa_Click(object sender, EventArgs e)
         {
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close(); 
             Entradas entradas = new Entradas(this);
             entradas.Show();
         }
+        //-------------------------------------------------------------------------------------
     }
 }

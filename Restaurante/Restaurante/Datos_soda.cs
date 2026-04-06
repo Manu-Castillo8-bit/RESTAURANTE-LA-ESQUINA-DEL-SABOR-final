@@ -20,6 +20,7 @@ namespace Restaurante
              
         }
 
+        //----------------BOTON DE REGRESO A LAS BEBIDAS 🔙----------------------
         private void R_Dtos_soda_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -27,9 +28,12 @@ namespace Restaurante
             bebidas.Show();
             this.Close();
         }
+        //-----------------------------------------------------------------------
+
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+
+        {//Guarda los datos ingresados en la variable "Bebidas" de la clase Almacenamiento_temporal
             Almacenamiento_temporal.Bebidas = Soda_.Text;
           
             this.Close(); // Solo cierra, NO hace INSERT

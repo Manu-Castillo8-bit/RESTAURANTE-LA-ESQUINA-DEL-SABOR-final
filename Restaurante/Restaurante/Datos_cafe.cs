@@ -20,6 +20,8 @@ namespace Restaurante
              
         }
 
+
+        //-------------BOTON DE REGRESO A LAS BEBIDAS 🔙-------------------
         private void R_Dtos_cafe_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -27,12 +29,14 @@ namespace Restaurante
             bebidas.Show();
             this.Close();
         }
+        //_________________________________________________________________
+
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "Cafes" de la clase Almacenamiento_temporal
             Almacenamiento_temporal.Cafes = Cafe_.Text;
          
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close();
             Bebidas bebidas = new Bebidas(this);
             bebidas.Show();
         }

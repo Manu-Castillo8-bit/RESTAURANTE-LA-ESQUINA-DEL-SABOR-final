@@ -17,18 +17,22 @@ namespace Restaurante
             InitializeComponent();
         }
 
+        //------------BOTON DE REGRESO A LAS BEBIDAS 🔙---------------------
         private void R_Dtos_te_Click(object sender, EventArgs e)
         {
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close(); 
             Bebidas bebidas = new Bebidas();
             bebidas.Show();
         }
+        //------------------------------------------------------------------
+
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "Tes" de la clase Almacenamiento_temporal
+
             Almacenamiento_temporal.Tes = te_.Text;
 
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close(); 
             Bebidas bebidas = new Bebidas();
             bebidas.Show();
         }

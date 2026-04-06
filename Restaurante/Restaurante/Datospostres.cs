@@ -20,22 +20,38 @@ namespace Restaurante
              
         }
 
+        //-----------BOTON DE REGRESO A LOS POSTRES 🔙------------------
         private void R_Dtos_pastel_Click(object sender, EventArgs e)
         {
             this.Hide();
             Postres newForm = new Postres();
             newForm.Show();
         }
+        //______________________________________________________________
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "pastel" de la clase Almacenamiento_temporal
+
             Almacenamiento_temporal.pastel = p_chocolate_.Text;
            
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close();
             Postres postres = new Postres(this);
             postres.Show();
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+        //-----------------EVENTOS CREADOS POR ERROR 💀--------------------------
         private void Datospostres_Load(object sender, EventArgs e)
         {
             //Ignorar
@@ -45,5 +61,6 @@ namespace Restaurante
         {
 
         }
+        //------------------------------------------------------------------------  
     }
 }

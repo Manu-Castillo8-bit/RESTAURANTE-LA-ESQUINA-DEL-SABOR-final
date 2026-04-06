@@ -20,30 +20,50 @@ namespace Restaurante
             
         }
 
+
+
+        //--------------EVENTOS CREADOS POR ACCIDENTE 💀----------------
         private void Datos_cena_Load(object sender, EventArgs e)
         {
             //Ignorar
         }
+        //______________________________________________________________
 
+
+
+
+
+
+        //---------------BOTON DE REGRESO A LOS PLATILLOS 🔙-----------------
         private void R_Dtos_cenas_Click(object sender, EventArgs e)
-        {
+        { 
             this.Hide();
             Platillos platillos = new Platillos(this);
             platillos.Show();
             this.Close();
         }
+        //____________________________________________________________________
+
+
+
+
 
         private void Datos_Click(object sender, EventArgs e)
         {
-
-
+            //Guarda los datos ingresados en la variable "Cena" de la clase Almacenamiento_temporal
             Almacenamiento_temporal.Cena = Cenas_.Text;
+
+            //Ejecuta el metodo para calcular el costo de los aderezos seleccionados
            Calcular_aderezos();
-            this.Close(); // Solo cierra, NO hace INSERT
+
+            this.Close(); 
             Platillos platillos = new Platillos(this);
             platillos.Show();
         }
 
+
+
+        //ESTE METODO CALCULA EL COSTO DE LOS ADEREZOS QUE SE SELECCIONAN
         public void Calcular_aderezos()
         {
             double Aderezo_de_cenas = 0;

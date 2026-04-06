@@ -79,6 +79,7 @@
             this.R_Dtos_tartaletas.TabIndex = 50;
             this.R_Dtos_tartaletas.Text = "Regresar";
             this.R_Dtos_tartaletas.UseVisualStyleBackColor = false;
+            this.R_Dtos_tartaletas.Click += new System.EventHandler(this.R_Dtos_tartaletas_Click);
             // 
             // pictureBox8
             // 

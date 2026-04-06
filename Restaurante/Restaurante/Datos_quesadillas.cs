@@ -18,8 +18,8 @@ namespace Restaurante
         {
             InitializeComponent();
         }
-            
 
+        //-------------------BOTON DE REGRESO A LOS POSTRES 🔙-----------------
         private void R_Dtos_quesadillas_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -27,12 +27,15 @@ namespace Restaurante
             postres.Show();
             this.Close();
         }
+        //_____________________________________________________________________
+
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "Quesadillas" de la clase Almacenamiento_temporal
+
             Almacenamiento_temporal.Quesadillas = quesadillas_.Text;
             
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close(); 
             Postres postres = new Postres(this);
             postres.Show();
         }

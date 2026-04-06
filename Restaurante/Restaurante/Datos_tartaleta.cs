@@ -16,7 +16,7 @@ namespace Restaurante
         {
             InitializeComponent();
         }
-
+        //----------------BOTON DE REGRESO A LOS POSTRES 🔙-----------------------------
         private void R_Dtos_tartaletas_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -24,9 +24,11 @@ namespace Restaurante
             postres.Show();
             this.Close();
         }
+        //-----------------------------------------------------------------------------
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "Tartaletas" de la clase Almacenamiento_temporal
+
             Almacenamiento_temporal.Tartaletas = Tartaleta_.Text;
 
             this.Close(); // Solo cierra, NO hace INSERT

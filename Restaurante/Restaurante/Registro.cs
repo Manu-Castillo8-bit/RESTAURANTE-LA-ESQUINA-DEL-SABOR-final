@@ -46,13 +46,14 @@ namespace Restaurante
 
                 int existe = (int)verificarCmd.ExecuteScalar();
 
+                //Si el usuario ya existe
                 if (existe > 0)
                 {
                     MessageBox.Show("El usuario ya existe. Por favor, elige otro nombre de usuario.", "Usuario existente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // Insertar solo si no existe
+                // Si no existe se guardará el dato en la base de datos
                 OleDbCommand comando = new OleDbCommand("INSERT INTO tb_cliente ([nombre], [correo]) VALUES (?, ?)", conexion);
                 comando.Parameters.AddWithValue("?", usuario);
                 comando.Parameters.AddWithValue("?", correo);
@@ -77,34 +78,30 @@ namespace Restaurante
             {
                 conexion.Close();
             }
-            /*
-            
-
-        
-
-        
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            /* string consulta = "SELECT * FROM login";  // <-- cambia por tu tabla
-                OleDbDataAdapter adaptador = new OleDbDataAdapter(consulta, conexion);
-                DataTable tabla = new DataTable();
-                adaptador.Fill(tabla);
-
-                dataGridView1.DataSource = tabla;
         }
 
-        */
+
+
+
+
+
+        //----------------EVENTOS CREADOS POR ERROR EN EL DISEÑADOR 💀----------------
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void Ver_contra_CheckedChanged(object sender, EventArgs e)
         {
             
         }
+        //-----------------------------------------------------------------------------
 
+
+
+        //-------------------BOTON DE SALIDA DEL PROGRAMA ❌----------------------
         private void button7_Click(object sender, EventArgs e)
         {
-            // Mostrar cuadro de diálogo de confirmación
             DialogResult resultado = MessageBox.Show(
                 "¿Estás seguro de que deseas salir?",
                 "Confirmar salida",
@@ -112,14 +109,11 @@ namespace Restaurante
                 MessageBoxIcon.Question
             );
 
-            // Verificar la respuesta del usuario
             if (resultado == DialogResult.Yes)
             {
-                // Cerrar la aplicación
                 Application.Exit();
-                // O si es un formulario específico: this.Close();
             }
-            // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
+        //-------------------------------------------------------------------------
     }
 }

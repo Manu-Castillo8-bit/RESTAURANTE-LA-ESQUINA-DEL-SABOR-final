@@ -18,22 +18,32 @@ namespace Restaurante
         }
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "Papas" de la clase Almacenamiento_temporal
+
             Almacenamiento_temporal.Papas = Papas_.Text;
+
+            //Ejecuta el método para calcular el costo de los aderezos seleccionados
             Calcular_aderezos();
 
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close(); 
             Entradas entradas = new Entradas(this);
             entradas.Show();
         }
 
+
+        //-----------------BOTON DE REGRESO A LAS ENTRADAS 🔙----------------------
         private void R_Dtos_papas_Click(object sender, EventArgs e)
         {
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close(); 
             Entradas entradas = new Entradas(this);
             entradas.Show();
         }
+        //------------------------------------------------------------------------
 
+
+
+
+        // Método para calcular el costo total de los aderezos seleccionados
         public void Calcular_aderezos()
         {
             double Aderezo_de_papas = 0;

@@ -18,19 +18,22 @@ namespace Restaurante
         }
 
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "Carne" de la clase Almacenamiento_temporal
             Almacenamiento_temporal.Carne = Carne_.Text;
 
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close();
             Platillos platillos = new Platillos(this);
             platillos.Show();
         }
 
+
+        //---------------BOTON DE REGRESO A LOS PLATILLOS🔙------------------
         private void R_Dtos_platillos_Click(object sender, EventArgs e)
         {
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close();
             Platillos platillos = new Platillos(this);
             platillos.Show();
         }
+        //___________________________________________________________________
     }
 }

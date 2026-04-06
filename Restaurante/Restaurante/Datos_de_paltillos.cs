@@ -13,16 +13,17 @@ namespace Restaurante
 {
     public partial class Datos_de_paltillos : Form
     {
-        /*string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Mi pc\Desktop\Etapa de informarse\Usuarios.accdb;";
-        OleDbConnection conexion;*/
+       
 
         public Datos_de_paltillos()
         {
             InitializeComponent();
-            //conexion = new OleDbConnection(cadenaConexion);
             Pupusas_.Visible = true;
         }
 
+
+
+        //--------------BOTON DE REGRESO A Los platillos 🔙--------------
         private void R_Dtos_platillos_Click(object sender, EventArgs e)
         {
 
@@ -31,20 +32,29 @@ namespace Restaurante
             this.Close();
         }
 
+        //______________________________________________________________
 
 
 
-        //_______________________________________
+
+
         private void Datos_Click(object sender, EventArgs e)
-        {
+        {//Guarda los datos ingresados en la variable "Pupusas" de la clase Almacenamiento_temporal
+
             Almacenamiento_temporal.Pupusas = Pupusas_.Text;
+
+            //Ejecuta el método que calcula el costo de los aderezos seleccionados
             Calcular_aderezos();
-            this.Close(); // Solo cierra, NO hace INSERT
+            this.Close(); 
             Platillos platillos = new Platillos(this);
             platillos.Show();
 
 
         }
+
+
+
+        //Método para calcular el costo de los aderezos seleccionados
         public void Calcular_aderezos()
         {
             double Aderezo_de_pupusas = 0;
