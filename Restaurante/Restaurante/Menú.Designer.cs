@@ -133,7 +133,7 @@
             this.r_m_l.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.r_m_l.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.r_m_l.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r_m_l.Location = new System.Drawing.Point(318, 12);
+            this.r_m_l.Location = new System.Drawing.Point(331, 28);
             this.r_m_l.Name = "r_m_l";
             this.r_m_l.Size = new System.Drawing.Size(80, 64);
             this.r_m_l.TabIndex = 23;

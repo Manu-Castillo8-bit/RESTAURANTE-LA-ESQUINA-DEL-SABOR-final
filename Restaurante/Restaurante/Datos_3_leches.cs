@@ -36,13 +36,14 @@ namespace Restaurante
         private void Datos_Click(object sender, EventArgs e)
         {
 
+            //---------------------------VERIFICA QUE INGRESEN DATOS CORRECTOS-----------------------
 
             // Validar que el campo no esté vacío
             if (string.IsNullOrWhiteSpace(tres_leches_.Text))
             {
                 MessageBox.Show("Por favor, ingrese una cantidad.", "Campo vacío",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; // Sale del método sin continuar
+                return; 
             }
 
             // Validar que sea un número
@@ -62,6 +63,11 @@ namespace Restaurante
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            //--------------------------------------------------------------------------------------
+
+
+
+
 
             //Guarda los datos ingresados en la variable "TresLeches" de la clase Almacenamiento_temporal
             Almacenamiento_temporal.TresLeches = tres_leches_.Text;

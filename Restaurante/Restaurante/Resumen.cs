@@ -21,7 +21,7 @@ namespace Restaurante
         }
 
 
-        //-----------------Diccionario para almacenar los precios de los productos--------------------------
+ //-----------------Diccionario para almacenar los precios de los productos--------------------------
         Dictionary<string, double> precios = new Dictionary<string, double>()
 {
     {"Papas", 1.00},

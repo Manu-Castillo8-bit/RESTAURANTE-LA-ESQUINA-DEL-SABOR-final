@@ -8,6 +8,7 @@ namespace Restaurante
 {
     public static class Almacenamiento_temporal
     {
+        public static string usuario_temp { get; set; } = "0";
         /*Sirve para almacenar valores que pueden ser leídos o modificados desde cualquier parte del programa.*/
 
         public static string Ad_papas{ get; set; } = "0";
@@ -50,6 +51,8 @@ namespace Restaurante
         public static string pastel { get; set; } = "0";
         public static string Tartaletas { get; set; } = "0";
         public static string Pastel_de_limon { get; set; } = "0";
+
+  
 
         public static void Limpiar()
         {

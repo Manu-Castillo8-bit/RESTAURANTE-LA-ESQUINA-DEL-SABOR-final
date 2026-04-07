@@ -26,7 +26,7 @@ namespace Restaurante
 
 
 
-        public Factura()
+ public Factura()
         {
             InitializeComponent();
 
@@ -211,12 +211,15 @@ namespace Restaurante
 
 
         private void Total_Click(object sender, EventArgs e)
+
         {
-            //....................................................ENTRADAS.................................................................
+            VerPlatillosExistentes();
+
+        //....................................................ENTRADAS.................................................................
 
 
             //-------Convierte las cantidades de cada producto a double para poder realizar los cálculos---------
-            double papas = Convert.ToDouble(Almacenamiento_temporal.Papas);
+        double papas = Convert.ToDouble(Almacenamiento_temporal.Papas);
             double sopas = Convert.ToDouble(Almacenamiento_temporal.Sopas);
             double tamales = Convert.ToDouble(Almacenamiento_temporal.Tamales);
             double torrejas = Convert.ToDouble(Almacenamiento_temporal.Torrejas);
@@ -492,6 +495,9 @@ namespace Restaurante
             precio_final.Text = Convert.ToString(total_entradas + total_platillos + total_bebidas + total_postres);
 
             Calcular_total.Visible = true;
+            // Guardar en la base de datos
+            GuardarFacturaEnBD();
+
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -529,6 +535,413 @@ namespace Restaurante
             // Si el usuario selecciona No, no hace nada y permanece en la aplicación
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+        // Método principal para guardar la factura
+        private void GuardarFacturaEnBD()
+        {
+            if (!ConfiguracionDB.ValidarBaseDatos())
+                return;
+
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(ConfiguracionDB.CadenaConexion))
+                {
+                    conexion.Open();
+                    OleDbTransaction transaccion = conexion.BeginTransaction();
+
+                    try
+                    {
+                        // 🔥 Verificar qué ID de cliente está obteniendo
+                        int idCliente = InsertarCliente(conexion, transaccion);
+                        MessageBox.Show($"ID Cliente obtenido: {idCliente}"); // ← Depuración
+
+                        if (idCliente <= 0)
+                        {
+                            MessageBox.Show("Error: ID de cliente inválido (0 o negativo)");
+                            transaccion.Rollback();
+                            return;
+                        }
+
+                        int idPedido = InsertarPedido(conexion, transaccion, idCliente);
+                        MessageBox.Show($"ID Pedido: {idPedido}"); // ← Depuración
+
+                        int idDetalle = InsertarDetalle(conexion, transaccion, idPedido);
+                        MessageBox.Show($"ID Detalle: {idDetalle}"); // ← Depuración
+
+                        InsertarAgregados(conexion, transaccion, idCliente, idDetalle);
+
+                        transaccion.Commit();
+
+                        MessageBox.Show($"¡Factura guardada exitosamente!\nCliente: {Almacenamiento_temporal.usuario_temp}\nNúmero de Pedido: {idPedido}",
+                            "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        transaccion.Rollback();
+                        MessageBox.Show($"Error al guardar: {ex.Message}\n\nDetalle: {ex.StackTrace}",
+                            "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error de conexión: {ex.Message}",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private int InsertarCliente(OleDbConnection conexion, OleDbTransaction transaccion)
+        {
+            string nombreUsuario = Almacenamiento_temporal.usuario_temp;
+
+            if (string.IsNullOrEmpty(nombreUsuario) || nombreUsuario == "0")
+                nombreUsuario = "Cliente General";
+
+            // 🔥 Verificar si el cliente ya existe
+            string queryVerificar = "SELECT id_cliente FROM tb_cliente WHERE nombre_cliente = ?";
+
+            using (OleDbCommand cmdVerificar = new OleDbCommand(queryVerificar, conexion, transaccion))
+            {
+                cmdVerificar.Parameters.AddWithValue("?", nombreUsuario);
+                object resultado = cmdVerificar.ExecuteScalar();
+
+                if (resultado != null && resultado != DBNull.Value)
+                {
+                    int idExistente = Convert.ToInt32(resultado);
+                    MessageBox.Show($"Cliente existente encontrado. ID: {idExistente}"); // Depuración
+                    return idExistente;
+                }
+            }
+
+            // Insertar nuevo cliente
+            string queryInsertar = @"INSERT INTO tb_cliente (nombre_cliente, telefono, correo) 
+                             VALUES (?, ?, ?)";
+
+            using (OleDbCommand cmd = new OleDbCommand(queryInsertar, conexion, transaccion))
+            {
+                cmd.Parameters.AddWithValue("?", nombreUsuario);
+                cmd.Parameters.AddWithValue("?", "00000000");
+                cmd.Parameters.AddWithValue("?", "sin@correo.com");
+
+                cmd.ExecuteNonQuery();
+
+                cmd.CommandText = "SELECT @@IDENTITY";
+                int nuevoId = Convert.ToInt32(cmd.ExecuteScalar());
+                MessageBox.Show($"Nuevo cliente insertado. ID: {nuevoId}"); // Depuración
+                return nuevoId;
+            }
+        }
+        private int InsertarPedido(OleDbConnection conexion, OleDbTransaction transaccion, int idCliente)
+        {
+            try
+            {
+                double total = ObtenerValorDecimal(precio_final.Text);
+                string nombreCliente = Almacenamiento_temporal.usuario_temp;
+
+                if (string.IsNullOrEmpty(nombreCliente) || nombreCliente == "0")
+                    nombreCliente = "Cliente General";
+
+                // 🔥 PRIMERO: Verificar la estructura de la tabla
+                string queryVerificar = "SELECT * FROM tb_pedido WHERE 1=0";
+                using (OleDbCommand cmdVerificar = new OleDbCommand(queryVerificar, conexion, transaccion))
+                {
+                    using (OleDbDataReader reader = cmdVerificar.ExecuteReader())
+                    {
+                        string campos = "Campos encontrados: ";
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            campos += reader.GetName(i) + ", ";
+                        }
+                        MessageBox.Show(campos); // Ver qué campos existen
+                    }
+                }
+
+                // 🔥 SEGUNDO: Insertar usando SOLO los campos que existen
+                // PRUEBA SOLO CON ID_CLIENTE Y TOTAL (sin fecha ni nombre)
+                string query = @"INSERT INTO tb_pedido (id_cliente, total) VALUES (?, ?)";
+
+                using (OleDbCommand cmd = new OleDbCommand(query, conexion, transaccion))
+                {
+                    cmd.Parameters.AddWithValue("?", idCliente);
+                    cmd.Parameters.AddWithValue("?", (decimal)total);
+                    cmd.ExecuteNonQuery();
+
+                    cmd.CommandText = "SELECT @@IDENTITY";
+                    return Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error en InsertarPedido: {ex.Message}");
+                throw;
+            }
+        }
+        private int InsertarDetalle(OleDbConnection conexion, OleDbTransaction transaccion, int idPedido)
+        {
+            // Obtener cantidades y totales
+            int cantPlatillos = ObtenerCantidadPlatillos();
+            decimal totalPlatillos = (decimal)ObtenerValorDecimal(t_platillos.Text);
+
+            int cantBebidas = ObtenerCantidadBebidas();
+            decimal totalBebidas = (decimal)ObtenerValorDecimal(t_bebidas.Text);
+
+            int cantEntradas = ObtenerCantidadEntradas();
+            decimal totalEntradas = (decimal)ObtenerValorDecimal(t_entradas.Text);
+
+            int cantPostres = ObtenerCantidadPostres();
+            decimal totalPostres = (decimal)ObtenerValorDecimal(t_postres.Text);
+
+            decimal subtotalBase = totalPlatillos + totalBebidas + totalEntradas + totalPostres;
+
+            string nombreCliente = Almacenamiento_temporal.usuario_temp;
+            if (string.IsNullOrEmpty(nombreCliente) || nombreCliente == "0")
+                nombreCliente = "Cliente General";
+
+            // 🔥 Usar ID de platillo existente (1 = Pupusas, es el más común)
+            int idPlatilloExistente = 1; // Pupusas
+
+            string query = @"INSERT INTO tb_detalle (
+                        id_pedido, 
+                        id_platillo,
+                        nombre_cliente,
+                        nombre_platillo, 
+                        cantidad_platillo, 
+                        total_platillo,
+                        id_bebida,
+                        nombre_bebida, 
+                        cantidad_bebida, 
+                        total_bebida,
+                        id_entrada,
+                        nombre_entrada, 
+                        cantidad_entrada, 
+                        total_entrada,
+                        id_postre,
+                        nombre_postre, 
+                        cantidad_postre, 
+                        total_postre,
+                        subtotal_base
+                     ) VALUES (
+                        ?, ?, ?, ?, ?, ?,
+                        ?, ?, ?, ?,
+                        ?, ?, ?, ?,
+                        ?, ?, ?, ?,
+                        ?
+                     )";
+
+            using (OleDbCommand cmd = new OleDbCommand(query, conexion, transaccion))
+            {
+                // Campos de platillos (usando ID existente 1)
+                cmd.Parameters.AddWithValue("?", idPedido);
+                cmd.Parameters.AddWithValue("?", idPlatilloExistente); // ← Ahora es 1, no 0
+                cmd.Parameters.AddWithValue("?", nombreCliente);
+                cmd.Parameters.AddWithValue("?", "Platillos");
+                cmd.Parameters.AddWithValue("?", cantPlatillos);
+                cmd.Parameters.AddWithValue("?", totalPlatillos);
+
+                // Campos de bebidas (si tienes tabla tb_bebida, usa ID existente)
+                cmd.Parameters.AddWithValue("?", 1); // id_bebida (si no existe, podría dar error)
+                cmd.Parameters.AddWithValue("?", "Bebidas");
+                cmd.Parameters.AddWithValue("?", cantBebidas);
+                cmd.Parameters.AddWithValue("?", totalBebidas);
+
+                // Campos de entradas (si tienes tabla tb_entrada, usa ID existente)
+                cmd.Parameters.AddWithValue("?", 1); // id_entrada
+                cmd.Parameters.AddWithValue("?", "Entradas");
+                cmd.Parameters.AddWithValue("?", cantEntradas);
+                cmd.Parameters.AddWithValue("?", totalEntradas);
+
+                // Campos de postres (si tienes tabla tb_postre, usa ID existente)
+                cmd.Parameters.AddWithValue("?", 1); // id_postre
+                cmd.Parameters.AddWithValue("?", "Postres");
+                cmd.Parameters.AddWithValue("?", cantPostres);
+                cmd.Parameters.AddWithValue("?", totalPostres);
+
+                // Subtotal
+                cmd.Parameters.AddWithValue("?", subtotalBase);
+
+                cmd.ExecuteNonQuery();
+
+                cmd.CommandText = "SELECT @@IDENTITY";
+                return Convert.ToInt32(cmd.ExecuteScalar());
+            }
+        }
+
+        private void InsertarAgregados(OleDbConnection conexion, OleDbTransaction transaccion, int idCliente, int idDetalle)
+        {
+            // 🔥 Validar que los IDs sean válidos
+            if (idCliente <= 0)
+            {
+                MessageBox.Show($"Error: idCliente inválido ({idCliente}) para insertar agregados");
+                return;
+            }
+
+            if (idDetalle <= 0)
+            {
+                MessageBox.Show($"Error: idDetalle inválido ({idDetalle}) para insertar agregados");
+                return;
+            }
+
+            string query = @"INSERT INTO tb_detalle_agregado (id_cliente, id_detalle, nombre_agregado, precio_cobrado) 
+                     VALUES (?, ?, ?, ?)";
+
+            var aderezos = new[]
+            {
+        new { Nombre = "Aderezo de Papas", Precio = ObtenerValorDecimal(ade_papas.Text) },
+        new { Nombre = "Aderezo de Ensaladas", Precio = ObtenerValorDecimal(ade_ensaladas.Text) },
+        new { Nombre = "Aderezo de Sandwiches", Precio = ObtenerValorDecimal(ade_sandwiches.Text) },
+        new { Nombre = "Aderezo de Pupusas", Precio = ObtenerValorDecimal(ade_pupusas.Text) },
+        new { Nombre = "Aderezo de Panes", Precio = ObtenerValorDecimal(ade_panes.Text) },
+        new { Nombre = "Aderezo de Cenas", Precio = ObtenerValorDecimal(ade_cenas.Text) },
+        new { Nombre = "Aderezo de Tortas", Precio = ObtenerValorDecimal(ade_tortas.Text) }
+    };
+
+            int contador = 0;
+            foreach (var aderezo in aderezos)
+            {
+                if (aderezo.Precio > 0)
+                {
+                    using (OleDbCommand cmd = new OleDbCommand(query, conexion, transaccion))
+                    {
+                        cmd.Parameters.AddWithValue("?", idCliente);
+                        cmd.Parameters.AddWithValue("?", idDetalle);
+                        cmd.Parameters.AddWithValue("?", aderezo.Nombre);
+                        cmd.Parameters.AddWithValue("?", (decimal)aderezo.Precio);
+                        cmd.ExecuteNonQuery();
+                        contador++;
+                    }
+                }
+            }
+
+            if (contador > 0)
+                MessageBox.Show($"Se insertaron {contador} aderezos correctamente"); // Depuración
+        }
+
+        // Métodos auxiliares para obtener cantidades
+        private int ObtenerCantidadPlatillos()
+        {
+            int cantidad = 0;
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Pupusas))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Pupusas);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Cena))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Cena);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Panes))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Panes);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Tortas))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Tortas);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Lasaña))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Lasaña);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Carne))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Carne);
+            return cantidad;
+        }
+
+        private int ObtenerCantidadBebidas()
+        {
+            int cantidad = 0;
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Bebidas))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Bebidas);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Chocolates))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Chocolates);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Cafes))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Cafes);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Atoles))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Atoles);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Licuados))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Licuados);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Tes))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Tes);
+            return cantidad;
+        }
+
+        private int ObtenerCantidadEntradas()
+        {
+            int cantidad = 0;
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Papas))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Papas);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Sopas))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Sopas);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Tamales))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Tamales);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Torrejas))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Torrejas);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Ensaladas))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Ensaladas);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Sandwiches))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Sandwiches);
+            return cantidad;
+        }
+
+        private int ObtenerCantidadPostres()
+        {
+            int cantidad = 0;
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.TresLeches))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.TresLeches);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Quesadillas))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Quesadillas);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Flanes))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Flanes);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.pastel))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.pastel);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Tartaletas))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Tartaletas);
+            if (!string.IsNullOrEmpty(Almacenamiento_temporal.Pastel_de_limon))
+                cantidad += Convert.ToInt32(Almacenamiento_temporal.Pastel_de_limon);
+            return cantidad;
+        }
+
+        private double ObtenerValorDecimal(string texto)
+        {
+            if (string.IsNullOrEmpty(texto))
+                return 0;
+
+            double valor;
+            if (double.TryParse(texto, out valor))
+                return valor;
+            return 0;
+        }
+
+        private void VerPlatillosExistentes()
+        {
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(ConfiguracionDB.CadenaConexion))
+                {
+                    conexion.Open();
+                    string query = "SELECT id_platillo, nombre_platillo FROM tb_platillo";
+                    using (OleDbCommand cmd = new OleDbCommand(query, conexion))
+                    {
+                        using (OleDbDataReader reader = cmd.ExecuteReader())
+                        {
+                            string mensaje = "Platillos existentes:\n";
+                            while (reader.Read())
+                            {
+                                mensaje += $"ID: {reader["id_platillo"]} - {reader["nombre_platillo"]}\n";
+                            }
+                            MessageBox.Show(mensaje);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+
+
     }
 }
-
+   
+        

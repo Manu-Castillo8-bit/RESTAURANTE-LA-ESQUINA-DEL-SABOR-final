@@ -7,11 +7,19 @@ namespace Restaurante
 { //Prueba de commit
     public partial class Login : Form
     {
+        /*
         private readonly string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\La esquina del sabor new.accdb;";
-
+        */
+        
         public Login()
         {
             InitializeComponent();
+
+            // Verificar que la BD existe al iniciar el Login
+            if (!ConfiguracionDB.ValidarBaseDatos())
+            {
+                MessageBox.Show("La aplicación no puede continuar sin la base de datos. Se cerrará ahora.", "Error crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
        //--------------EVENTOS CREADOS POR ERROR EN EL DISEÑADOR 💀----------------------
@@ -29,7 +37,7 @@ namespace Restaurante
         {
             // Asegúrate de que los nombres textBox1/textBox2 coincidan con tus controles
             string usuario = textBox1.Text;
-
+          Almacenamiento_temporal.usuario_temp= usuario; // Guardar el nombre del usuario en la variable temporal
 
 
             // Validar que el campo de usuario no esté vacío
@@ -41,38 +49,51 @@ namespace Restaurante
 
             try
             {
-                using (var conexion = new OleDbConnection(cadenaConexion))
-                using (var comando = new OleDbCommand("SELECT COUNT(*) FROM tb_cliente WHERE [nombre]=? ", conexion))
+                /* using (var conexion = new OleDbConnection(cadenaConexion))
+                 using (var comando = new OleDbCommand("SELECT COUNT(*) FROM tb_cliente WHERE [nombre]=? ", conexion))
+                */
+
+                using (var conexion = new OleDbConnection(ConfiguracionDB.CadenaConexion))
+                using (var comando = new OleDbCommand("SELECT COUNT(*) FROM tb_cliente WHERE [nombre_cliente]=?", conexion))
                 {
                     comando.Parameters.AddWithValue("?", usuario);
-                   
 
-                    conexion.Open();
-                    int existe = Convert.ToInt32(comando.ExecuteScalar());
+                                  
 
 
-                    // Si los datos son válidos
-                    if (existe > 0)
-                    {
-                        MessageBox.Show("BIENVENIDO A LA ESQUINA DEL SABOR ");
-                        
-                        this.Hide();
-                        Menú newForm = new Menú();
-                        newForm.ShowDialog();
-                       
-                    }
-                    else
-                    {
-                        MessageBox.Show("Introduzca su nombre correcto.", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        conexion.Open();
+                        int existe = Convert.ToInt32(comando.ExecuteScalar());
+
+
+                        // Si los datos son válidos
+                        if (existe > 0)
+                        {
+                           
+
+                            MessageBox.Show("BIENVENIDO A LA ESQUINA DEL SABOR ");
+
+                            this.Hide();
+                            Menú newForm = new Menú();
+                            newForm.ShowDialog();
+                            
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Introduzca su nombre correcto.", "Acceso denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
                     }
                 }
-            }
+            
+                
             catch (Exception ex)
             {
                 MessageBox.Show("Error al conectarse: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         //--------------------------------------------------------------------------------------
+
+
 
 
         //--------------EVENTOS CREADOS POR ERROR EN EL DISEÑADOR 💀----------------------

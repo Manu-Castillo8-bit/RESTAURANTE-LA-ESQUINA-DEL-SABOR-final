@@ -15,12 +15,14 @@ namespace Restaurante
 {
     public partial class Registro : Form
     {
-        string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\La esquina del sabor new.accdb;";
-        OleDbConnection conexion;
+       // string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\User\Desktop\RESTAURANTE LA ESQUINA DEL SABOR\La esquina del sabor new.accdb;";
+       
+            OleDbConnection conexion;
         public Registro()
         {
             InitializeComponent();
-            conexion = new OleDbConnection(cadenaConexion);
+            conexion = new OleDbConnection(ConfiguracionDB.CadenaConexion);
+            //conexion = new OleDbConnection(cadenaConexion);
         }
 
         private void Ingresar_l_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -76,7 +78,7 @@ namespace Restaurante
             }
             finally
             {
-                conexion.Close();
+                if (conexion.State == ConnectionState.Open) conexion.Close();
             }
         }
 
