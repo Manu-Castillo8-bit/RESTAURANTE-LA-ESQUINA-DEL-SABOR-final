@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|c:\\users\\user\\desktop\\restaurante la esquina del sabor\\restaurante\\restaurante\\configuraciondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\configuraciondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|c:\\users\\user\\desktop\\restaurante la esquina del sabor\\restaurante\\restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|c:\\users\\user\\desktop\\restaurante la esquina del sabor\\restaurante\\restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|c:\\users\\user\\desktop\\restaurante la esquina del sabor\\restaurante\\restaurante\\resumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\resumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Resumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:Restaurante\\Resumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|c:\\users\\user\\desktop\\restaurante la esquina del sabor\\restaurante\\restaurante\\resumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\resumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\restaurante\\resumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{79E87ABD-E815-4D9B-AD2B-8B894DA07C8B}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\resumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,6 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ConfiguracionDB.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\ConfiguracionDB.cs",
+              "RelativeDocumentMoniker": "Restaurante\\ConfiguracionDB.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\ConfiguracionDB.cs",
+              "RelativeToolTip": "Restaurante\\ConfiguracionDB.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:55:06.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Factura.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Factura.cs",
               "RelativeDocumentMoniker": "Restaurante\\Factura.cs",
@@ -59,15 +76,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Factura.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Factura.cs",
               "RelativeDocumentMoniker": "Restaurante\\Factura.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Factura.cs [Dise\u00F1o]",
               "RelativeToolTip": "Restaurante\\Factura.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T04:29:41.566Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-04-08T04:29:41.566Z"
             },
             {
               "$type": "Document",
@@ -84,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Resumen.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\RESTAURANTE LA ESQUINA DEL SABOR\\Restaurante\\Restaurante\\Resumen.cs",
               "RelativeDocumentMoniker": "Restaurante\\Resumen.cs",
