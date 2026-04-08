@@ -195,6 +195,7 @@ namespace Restaurante
                                 "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            GuardarFacturaEnBD();
 
             GenerarFacturaTXT();
         }
@@ -213,7 +214,8 @@ namespace Restaurante
         private void Total_Click(object sender, EventArgs e)
 
         {
-            VerPlatillosExistentes();
+           // VerNombresEnTablas();
+            //VerPlatillosExistentes();
 
         //....................................................ENTRADAS.................................................................
 
@@ -496,7 +498,6 @@ namespace Restaurante
 
             Calcular_total.Visible = true;
             // Guardar en la base de datos
-            GuardarFacturaEnBD();
 
         }
 
@@ -579,7 +580,7 @@ namespace Restaurante
                         int idDetalle = InsertarDetalle(conexion, transaccion, idPedido);
                         MessageBox.Show($"ID Detalle: {idDetalle}"); // ← Depuración
 
-                        InsertarAgregados(conexion, transaccion, idCliente, idDetalle);
+                  //      InsertarAgregados(conexion, transaccion, idCliente, idDetalle);
 
                         transaccion.Commit();
 
@@ -708,62 +709,83 @@ namespace Restaurante
             if (string.IsNullOrEmpty(nombreCliente) || nombreCliente == "0")
                 nombreCliente = "Cliente General";
 
-            // 🔥 Usar ID de platillo existente (1 = Pupusas, es el más común)
-            int idPlatilloExistente = 1; // Pupusas
+            // 🔥 OBTENER IDs REALES (pueden ser NULL)
+            var ids = ObtenerIdsProductosComprados();
 
             string query = @"INSERT INTO tb_detalle (
-                        id_pedido, 
-                        id_platillo,
-                        nombre_cliente,
-                        nombre_platillo, 
-                        cantidad_platillo, 
-                        total_platillo,
-                        id_bebida,
-                        nombre_bebida, 
-                        cantidad_bebida, 
-                        total_bebida,
-                        id_entrada,
-                        nombre_entrada, 
-                        cantidad_entrada, 
-                        total_entrada,
-                        id_postre,
-                        nombre_postre, 
-                        cantidad_postre, 
-                        total_postre,
-                        subtotal_base
-                     ) VALUES (
-                        ?, ?, ?, ?, ?, ?,
-                        ?, ?, ?, ?,
-                        ?, ?, ?, ?,
-                        ?, ?, ?, ?,
-                        ?
-                     )";
+                id_pedido, 
+                id_platillo,
+                nombre_cliente,
+                nombre_platillo, 
+                cantidad_platillo, 
+                total_platillo,
+                id_bebida,
+                nombre_bebida, 
+                cantidad_bebida, 
+                total_bebida,
+                id_entrada,
+                nombre_entrada, 
+                cantidad_entrada, 
+                total_entrada,
+                id_postre,
+                nombre_postre, 
+                cantidad_postre, 
+                total_postre,
+                subtotal_base
+             ) VALUES (
+                ?, ?, ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?, ?, ?, ?,
+                ?
+             )";
 
             using (OleDbCommand cmd = new OleDbCommand(query, conexion, transaccion))
             {
-                // Campos de platillos (usando ID existente 1)
+                // Campos de platillos
                 cmd.Parameters.AddWithValue("?", idPedido);
-                cmd.Parameters.AddWithValue("?", idPlatilloExistente); // ← Ahora es 1, no 0
+
+                // 🔥 id_platillo: NULL si no hay cantidad
+                if (ids.idPlatillo.HasValue && cantPlatillos > 0)
+                    cmd.Parameters.AddWithValue("?", ids.idPlatillo.Value);
+                else
+                    cmd.Parameters.AddWithValue("?", DBNull.Value);
+
                 cmd.Parameters.AddWithValue("?", nombreCliente);
-                cmd.Parameters.AddWithValue("?", "Platillos");
+                cmd.Parameters.AddWithValue("?", ObtenerNombrePlatilloConCantidad());
                 cmd.Parameters.AddWithValue("?", cantPlatillos);
                 cmd.Parameters.AddWithValue("?", totalPlatillos);
 
-                // Campos de bebidas (si tienes tabla tb_bebida, usa ID existente)
-                cmd.Parameters.AddWithValue("?", 1); // id_bebida (si no existe, podría dar error)
-                cmd.Parameters.AddWithValue("?", "Bebidas");
+                // Campos de bebidas
+                // 🔥 id_bebida: NULL si no hay cantidad
+                if (ids.idBebida.HasValue && cantBebidas > 0)
+                    cmd.Parameters.AddWithValue("?", ids.idBebida.Value);
+                else
+                    cmd.Parameters.AddWithValue("?", DBNull.Value);
+
+                cmd.Parameters.AddWithValue("?", ObtenerNombreBebidaConCantidad());
                 cmd.Parameters.AddWithValue("?", cantBebidas);
                 cmd.Parameters.AddWithValue("?", totalBebidas);
 
-                // Campos de entradas (si tienes tabla tb_entrada, usa ID existente)
-                cmd.Parameters.AddWithValue("?", 1); // id_entrada
-                cmd.Parameters.AddWithValue("?", "Entradas");
+                // Campos de entradas
+                // 🔥 id_entrada: NULL si no hay cantidad
+                if (ids.idEntrada.HasValue && cantEntradas > 0)
+                    cmd.Parameters.AddWithValue("?", ids.idEntrada.Value);
+                else
+                    cmd.Parameters.AddWithValue("?", DBNull.Value);
+
+                cmd.Parameters.AddWithValue("?", ObtenerNombreEntradaConCantidad());
                 cmd.Parameters.AddWithValue("?", cantEntradas);
                 cmd.Parameters.AddWithValue("?", totalEntradas);
 
-                // Campos de postres (si tienes tabla tb_postre, usa ID existente)
-                cmd.Parameters.AddWithValue("?", 1); // id_postre
-                cmd.Parameters.AddWithValue("?", "Postres");
+                // Campos de postres
+                // 🔥 id_postre: NULL si no hay cantidad
+                if (ids.idPostre.HasValue && cantPostres > 0)
+                    cmd.Parameters.AddWithValue("?", ids.idPostre.Value);
+                else
+                    cmd.Parameters.AddWithValue("?", DBNull.Value);
+
+                cmd.Parameters.AddWithValue("?", ObtenerNombrePostreConCantidad());
                 cmd.Parameters.AddWithValue("?", cantPostres);
                 cmd.Parameters.AddWithValue("?", totalPostres);
 
@@ -776,7 +798,6 @@ namespace Restaurante
                 return Convert.ToInt32(cmd.ExecuteScalar());
             }
         }
-
         private void InsertarAgregados(OleDbConnection conexion, OleDbTransaction transaccion, int idCliente, int idDetalle)
         {
             // 🔥 Validar que los IDs sean válidos
@@ -940,6 +961,291 @@ namespace Restaurante
         }
 
 
+
+        /// <summary>
+        /// Obtiene el ID de cualquier tabla por el nombre del producto
+        /// </summary>
+        /// <param name="nombreTabla">Nombre de la tabla (Bebidas, Entradas, Postres, tb_platillo)</param>
+        /// <param name="nombreColumnaId">Nombre de la columna ID</param>
+        /// <param name="nombreColumnaNombre">Nombre de la columna que contiene el nombre</param>
+        /// <param name="nombreProducto">Nombre del producto a buscar</param>
+        /// <returns>ID del producto, o 1 si no se encuentra</returns>
+        private int ObtenerIdPorNombre(string nombreTabla, string nombreColumnaId, string nombreColumnaNombre, string nombreProducto)
+        {
+            if (string.IsNullOrEmpty(nombreProducto))
+                return 1;
+
+            string query = $"SELECT {nombreColumnaId} FROM {nombreTabla} WHERE {nombreColumnaNombre} = ?";
+
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(ConfiguracionDB.CadenaConexion))
+                {
+                    conexion.Open();
+                    using (OleDbCommand cmd = new OleDbCommand(query, conexion))
+                    {
+                        cmd.Parameters.AddWithValue("?", nombreProducto);
+                        object resultado = cmd.ExecuteScalar();
+
+                        if (resultado != null && resultado != DBNull.Value)
+                        {
+                            int id = Convert.ToInt32(resultado);
+                            return id;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al obtener ID de {nombreTabla}: {ex.Message}");
+            }
+
+            return 1; // Valor por defecto
+        }
+
+
+
+        // Obtener ID de bebida desde la tabla Bebidas
+        private int ObtenerIdBebida(string nombreBebida)
+        {
+            return ObtenerIdPorNombre("Bebidas", "id_bebida", "nombre", nombreBebida);
+        }
+
+        // Obtener ID de entrada desde la tabla Entradas
+        private int ObtenerIdEntrada(string nombreEntrada)
+        {
+            return ObtenerIdPorNombre("Entradas", "id_entrada", "nombre", nombreEntrada);
+        }
+
+        // Obtener ID de postre desde la tabla Postres
+        private int ObtenerIdPostre(string nombrePostre)
+        {
+            return ObtenerIdPorNombre("Postres", "id_postre", "nombre", nombrePostre);
+        }
+
+        // Obtener ID de platillo desde la tabla tb_platillo
+        private int ObtenerIdPlatillo(string nombrePlatillo)
+        {
+            return ObtenerIdPorNombre("tb_platillo", "id_platillo", "nombre_platillo", nombrePlatillo);
+        }
+
+
+
+
+        private (int? idPlatillo, int? idBebida, int? idEntrada, int? idPostre) ObtenerIdsProductosComprados()
+        {
+            int? idPlatillo = null;
+            int? idBebida = null;
+            int? idEntrada = null;
+            int? idPostre = null;
+
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(ConfiguracionDB.CadenaConexion))
+                {
+                    conexion.Open();
+
+                    // 🔥 OBTENER PLATILLO (solo si hay cantidad)
+                    if (ObtenerCantidadPlatillos() > 0)
+                    {
+                        string nombrePlatillo = ObtenerNombrePlatilloConCantidad();
+                        if (!string.IsNullOrEmpty(nombrePlatillo))
+                        {
+                            string query = "SELECT id_platillo FROM tb_platillo WHERE nombre_platillo = @nombre";
+                            using (OleDbCommand cmd = new OleDbCommand(query, conexion))
+                            {
+                                cmd.Parameters.AddWithValue("@nombre", nombrePlatillo);
+                                object result = cmd.ExecuteScalar();
+                                if (result != null && result != DBNull.Value)
+                                {
+                                    idPlatillo = Convert.ToInt32(result);
+                                }
+                            }
+                        }
+                    }
+
+                    // 🔥 OBTENER BEBIDA (solo si hay cantidad)
+                    if (ObtenerCantidadBebidas() > 0)
+                    {
+                        string nombreBebida = ObtenerNombreBebidaConCantidad();
+                        if (!string.IsNullOrEmpty(nombreBebida))
+                        {
+                            string query = "SELECT id_bebida FROM Bebidas WHERE nombre_bebida = @nombre";
+                            using (OleDbCommand cmd = new OleDbCommand(query, conexion))
+                            {
+                                cmd.Parameters.AddWithValue("@nombre", nombreBebida);
+                                object result = cmd.ExecuteScalar();
+                                if (result != null && result != DBNull.Value)
+                                {
+                                    idBebida = Convert.ToInt32(result);
+                                }
+                            }
+                        }
+                    }
+
+                    // 🔥 OBTENER ENTRADA (solo si hay cantidad)
+                    if (ObtenerCantidadEntradas() > 0)
+                    {
+                        string nombreEntrada = ObtenerNombreEntradaConCantidad();
+                        if (!string.IsNullOrEmpty(nombreEntrada))
+                        {
+                            string query = "SELECT id_entrada FROM Entradas WHERE nombre_entrada = @nombre";
+                            using (OleDbCommand cmd = new OleDbCommand(query, conexion))
+                            {
+                                cmd.Parameters.AddWithValue("@nombre", nombreEntrada);
+                                object result = cmd.ExecuteScalar();
+                                if (result != null && result != DBNull.Value)
+                                {
+                                    idEntrada = Convert.ToInt32(result);
+                                }
+                            }
+                        }
+                    }
+
+                    // 🔥 OBTENER POSTRE (solo si hay cantidad)
+                    if (ObtenerCantidadPostres() > 0)
+                    {
+                        string nombrePostre = ObtenerNombrePostreConCantidad();
+                        if (!string.IsNullOrEmpty(nombrePostre))
+                        {
+                            string query = "SELECT id_postre FROM Postres WHERE nombre_postre = @nombre";
+                            using (OleDbCommand cmd = new OleDbCommand(query, conexion))
+                            {
+                                cmd.Parameters.AddWithValue("@nombre", nombrePostre);
+                                object result = cmd.ExecuteScalar();
+                                if (result != null && result != DBNull.Value)
+                                {
+                                    idPostre = Convert.ToInt32(result);
+                                }
+                            }
+                        }
+                    }
+
+                    // Mensaje de depuración
+                    string mensaje = $"IDs encontrados:\n" +
+                                    $"Platillo: {(idPlatillo.HasValue ? idPlatillo.ToString() : "NULL")}\n" +
+                                    $"Bebida: {(idBebida.HasValue ? idBebida.ToString() : "NULL")}\n" +
+                                    $"Entrada: {(idEntrada.HasValue ? idEntrada.ToString() : "NULL")}\n" +
+                                    $"Postre: {(idPostre.HasValue ? idPostre.ToString() : "NULL")}";
+                    MessageBox.Show(mensaje, "IDs obtenidos");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al obtener IDs: {ex.Message}");
+            }
+
+            return (idPlatillo, idBebida, idEntrada, idPostre);
+        }
+        private string ObtenerNombrePlatilloConCantidad()
+        {
+            if (Convert.ToInt32(Almacenamiento_temporal.Pupusas) > 0) return "Pupusas";
+            if (Convert.ToInt32(Almacenamiento_temporal.Cena) > 0) return "Cena";
+            if (Convert.ToInt32(Almacenamiento_temporal.Panes) > 0) return "Panes";
+            if (Convert.ToInt32(Almacenamiento_temporal.Tortas) > 0) return "Tortas";
+            if (Convert.ToInt32(Almacenamiento_temporal.Lasaña) > 0) return "Lasaña";
+            if (Convert.ToInt32(Almacenamiento_temporal.Carne) > 0) return "Carne";
+            return "";
+        }
+
+        private string ObtenerNombreBebidaConCantidad()
+        {
+            if (Convert.ToInt32(Almacenamiento_temporal.Bebidas) > 0) return "Bebidas enlatadas";
+            if (Convert.ToInt32(Almacenamiento_temporal.Chocolates) > 0) return "Chocolate";
+            if (Convert.ToInt32(Almacenamiento_temporal.Cafes) > 0) return "Café";
+            if (Convert.ToInt32(Almacenamiento_temporal.Atoles) > 0) return "Atol";
+            if (Convert.ToInt32(Almacenamiento_temporal.Licuados) > 0) return "Licuado";
+            if (Convert.ToInt32(Almacenamiento_temporal.Tes) > 0) return "Té";
+            return "";
+        }
+
+        private string ObtenerNombreEntradaConCantidad()
+        {
+            if (Convert.ToInt32(Almacenamiento_temporal.Papas) > 0) return "Papas";
+            if (Convert.ToInt32(Almacenamiento_temporal.Sopas) > 0) return "Sopas";
+            if (Convert.ToInt32(Almacenamiento_temporal.Tamales) > 0) return "Tamales";
+            if (Convert.ToInt32(Almacenamiento_temporal.Torrejas) > 0) return "Torresjas"; // ⚠️ OJO: tiene typo en tu BD
+            if (Convert.ToInt32(Almacenamiento_temporal.Ensaladas) > 0) return "Ensaladas";
+            if (Convert.ToInt32(Almacenamiento_temporal.Sandwiches) > 0) return "Sandwiches";
+            return "";
+        }
+
+        private string ObtenerNombrePostreConCantidad()
+        {
+            if (Convert.ToInt32(Almacenamiento_temporal.TresLeches) > 0) return "Tres Leches";
+            if (Convert.ToInt32(Almacenamiento_temporal.Quesadillas) > 0) return "Quesadillas";
+            if (Convert.ToInt32(Almacenamiento_temporal.Flanes) > 0) return "Flan";
+            if (Convert.ToInt32(Almacenamiento_temporal.pastel) > 0) return "Pastel de chocolate";
+            if (Convert.ToInt32(Almacenamiento_temporal.Tartaletas) > 0) return "Tartaleta";
+            if (Convert.ToInt32(Almacenamiento_temporal.Pastel_de_limon) > 0) return "Pastel de limón";
+            return "";
+        }
+        private void VerNombresEnTablas()
+        {
+            try
+            {
+                using (OleDbConnection conexion = new OleDbConnection(ConfiguracionDB.CadenaConexion))
+                {
+                    conexion.Open();
+
+                    // Ver Bebidas
+                    string queryBebidas = "SELECT id_bebida, nombre FROM Bebidas";
+                    using (OleDbCommand cmd = new OleDbCommand(queryBebidas, conexion))
+                    {
+                        using (OleDbDataReader reader = cmd.ExecuteReader())
+                        {
+                            string mensaje = "=== BEBIDAS ===\n";
+                            while (reader.Read())
+                            {
+                                mensaje += $"ID: {reader["id_bebida"]}, Nombre: {reader["nombre"]}\n";
+                            }
+
+                            // Ver Entradas
+                            string queryEntradas = "SELECT id_entrada, nombre FROM Entradas";
+                            cmd.CommandText = queryEntradas;
+                            using (OleDbDataReader reader2 = cmd.ExecuteReader())
+                            {
+                                mensaje += "\n=== ENTRADAS ===\n";
+                                while (reader2.Read())
+                                {
+                                    mensaje += $"ID: {reader2["id_entrada"]}, Nombre: {reader2["nombre"]}\n";
+                                }
+                            }
+
+                            // Ver Postres
+                            string queryPostres = "SELECT id_postre, nombre FROM Postres";
+                            cmd.CommandText = queryPostres;
+                            using (OleDbDataReader reader3 = cmd.ExecuteReader())
+                            {
+                                mensaje += "\n=== POSTRES ===\n";
+                                while (reader3.Read())
+                                {
+                                    mensaje += $"ID: {reader3["id_postre"]}, Nombre: {reader3["nombre"]}\n";
+                                }
+                            }
+
+                            // Ver tb_platillo
+                            string queryPlatillos = "SELECT id_platillo, nombre_platillo FROM tb_platillo";
+                            cmd.CommandText = queryPlatillos;
+                            using (OleDbDataReader reader4 = cmd.ExecuteReader())
+                            {
+                                mensaje += "\n=== PLATILLOS ===\n";
+                                while (reader4.Read())
+                                {
+                                    mensaje += $"ID: {reader4["id_platillo"]}, Nombre: {reader4["nombre_platillo"]}\n";
+                                }
+                            }
+
+                            MessageBox.Show(mensaje, "Nombres en la Base de Datos");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
 
     }
 }

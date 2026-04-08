@@ -50,7 +50,17 @@ namespace Restaurante
     {"Flanes", 1.50},
     {"Pastel de chocolate", 3.50},
     {"Tartaletas", 1.50},
-    {"Pastel de limón", 3.50}
+    {"Pastel de limón", 3.50},
+
+
+ // 🔥 ADEREZOS (precio unitario)
+  {"Aderezo de Papas", 0.50},
+ {"Aderezo de Ensaladas", 0.50 },
+ {"Aderezo de Sandwiches", 0.50},
+{"Aderezo de Pupusas", 0.50},
+{"Aderezo de Panes", 0.50},
+{"Aderezo de Cenas", 0.50},
+{"Aderezo de Tortas", 0.50}
 };
         //--------------------------------------------------------------------------------------------------------
 
@@ -61,7 +71,7 @@ namespace Restaurante
 
             double totalGeneral = 0;
 
-            void Agregar(string nombre, string cantidadTexto)
+            void AgregarProducto(string nombre, string cantidadTexto)
             {
                 if (!string.IsNullOrEmpty(cantidadTexto) && cantidadTexto != "0")
                 {
@@ -75,38 +85,66 @@ namespace Restaurante
                 }
             }
 
+            // 🔥 Función para agregar aderezos (solo si tienen precio > 0)
+            void AgregarAderezo(string nombre, string precioTexto)
+            {
+                if (!string.IsNullOrEmpty(precioTexto) && precioTexto != "0")
+                {
+                    double precioAderezo = double.Parse(precioTexto);
+                    if (precioAderezo > 0)
+                    {
+                        // Los aderezos se muestran con cantidad 1 y su precio individual
+                        totalGeneral += precioAderezo;
+                        dataGridView1.Rows.Add(nombre, 1, precioAderezo, precioAderezo);
+                    }
+                }
+            }
 
 
-            // ACÁ SE AGREGAN LOS PRODUCTOS QUE SE PIDIERON
-            Agregar("Papas", Almacenamiento_temporal.Papas);
-            Agregar("Sopas", Almacenamiento_temporal.Sopas);
-            Agregar("Tamales", Almacenamiento_temporal.Tamales);
-            Agregar("Torrejas", Almacenamiento_temporal.Torrejas);
-            Agregar("Ensaladas", Almacenamiento_temporal.Ensaladas);
-            Agregar("Sandwiches", Almacenamiento_temporal.Sandwiches);
+            // ========== PRODUCTOS NORMALES ==========
 
-            Agregar("Pupusas", Almacenamiento_temporal.Pupusas);
-            Agregar("Cena", Almacenamiento_temporal.Cena);
-            Agregar("Panes", Almacenamiento_temporal.Panes);
-            Agregar("Tortas", Almacenamiento_temporal.Tortas);
-            Agregar("Lasaña", Almacenamiento_temporal.Lasaña);
-            Agregar("Carne", Almacenamiento_temporal.Carne);
+            // ENTRADAS
+            AgregarProducto("Papas", Almacenamiento_temporal.Papas);
+            AgregarProducto("Sopas", Almacenamiento_temporal.Sopas);
+            AgregarProducto("Tamales", Almacenamiento_temporal.Tamales);
+            AgregarProducto("Torrejas", Almacenamiento_temporal.Torrejas);
+            AgregarProducto("Ensaladas", Almacenamiento_temporal.Ensaladas);
+            AgregarProducto("Sandwiches", Almacenamiento_temporal.Sandwiches);
 
-            Agregar("Bebidas", Almacenamiento_temporal.Bebidas);
-            Agregar("Chocolates", Almacenamiento_temporal.Chocolates);
-            Agregar("Cafes", Almacenamiento_temporal.Cafes);
-            Agregar("Atoles", Almacenamiento_temporal.Atoles);
-            Agregar("Licuados", Almacenamiento_temporal.Licuados);
-            Agregar("Tes", Almacenamiento_temporal.Tes);
+            // PLATILLOS
+            AgregarProducto("Pupusas", Almacenamiento_temporal.Pupusas);
+            AgregarProducto("Cena", Almacenamiento_temporal.Cena);
+            AgregarProducto("Panes", Almacenamiento_temporal.Panes);
+            AgregarProducto("Tortas", Almacenamiento_temporal.Tortas);
+            AgregarProducto("Lasaña", Almacenamiento_temporal.Lasaña);
+            AgregarProducto("Carne", Almacenamiento_temporal.Carne);
 
-            Agregar("Tres Leches", Almacenamiento_temporal.TresLeches);
-            Agregar("Quesadillas", Almacenamiento_temporal.Quesadillas);
-            Agregar("Flanes", Almacenamiento_temporal.Flanes);
-            Agregar("Pastel de chocolate", Almacenamiento_temporal.pastel);
-            Agregar("Tartaletas", Almacenamiento_temporal.Tartaletas);
-            Agregar("Pastel de limón", Almacenamiento_temporal.Pastel_de_limon);
+            // BEBIDAS
+            AgregarProducto("Bebidas", Almacenamiento_temporal.Bebidas);
+            AgregarProducto("Chocolates", Almacenamiento_temporal.Chocolates);
+            AgregarProducto("Cafes", Almacenamiento_temporal.Cafes);
+            AgregarProducto("Atoles", Almacenamiento_temporal.Atoles);
+            AgregarProducto("Licuados", Almacenamiento_temporal.Licuados);
+            AgregarProducto("Tes", Almacenamiento_temporal.Tes);
 
-            // Mostrar total (puedes usar Label)
+            // POSTRES
+            AgregarProducto("Tres Leches", Almacenamiento_temporal.TresLeches);
+            AgregarProducto("Quesadillas", Almacenamiento_temporal.Quesadillas);
+            AgregarProducto("Flanes", Almacenamiento_temporal.Flanes);
+            AgregarProducto("Pastel de chocolate", Almacenamiento_temporal.pastel);
+            AgregarProducto("Tartaletas", Almacenamiento_temporal.Tartaletas);
+            AgregarProducto("Pastel de limón", Almacenamiento_temporal.Pastel_de_limon);
+
+            // ========== 🔥 ADEREZOS (se muestran como productos independientes) ==========
+            AgregarAderezo("Aderezo de Papas", Almacenamiento_temporal.Ad_papas);
+            AgregarAderezo("Aderezo de Ensaladas", Almacenamiento_temporal.Ad_ensaladas);
+            AgregarAderezo("Aderezo de Sandwiches", Almacenamiento_temporal.Ad_sandwiches);
+            AgregarAderezo("Aderezo de Pupusas", Almacenamiento_temporal.Ad_pupusas);
+            AgregarAderezo("Aderezo de Panes", Almacenamiento_temporal.Ad_panes);
+            AgregarAderezo("Aderezo de Cenas", Almacenamiento_temporal.Ad_cenas);
+            AgregarAderezo("Aderezo de Tortas", Almacenamiento_temporal.Ad_tortas);
+
+            // Mostrar total
             lblTotal.Text = "Total: $" + totalGeneral.ToString("0.00");
         }
 
@@ -114,12 +152,19 @@ namespace Restaurante
         //---------------------BOTON DE MOSTRAR RESUMEN-------------------------
         private void Resumen_Load(object sender, EventArgs e)
         {
+            // Configurar columnas del DataGridView
             dataGridView1.ColumnCount = 4;
 
             dataGridView1.Columns[0].Name = "Producto";
             dataGridView1.Columns[1].Name = "Cantidad";
             dataGridView1.Columns[2].Name = "Precio Unitario";
             dataGridView1.Columns[3].Name = "Subtotal";
+
+            // Ajustar anchos de columnas
+            dataGridView1.Columns[0].Width = 180;
+            dataGridView1.Columns[1].Width = 80;
+            dataGridView1.Columns[2].Width = 100;
+            dataGridView1.Columns[3].Width = 100;
 
             CargarPedidos();
         }
@@ -212,6 +257,14 @@ namespace Restaurante
                 case "Tartaletas": Almacenamiento_temporal.Tartaletas = "0"; break;
                 case "Pastel de limón": Almacenamiento_temporal.Pastel_de_limon = "0"; break;
 
+                // 🔥 ADEREZOS
+                case "Aderezo de Papas": Almacenamiento_temporal.Ad_papas = "0"; break;
+                case "Aderezo de Ensaladas": Almacenamiento_temporal.Ad_ensaladas = "0"; break;
+                case "Aderezo de Sandwiches": Almacenamiento_temporal.Ad_sandwiches = "0"; break;
+                case "Aderezo de Pupusas": Almacenamiento_temporal.Ad_pupusas = "0"; break;
+                case "Aderezo de Panes": Almacenamiento_temporal.Ad_panes = "0"; break;
+                case "Aderezo de Cenas": Almacenamiento_temporal.Ad_cenas = "0"; break;
+                case "Aderezo de Tortas": Almacenamiento_temporal.Ad_tortas = "0"; break;
             }
         }
 
@@ -228,27 +281,28 @@ namespace Restaurante
                 {
                     string producto = dataGridView1.CurrentRow.Cells[0].Value.ToString();
 
-                    DialogResult r = MessageBox.Show("¿Eliminar este producto?", "Confirmar", MessageBoxButtons.YesNo);
+                    DialogResult r = MessageBox.Show($"¿Eliminar '{producto}' del pedido?",
+                        "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                     if (r == DialogResult.Yes)
                     {
-                        // 🔥 1. BORRAR DE LA CLASE (LO MÁS IMPORTANTE)
+                        // Eliminar de la memoria
                         EliminarDeMemoria(producto);
 
-                        // 🔥 2. RECARGAR (esto ya actualiza el grid)
+                        // Recargar el DataGridView
                         CargarPedidos();
                     }
-
                 }
                 else
                 {
-                    MessageBox.Show("Selecciona una fila");
+                    MessageBox.Show("Selecciona un producto para eliminar", "Advertencia",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
